@@ -1,0 +1,3741 @@
+<html class="no-js" lang="" dir="ltr" id="htmlTag">
+
+<head>
+  <meta http-equiv="origin-trial"
+    content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+  <meta charset="utf-8">
+  <title>Tazkarti</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://tazkarti.com/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <link rel="stylesheet" href="https://tazkarti.com/styles.9d76113b960fa23b63e0.css">
+  <style>
+    .modal-open {
+      padding-right: 0 !important;
+      padding-left: 0 !important
+    }
+  </style>
+  <script type="text/javascript" async=""
+    src="https://www.gstatic.com/recaptcha/releases/8k85QBI-qzxmenDv318AZH30/recaptcha__en.js" crossorigin="anonymous"
+    integrity="sha384-YaLdSXMqm9CEKTpOkSnpu5vAhzVfmtaskI7GboiAj0dVtvfpzmGU1XBINZ7hs6ET"></script>
+  <script charset="utf-8" src="1.7cbf48878a7d362f9e1b.js"></script>
+  <script charset="utf-8" src="7.731f3826aaf127b1d913.js"></script>
+  <style>
+    .view-all {
+      cursor: pointer
+    }
+
+    .disabled {
+      pointer-events: none !important;
+      opacity: .5 !important;
+      cursor: default !important
+    }
+
+    .errorbook {
+      color: red
+    }
+
+    .modalQueue .teams {
+      text-align: center
+    }
+
+    .app-modal .modal-dialog.modalQueue {
+      min-width: 400px !important;
+      max-width: 800px !important
+    }
+
+    .queueTextTop {
+      font-weight: 700;
+      font-size: 28px;
+      color: #219f45
+    }
+
+    .queueTextMiddle {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 16px;
+      color: #000
+    }
+
+    .queueTextMiddle2 {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 16px;
+      color: red
+    }
+
+    .queueTextPeopleNumber {
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 12px;
+      color: #000
+    }
+
+    .warningQueue {
+      margin-top: 10px;
+      border-radius: 10px;
+      background-color: #f59898;
+      width: 100%;
+      color: #000;
+      font-weight: 700;
+      padding: 20px
+    }
+
+    .warningQueue span {
+      display: list-item
+    }
+
+    .lastupdateTime {
+      font-weight: 700;
+      font-size: 12px
+    }
+
+    .queueImage {
+      width: 350px
+    }
+
+    @media (max-width:768px) {
+      .bottom {
+        flex-direction: row !important;
+        flex-wrap: wrap
+      }
+
+      .bottom .first,
+      .bottom .one,
+      .bottom .second {
+        font-size: 8px !important
+      }
+
+      .bottom .status.green {
+        width: 20%
+      }
+
+      .bottom .one:nth-child(1) {
+        width: 60% !important
+      }
+
+      .bottom .one:nth-child(2) {
+        width: 20% !important
+      }
+
+      .bottom .one:nth-child(3) {
+        width: 30% !important
+      }
+
+      .bottom .one:nth-child(4) {
+        width: 16% !important
+      }
+
+      .bottom .one:nth-child(5) {
+        width: 20% !important
+      }
+    }
+
+    @media (max-width:992px) {
+      .bottom {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        max-height: -webkit-fit-content !important;
+        max-height: -moz-fit-content !important;
+        max-height: fit-content !important
+      }
+
+      .bottom .status.green {
+        width: 20%
+      }
+
+      .bottom .one:nth-child(1) {
+        width: 60% !important
+      }
+
+      .bottom .one:nth-child(2) {
+        width: 20% !important
+      }
+
+      .bottom .one:nth-child(3) {
+        width: 30% !important
+      }
+
+      .bottom .one:nth-child(4) {
+        width: 16% !important
+      }
+
+      .bottom .one:nth-child(5) {
+        width: 20% !important
+      }
+    }
+
+    .modalQueue .teams.responsive {
+      display: none !important;
+      margin-bottom: 10px
+    }
+
+    @media (max-width:575px) {
+      .modalQueue .matches .match {
+        margin-bottom: 20px
+      }
+
+      .app-modal .modalQueue .modal-body {
+        padding: 20px
+      }
+
+      .modalQueue .teams.main {
+        display: none !important
+      }
+
+      .modalQueue .teams.responsive {
+        display: flex !important
+      }
+
+      .app-modal .modal-dialog {
+        min-width: 300px
+      }
+
+      .queueTextTop {
+        font-size: 16px
+      }
+
+      .queueTextMiddle {
+        font-size: 14px
+      }
+
+      .warningQueue {
+        margin-top: 0
+      }
+
+      .queueImage {
+        width: 300px;
+        display: flex;
+        margin: auto
+      }
+    }
+
+    @media (max-width:450px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 20px
+      }
+
+      .page-title-holder .view-all-en {
+        margin-left: 0 !important
+      }
+
+      .page-title-holder .view-all-ar {
+        margin-right: 0 !important
+      }
+    }
+
+    @media (max-width:400px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 400px
+      }
+    }
+
+    @media (max-width:380px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 20px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 380px
+      }
+    }
+
+    @media (max-width:370px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 380px
+      }
+    }
+
+    @media (max-width:360px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 360px
+      }
+    }
+
+    @media (max-width:350px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 350px
+      }
+    }
+
+    @media (max-width:330px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 330px
+      }
+    }
+
+    @media (max-width:320px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 320px
+      }
+    }
+
+    .disclaimer {
+      background-color: #fcfee6;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #000;
+      padding: 4px;
+      box-shadow: 0 0 0 #00000029;
+      font-weight: 700
+    }
+
+    .disclaimer .disclaimer-content {
+      border: 2px solid #efff01;
+      display: flex;
+      padding: 13px
+    }
+
+    .disclaimer .disclaimer-content div {
+      padding-left: 10px
+    }
+
+    .disclaimer .disclaimer-content span {
+      text-align: left;
+      padding-left: 20px
+    }
+
+    .disclaimer .disclaimer-content span img {
+      vertical-align: top
+    }
+
+    progress[value] {
+      display: block;
+      width: 100%;
+      min-height: 2rem;
+      margin-top: 10px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: inset 4px 4px 4px rgba(84, 30, 8, .2);
+      background-color: rgba(149, 250, 61, .1);
+      -webkit-animation: 4s linear infinite colorrush;
+      animation: 4s linear infinite colorrush
+    }
+
+    progress[value]::-webkit-progress-inner-element {
+      border-radius: 8px;
+      overflow: hidden;
+      background-position: inherit
+    }
+
+    progress[value]::-webkit-progress-bar {
+      border-radius: 8px;
+      background-color: transparent;
+      background-position: inherit
+    }
+
+    progress[value]::-webkit-progress-value {
+      border-radius: 10px 0 0 10px;
+      box-shadow: inset 2px 2px 2px rgba(90, 90, 92, .2);
+      background: repeating-linear-gradient(45deg, transparent 0 6px, rgba(0, 0, 0, .1) 6px 12px), linear-gradient(#219f45, #219f45, #4aac66);
+      background-size: calc(12px/.707) 100%, 100% 800%;
+      background-position: inherit
+    }
+
+    progress[value]::-moz-progress-bar {
+      border-radius: 10px 0 0 10px;
+      box-shadow: inset 2px 2px 2px rgba(90, 90, 92, .2);
+      background: repeating-linear-gradient(45deg, transparent 0 6px, rgba(0, 0, 0, .1) 6px 12px), linear-gradient(#219f45, #219f45, #4aac66);
+      background-size: calc(12px/.707) 100%, 100% 800%;
+      background-position: inherit
+    }
+
+    @-webkit-keyframes colorrush {
+      0% {
+        background-position: 0 0
+      }
+
+      100% {
+        background-position: calc(10*(12px/.707)) 100%
+      }
+    }
+
+    @keyframes colorrush {
+      0% {
+        background-position: 0 0
+      }
+
+      100% {
+        background-position: calc(10*(12px/.707)) 100%
+      }
+    }
+  </style>
+  <style>
+    .footer {
+      background-color: #363636;
+      padding: 30px 0 22px;
+      z-index: 777;
+      position: relative
+    }
+
+    .footer>.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .footer .links {
+      position: relative;
+      z-index: 3
+    }
+
+    html[dir=ltr] .footer .links {
+      text-align: left
+    }
+
+    html[dir=rtl] .footer .links {
+      text-align: right
+    }
+
+    .footer .links>li {
+      display: inline-block;
+      vertical-align: middle
+    }
+
+    html[dir=ltr] .footer .links>li {
+      margin-right: 18px
+    }
+
+    html[dir=rtl] .footer .links>li {
+      margin-left: 18px
+    }
+
+    .footer .links>li:first-child {
+      height: 30px
+    }
+
+    .footer .links>li>a {
+      display: block;
+      color: #fff;
+      font-family: EncodeSansExpanded-Regular, arial, tahoma;
+      font-size: 13px;
+      height: 100%
+    }
+
+    .footer .links>li>a:hover {
+      opacity: .5;
+      transition: all .1s ease-in-out
+    }
+
+    .footer .links>li>a>img {
+      display: block;
+      height: 100%;
+      width: auto
+    }
+
+    .footer .copy-rights {
+      font-size: 11px;
+      color: #bebebe;
+      font-family: EncodeSansExpanded-Regular, arial, tahoma
+    }
+
+    html[dir=ltr] .footer .copy-rights {
+      direction: ltr
+    }
+
+    html[dir=rtl] .footer .copy-rights {
+      direction: rtl
+    }
+
+    @media (max-width:991px) {
+      .logged-in {
+        margin-bottom: 72px
+      }
+
+      .footer>.container {
+        display: block
+      }
+
+      .footer .links {
+        text-align: center;
+        margin-bottom: 15px
+      }
+
+      .footer .copy-rights {
+        text-align: center
+      }
+    }
+
+    @media (max-width:769px) {
+      .footer .links {
+        text-align: center
+      }
+
+      .footer .links>li {
+        margin: 0 5px
+      }
+    }
+
+    @media (max-width:575px) {
+      .footer.logged-in {
+        margin-bottom: 67px
+      }
+
+      .footer .links>li:first-child {
+        display: none
+      }
+    }
+  </style>
+  <script charset="utf-8" src="8.6e5089816c41cf88ab2a.js"></script>
+  <script charset="utf-8" src="6.d89b4067179bf400fc71.js"></script>
+  <style>
+    .user-nav {
+      background-color: #fff
+    }
+
+    .user-nav>.container {
+      position: relative
+    }
+
+    .user-nav .user-info {
+      font-size: 0;
+      width: 340px;
+      white-space: nowrap
+    }
+
+    html[dir=ltr] .user-nav .user-info {
+      float: left
+    }
+
+    html[dir=rtl] .user-nav .user-info {
+      float: right
+    }
+
+    .user-nav .user-info .image-holder {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #bebebe;
+      position: relative;
+      transform: translateY(25%)
+    }
+
+    html[dir=ltr] .user-nav .user-info .image-holder {
+      margin-right: 10px
+    }
+
+    html[dir=rtl] .user-nav .user-info .image-holder {
+      margin-left: 10px
+    }
+
+    .user-nav .user-info .image-holder>img {
+      display: block;
+      width: 100%;
+      height: auto
+    }
+
+    .user-nav .user-info .info {
+      display: inline-block;
+      vertical-align: middle;
+      width: calc(100% - 110px)
+    }
+
+    .user-nav .user-info .info .welcome {
+      color: #121212;
+      margin: 0;
+      font-size: 13px;
+      font-weight: 700
+    }
+
+    html[dir=ltr] .user-nav .user-info .info .welcome {
+      text-align: left
+    }
+
+    html[dir=rtl] .user-nav .user-info .info .welcome {
+      text-align: right
+    }
+
+    .user-nav .user-info .info .name {
+      font-weight: 700;
+      font-size: 18px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-bottom: 0;
+      direction: initial
+    }
+
+    html[dir=ltr] .user-nav .user-info .info .name {
+      text-align: left
+    }
+
+    html[dir=rtl] .user-nav .user-info .info .name {
+      text-align: right
+    }
+
+    .user-nav .user-info .info .fan-id {
+      font-family: EncodeSansExpanded-Regular, arial, tahoma;
+      font-size: 14px
+    }
+
+    html[dir=ltr] .user-nav .user-info .info .fan-id {
+      text-align: left
+    }
+
+    html[dir=rtl] .user-nav .user-info .info .fan-id {
+      text-align: right
+    }
+
+    .user-nav .user-info .info .fan-id>span {
+      display: inline-block
+    }
+
+    html[dir=ltr] .user-nav .user-info .info .fan-id>span {
+      margin-right: 10px
+    }
+
+    html[dir=rtl] .user-nav .user-info .info .fan-id>span {
+      margin-left: 10px
+    }
+
+    .user-nav .user-info .info .fan-id .id-num {
+      letter-spacing: 1px
+    }
+
+    .user-nav .user-links {
+      margin-top: 39px;
+      width: calc(100% - 430px);
+      font-size: 0;
+      white-space: nowrap;
+      min-width: 318px
+    }
+
+    html[dir=ltr] .user-nav .user-links {
+      float: right;
+      text-align: right
+    }
+
+    html[dir=rtl] .user-nav .user-links {
+      float: left;
+      text-align: left
+    }
+
+    .user-nav .user-links>li {
+      display: inline-block
+    }
+
+    html[dir=ltr] .user-nav .user-links>li:not(:first-child) {
+      margin-left: 3%
+    }
+
+    html[dir=rtl] .user-nav .user-links>li:not(:first-child) {
+      margin-right: 3%
+    }
+
+    .user-nav .user-links>li>a {
+      display: block;
+      color: #7e7e7e;
+      transition: all .1s ease-in-out;
+      font-family: EncodeSansExpanded-Regular, arial, tahoma;
+      font-size: 0
+    }
+
+    .user-nav .user-links>li>a.active,
+    .user-nav .user-links>li>a:hover {
+      color: #000
+    }
+
+    .user-nav .user-links>li>a>i {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px
+    }
+
+    html[dir=ltr] .user-nav .user-links>li>a>i {
+      margin-right: 7px
+    }
+
+    html[dir=rtl] .user-nav .user-links>li>a>i {
+      margin-left: 7px
+    }
+
+    .user-nav .user-links>li>a>span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px
+    }
+
+    .user-nav .user-cart {
+      display: block;
+      width: 45px;
+      height: 45px;
+      line-height: 50px;
+      text-align: center;
+      background-color: #f2f2f2;
+      border: 1px solid #c2c2c2;
+      position: relative;
+      margin-top: 27px
+    }
+
+    html[dir=ltr] .user-nav .user-cart {
+      float: right;
+      margin-left: 20px
+    }
+
+    html[dir=rtl] .user-nav .user-cart {
+      float: left;
+      margin-right: 20px
+    }
+
+    .user-nav .user-cart>i {
+      display: inline-block;
+      font-size: 20px;
+      color: #c2c2c2
+    }
+
+    .user-nav .user-cart .num {
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      line-height: 23px;
+      border-radius: 50%;
+      top: -14px;
+      border: 2px solid #fff;
+      background-color: #ff4d4d;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding-left: 1px;
+      transform: scale(0);
+      transition: all .3s ease-in-out
+    }
+
+    html[dir=ltr] .user-nav .user-cart .num {
+      right: -14px
+    }
+
+    html[dir=rtl] .user-nav .user-cart .num {
+      left: -14px
+    }
+
+    .user-nav .user-cart.active {
+      border-color: #219f45;
+      cursor: pointer
+    }
+
+    .user-nav .user-cart.active>i {
+      color: #219f45
+    }
+
+    .user-nav .user-cart.active .num {
+      transform: scale(1)
+    }
+
+    .user-nav .user-nav-bottom {
+      padding: 10px 0;
+      background-color: #e9e9e9;
+      color: #666;
+      font-size: 13px
+    }
+
+    html[dir=ltr] .user-nav .user-nav-bottom {
+      text-align: left
+    }
+
+    html[dir=rtl] .user-nav .user-nav-bottom {
+      text-align: right
+    }
+
+    html[dir=ltr] .user-nav .user-nav-bottom>.container {
+      padding-left: 125px
+    }
+
+    html[dir=rtl] .user-nav .user-nav-bottom>.container {
+      padding-right: 125px
+    }
+
+    @media (max-width:991px) {
+      .user-nav .user-info {
+        width: calc(100% - 65px)
+      }
+
+      .user-nav .user-info .image-holder {
+        width: 75px;
+        height: 75px
+      }
+
+      .user-nav .user-info .info .welcome {
+        font-size: 11px
+      }
+
+      .user-nav .user-info .info .name {
+        font-size: 15px;
+        margin: 0
+      }
+
+      .user-nav .user-info .info .fan-id {
+        font-size: 12px
+      }
+
+      .user-nav .user-links {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        width: 100%;
+        background-color: #fff;
+        z-index: 77777777;
+        padding: 12px 0 10px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2)
+      }
+
+      .user-nav .user-links>li {
+        width: 20%;
+        margin: 0 !important
+      }
+
+      .user-nav .user-links>li>a {
+        text-align: center
+      }
+
+      .user-nav .user-links>li>a>i {
+        display: block;
+        font-size: 25px;
+        margin: 0 0 5px
+      }
+
+      .user-nav .user-cart {
+        margin-top: 17px
+      }
+
+      html[dir=ltr] .user-nav .user-nav-bottom>.container {
+        padding-left: 100px
+      }
+
+      html[dir=rtl] .user-nav .user-nav-bottom>.container {
+        padding-right: 100px
+      }
+    }
+
+    @media (max-width:575px) {
+      .user-nav .user-links>li>a>span {
+        font-size: 11px
+      }
+
+      .user-nav .user-info {
+        width: calc(100% - 55px)
+      }
+
+      .user-nav .user-info .info {
+        width: calc(100% - 65px)
+      }
+
+      .user-nav .user-nav-bottom {
+        font-size: 12px
+      }
+
+      .user-nav .user-cart {
+        width: 35px;
+        height: 35px;
+        line-height: 38px;
+        margin-top: 22px
+      }
+
+      .user-nav .user-cart>i {
+        font-size: 18px
+      }
+
+      .user-nav .user-cart .num {
+        width: 25px;
+        height: 25px;
+        line-height: 22px;
+        font-size: 10px;
+        padding: 0
+      }
+    }
+
+    @media (max-width:400px) {
+      .user-nav .user-info {
+        padding: 5px 0 0
+      }
+
+      .user-nav .user-info .image-holder {
+        width: 60px;
+        height: 60px
+      }
+
+      html[dir=ltr] .user-nav .user-info .image-holder {
+        margin-right: 5px
+      }
+
+      html[dir=rtl] .user-nav .user-info .image-holder {
+        margin-left: 5px
+      }
+
+      .user-nav .user-info .info .name {
+        font-size: 13px
+      }
+
+      .user-nav .user-info .info .fan-id {
+        font-size: 11px
+      }
+
+      html[dir=ltr] .user-nav .user-info .info .fan-id>span {
+        margin-right: 5px
+      }
+
+      html[dir=rtl] .user-nav .user-info .info .fan-id>span {
+        margin-left: 5px
+      }
+    }
+
+    .news-holder {
+      height: 50px;
+      padding: 0 20px;
+      background-color: transparent;
+      position: relative;
+      overflow: hidden
+    }
+
+    .news {
+      white-space: nowrap;
+      top: 5px;
+      right: 100%;
+      width: 100%;
+      height: 40px;
+      line-height: 40px
+    }
+
+    .marquee {
+      margin: 0 auto;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      -webkit-animation: 90s linear infinite marquee;
+      animation: 90s linear infinite marquee
+    }
+
+    .marquee:hover {
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused
+    }
+
+    @-webkit-keyframes marquee {
+      0% {
+        text-indent: 100%
+      }
+
+      100% {
+        text-indent: -480em
+      }
+    }
+
+    @keyframes marquee {
+      0% {
+        text-indent: 100%
+      }
+
+      100% {
+        text-indent: -480em
+      }
+    }
+
+    .vaccin-info {
+      display: flex;
+      align-items: center
+    }
+
+    .vaccin-info .status {
+      display: flex;
+      align-items: center;
+      -webkit-margin-end: 20px;
+      margin-inline-end: 20px
+    }
+
+    .vaccin-info .status svg {
+      -webkit-margin-end: 5px;
+      margin-inline-end: 5px
+    }
+
+    .vaccin-info .status.success svg .b {
+      fill: #219f45
+    }
+
+    .vaccin-info .status.success span {
+      color: #219f45
+    }
+
+    .vaccin-info .status.subscribe svg .b {
+      fill: #2965be
+    }
+
+    .vaccin-info .status.subscribe span {
+      color: #2965be
+    }
+
+    .vaccin-info .status.failed svg .b {
+      fill: #c23636
+    }
+
+    .vaccin-info .status.failed span {
+      color: #c23636
+    }
+  </style>
+  <style>
+    .txtRequired {
+      border: 1px solid #ec091e !important
+    }
+  </style>
+  <script src="https://www.google.com/recaptcha/api.js?render=explicit&amp;onload=ng2recaptchaloaded" async=""
+    defer=""></script>
+  <style>
+    .disclaimer {
+      background-color: #fcfee6;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #000;
+      padding: 4px;
+      box-shadow: 0 0 0 #00000029;
+      font-weight: 700;
+      font-family: EncodeSansExpanded-Regular, arial, tahoma
+    }
+
+    .disclaimer .disclaimer-content {
+      border: 2px solid #efff01;
+      padding: 13px
+    }
+
+    .disclaimer .disclaimer-content span {
+      text-align: left;
+      padding-left: 20px
+    }
+
+    .disclaimer .disclaimer-content span img {
+      vertical-align: top
+    }
+
+    .user-home .all-events,
+    .user-home .all-matches {
+      margin-bottom: 60px
+    }
+
+    .user-home .tickets-table .name {
+      color: #219f45 !important;
+      font-weight: 700;
+      width: 40%
+    }
+
+    .user-home .tickets-table .teams-cell {
+      width: 220px;
+      box-sizing: content-box;
+      white-space: nowrap
+    }
+
+    .user-home .tickets-table .teams-cell .collapse-table-toggle {
+      vertical-align: middle
+    }
+
+    .user-home .tickets-table .teams-cell .teams-holder {
+      display: inline-block;
+      vertical-align: middle
+    }
+
+    .user-home .tickets-table .teams-cell .teams-holder .team-names {
+      font-size: 0;
+      white-space: nowrap
+    }
+
+    .user-home .tickets-table .teams-cell .teams-holder .team-names .team-name {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      font-weight: 700;
+      color: #000
+    }
+
+    .user-home .tickets-table .teams-cell .teams-holder .vs {
+      display: inline-block;
+      vertical-align: bottom;
+      font-size: 14px;
+      color: #000;
+      margin: 0 5px;
+      font-weight: 100
+    }
+
+    .user-home .tickets-table .teams-cell .teams-holder .time {
+      font-size: 13px;
+      color: #7f7f7f;
+      white-space: nowrap
+    }
+
+    .user-home .dependents-table .name {
+      min-width: 140px;
+      box-sizing: content-box
+    }
+
+    @media (min-width:1200px) {
+      .user-home .dependents-table table tbody tr td {
+        padding: 22px 15px !important
+      }
+    }
+
+    @media (max-width:1199px) {
+      .n-modal .modal-dialog .modal-content .modal-body .notes {
+        height: 200px !important
+      }
+
+      .n-modal .modal-dialog .modal-content .modal-body .head .txt h2 {
+        font-size: 28px !important
+      }
+
+      .n-modal .modal-dialog .modal-content .modal-body .head .txt p {
+        font-size: 17px !important
+      }
+
+      .user-home .table-holder.first {
+        margin-bottom: 30px
+      }
+    }
+
+    @media (max-width:575px) {
+      .user-home .tickets-table .teams-cell {
+        width: auto
+      }
+
+      .user-home .tickets-table .teams-cell .teams-holder .team-names .team-name {
+        font-size: 12px
+      }
+
+      .user-home .tickets-table .teams-cell .teams-holder .team-names .team-name:first-child {
+        display: block
+      }
+
+      .user-home .tickets-table .teams-cell .teams-holder .team-names .vs {
+        font-size: 12px
+      }
+
+      html[dir=ltr] .user-home .tickets-table .teams-cell .teams-holder .team-names .vs {
+        margin: 0 3px 0 0
+      }
+
+      html[dir=rtl] .user-home .tickets-table .teams-cell .teams-holder .team-names .vs {
+        margin: 0 0 0 3px
+      }
+
+      .user-home .tickets-table .teams-cell .teams-holder .time {
+        display: none
+      }
+    }
+
+    .disabled {
+      pointer-events: none;
+      cursor: default
+    }
+
+    .venuLinkgooglemap {
+      text-decoration: underline !important
+    }
+
+    .venuLinkgooglemap:hover {
+      text-decoration: none !important;
+      cursor: pointer
+    }
+
+    @media (max-width:991px) {
+      .user-home .all-matches {
+        margin-bottom: 90px
+      }
+
+      .event-info.n-event-info {
+        display: block !important;
+        width: 100% !important;
+        padding: 20px !important
+      }
+
+      .n-event-info .top {
+        float: left
+      }
+
+      .n-event-info .show-shows {
+        float: right
+      }
+    }
+
+    @media (max-width:450px) {
+      .page-title-holder .view-all-en {
+        margin-left: 0 !important
+      }
+
+      .page-title-holder .view-all-ar {
+        margin-right: 0 !important
+      }
+    }
+
+    .n-info {
+      border-radius: 0;
+      border-width: 1.5px;
+      font-weight: 500
+    }
+
+    .n-info .close {
+      opacity: 1;
+      line-height: .9
+    }
+
+    .n-info .close:focus {
+      outline: 0
+    }
+
+    .n-info.alert-info {
+      color: #3b6e9b;
+      border-color: #68a8e0;
+      background-color: #deecf8
+    }
+
+    .n-info.alert-info .close {
+      color: #3b6e9b
+    }
+
+    .n-info.alert-danger {
+      color: #c34949;
+      border-color: #c34949;
+      background-color: #f2d7d7
+    }
+
+    .n-info.alert-danger .close {
+      color: #c34949
+    }
+
+    .n-modal {
+      overflow: hidden !important
+    }
+
+    .n-modal .modal-dialog {
+      margin-top: 0
+    }
+
+    .n-modal .modal-dialog .modal-content {
+      border-radius: 20px;
+      border-color: #707070;
+      padding: 25px
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .head {
+      text-align: center;
+      margin-bottom: 20px
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .head .logo {
+      margin-bottom: 20px
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .head .txt h2 {
+      font-size: 35px;
+      font-weight: 700;
+      color: #000;
+      margin: 0 0 20px
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .head .txt p {
+      margin: auto;
+      color: #000;
+      font-weight: 500;
+      font-size: 20px;
+      max-width: 600px
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .hint {
+      color: #0b7840;
+      font-weight: 700
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .notes {
+      height: 275px;
+      overflow: hidden auto;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #dfdfdf
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .notes.n-scroll {
+      height: auto
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .notes li {
+      margin-bottom: 15px
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .notes li .main-point {
+      display: flex;
+      align-items: flex-start;
+      font-weight: 600
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .notes li .main-point img.check-icon {
+      margin-top: 0;
+      width: 30px !important;
+      -webkit-margin-end: 10px;
+      margin-inline-end: 10px;
+      border: 0
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .notes li img {
+      width: 100%;
+      margin-top: 15px;
+      border: 1px solid #dfdfdf
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .main-checkbox {
+      font-weight: 600;
+      color: rgba(0, 0, 0, .34)
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .main-checkbox .check-txt {
+      transition: all .3s ease-in-out
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .main-checkbox input:checked~.check-txt {
+      color: #000
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .main-checkbox .check-mark {
+      box-shadow: none;
+      border-color: #c2c2c2;
+      border-width: 2px
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .n-btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .n-btns .n-site-btn {
+      max-width: 180px;
+      height: 55px;
+      font-size: 16px;
+      margin: 0 5px;
+      border: 1px solid #219f45
+    }
+
+    .n-modal .modal-dialog .modal-content .modal-body .n-btns .n-site-btn.light {
+      background-color: #fff;
+      color: #219f45 !important
+    }
+
+    .event1 {
+      display: flex;
+      height: 260px
+    }
+
+    .left1 {
+      width: 70%;
+      height: 100%
+    }
+
+    .startDateWithMinPRice {
+      font-size: 16px;
+      margin-bottom: 10px;
+      margin-top: 10px
+    }
+
+    .startDateWithoutMinPRice {
+      font-size: 16px;
+      margin-bottom: 20px;
+      margin-top: 20px
+    }
+
+    .noOfShowWithMinPrice {
+      margin-bottom: 10px
+    }
+
+    .noOfShowWithoutMinPrice {
+      margin-bottom: 24px
+    }
+
+    .right1 {
+      background-color: #fff;
+      padding: 16px 24px 16px 16px;
+      width: 30%;
+      height: 100%
+    }
+
+    .event-info1 {
+      height: 100%;
+      padding: 0
+    }
+
+    .first {
+      margin-bottom: 8px;
+      margin-top: 8px;
+      font-size: 16px
+    }
+
+    .second {
+      font-size: 16px;
+      margin-bottom: 8px
+    }
+
+    .shows-count1 {
+      font-size: 16px
+    }
+
+    .show1 {
+      width: auto;
+      height: auto;
+      font-weight: 700;
+      line-height: normal;
+      background-color: transparent;
+      color: #219f45 !important;
+      font-size: 18px
+    }
+
+    .image-holder-new {
+      height: 100%
+    }
+
+    .name {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      display: flex;
+      height: 50px;
+      overflow: hidden
+    }
+
+    .minPrice {
+      font-size: 16px;
+      margin-bottom: 10px;
+      margin-top: 10px
+    }
+
+    @media (max-width:992px) {
+      .event1 {
+        display: flex;
+        flex-direction: column;
+        height: auto
+      }
+
+      .right1 {
+        width: 100%
+      }
+
+      .left1 {
+        width: 100%;
+        height: 225px
+      }
+    }
+
+    @media (max-width:768px) {
+      .event1 {
+        display: flex;
+        flex-direction: column;
+        height: auto
+      }
+
+      .left1 {
+        width: 100%;
+        height: auto
+      }
+
+      .right1 {
+        width: 100%
+      }
+
+      .event-info1 .top1 {
+        display: block
+      }
+
+      .minPrice {
+        font-size: 16px;
+        margin-bottom: 5px;
+        margin-top: 16px
+      }
+
+      .startDateWithMinPRice {
+        margin-bottom: 10px;
+        margin-top: 10px
+      }
+
+      .startDateWithoutMinPRice {
+        margin-bottom: 5px;
+        margin-top: 16px
+      }
+
+      .noOfShowWithoutMinPrice {
+        margin-bottom: 12px
+      }
+
+      .image-holder-new {
+        height: 130px
+      }
+    }
+  </style>
+  <style>
+    .disabled {
+      pointer-events: none !important;
+      opacity: .5 !important;
+      cursor: default !important
+    }
+
+    .errorbook {
+      color: red
+    }
+
+    .modalQueue .teams {
+      text-align: center
+    }
+
+    .app-modal .modal-dialog.modalQueue {
+      min-width: 400px !important;
+      max-width: 800px !important
+    }
+
+    .queueTextTop {
+      font-weight: 700;
+      font-size: 28px;
+      color: #219f45
+    }
+
+    .queueTextMiddle {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 16px;
+      color: #000
+    }
+
+    .queueTextMiddle2 {
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 16px;
+      color: red
+    }
+
+    .queueTextPeopleNumber {
+      margin-top: 10px;
+      font-weight: 700;
+      font-size: 12px;
+      color: #000
+    }
+
+    .warningQueue {
+      margin-top: 10px;
+      border-radius: 10px;
+      background-color: #f59898;
+      width: 100%;
+      color: #000;
+      font-weight: 700;
+      padding: 20px
+    }
+
+    .warningQueue span {
+      display: list-item
+    }
+
+    .lastupdateTime {
+      font-weight: 700;
+      font-size: 12px
+    }
+
+    .queueImage {
+      width: 350px
+    }
+
+    .modalQueue .teams.responsive {
+      display: none !important;
+      margin-bottom: 10px
+    }
+
+    @media (max-width:768px) {
+      .bottom {
+        flex-direction: row !important;
+        flex-wrap: wrap
+      }
+
+      .bottom .first,
+      .bottom .one,
+      .bottom .second {
+        font-size: 8px !important
+      }
+
+      .bottom .status.green {
+        width: 20%
+      }
+
+      .bottom .one:nth-child(1) {
+        width: 60% !important
+      }
+
+      .bottom .one:nth-child(2) {
+        width: 20% !important
+      }
+
+      .bottom .one:nth-child(3) {
+        width: 30% !important
+      }
+
+      .bottom .one:nth-child(4) {
+        width: 16% !important
+      }
+
+      .bottom .one:nth-child(5) {
+        width: 20% !important
+      }
+    }
+
+    @media (max-width:992px) {
+      .bottom {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        max-height: -webkit-fit-content !important;
+        max-height: -moz-fit-content !important;
+        max-height: fit-content !important
+      }
+
+      .bottom .status.green {
+        width: 20%
+      }
+
+      .bottom .one:nth-child(1) {
+        width: 60% !important
+      }
+
+      .bottom .one:nth-child(2) {
+        width: 20% !important
+      }
+
+      .bottom .one:nth-child(3) {
+        width: 30% !important
+      }
+
+      .bottom .one:nth-child(4) {
+        width: 16% !important
+      }
+
+      .bottom .one:nth-child(5) {
+        width: 20% !important
+      }
+    }
+
+    @media (max-width:575px) {
+      .modalQueue .matches .match {
+        margin-bottom: 20px
+      }
+
+      .app-modal .modalQueue .modal-body {
+        padding: 20px
+      }
+
+      .modalQueue .teams.main {
+        display: none !important
+      }
+
+      .modalQueue .teams.responsive {
+        display: flex !important
+      }
+
+      .app-modal .modal-dialog {
+        min-width: 300px
+      }
+
+      .queueTextTop {
+        font-size: 16px
+      }
+
+      .queueTextMiddle {
+        font-size: 14px
+      }
+
+      .warningQueue {
+        margin-top: 0
+      }
+
+      .queueImage {
+        width: 300px;
+        display: flex;
+        margin: auto
+      }
+    }
+
+    @media (max-width:450px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 20px
+      }
+
+      .page-title-holder .view-all-en {
+        margin-left: 0 !important
+      }
+
+      .page-title-holder .view-all-ar {
+        margin-right: 0 !important
+      }
+    }
+
+    @media (max-width:400px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 400px
+      }
+    }
+
+    @media (max-width:380px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 20px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 380px
+      }
+    }
+
+    @media (max-width:370px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 380px
+      }
+    }
+
+    @media (max-width:360px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 360px
+      }
+    }
+
+    @media (max-width:350px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 350px
+      }
+    }
+
+    @media (max-width:330px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 330px
+      }
+    }
+
+    @media (max-width:320px) {
+      .app-modal .modalQueue .modal-body {
+        padding: 10px
+      }
+
+      .modalQueue .matches,
+      .modalQueue .noti-modal-footer {
+        max-width: 320px
+      }
+    }
+
+    .disclaimer {
+      background-color: #fcfee6;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #000;
+      padding: 4px;
+      box-shadow: 0 0 0 #00000029;
+      font-weight: 700
+    }
+
+    .disclaimer .disclaimer-content {
+      border: 2px solid #efff01;
+      display: flex;
+      padding: 13px
+    }
+
+    .disclaimer .disclaimer-content div {
+      padding-left: 10px
+    }
+
+    .disclaimer .disclaimer-content span {
+      text-align: left;
+      padding-left: 20px
+    }
+
+    .disclaimer .disclaimer-content span img {
+      vertical-align: top
+    }
+
+    progress[value] {
+      display: block;
+      width: 100%;
+      min-height: 2rem;
+      margin-top: 10px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: inset 4px 4px 4px rgba(84, 30, 8, .2);
+      background-color: rgba(149, 250, 61, .1);
+      -webkit-animation: 4s linear infinite colorrush;
+      animation: 4s linear infinite colorrush
+    }
+
+    progress[value]::-webkit-progress-inner-element {
+      border-radius: 8px;
+      overflow: hidden;
+      background-position: inherit
+    }
+
+    progress[value]::-webkit-progress-bar {
+      border-radius: 8px;
+      background-color: transparent;
+      background-position: inherit
+    }
+
+    progress[value]::-webkit-progress-value {
+      border-radius: 10px 0 0 10px;
+      box-shadow: inset 2px 2px 2px rgba(90, 90, 92, .2);
+      background: repeating-linear-gradient(45deg, transparent 0 6px, rgba(0, 0, 0, .1) 6px 12px), linear-gradient(#219f45, #219f45, #4aac66);
+      background-size: calc(12px/.707) 100%, 100% 800%;
+      background-position: inherit
+    }
+
+    progress[value]::-moz-progress-bar {
+      border-radius: 10px 0 0 10px;
+      box-shadow: inset 2px 2px 2px rgba(90, 90, 92, .2);
+      background: repeating-linear-gradient(45deg, transparent 0 6px, rgba(0, 0, 0, .1) 6px 12px), linear-gradient(#219f45, #219f45, #4aac66);
+      background-size: calc(12px/.707) 100%, 100% 800%;
+      background-position: inherit
+    }
+
+    @-webkit-keyframes colorrush {
+      0% {
+        background-position: 0 0
+      }
+
+      100% {
+        background-position: calc(10*(12px/.707)) 100%
+      }
+    }
+
+    @keyframes colorrush {
+      0% {
+        background-position: 0 0
+      }
+
+      100% {
+        background-position: calc(10*(12px/.707)) 100%
+      }
+    }
+  </style>
+  <style>
+    .all-tickets {
+      margin-bottom: 40px
+    }
+
+    .events-tickets {
+      margin-bottom: 70px
+    }
+
+    .sports-tickets {
+      margin-bottom: 50px
+    }
+
+    .ticket-item {
+      background-color: #fff;
+      border-right: 3px dashed #eee;
+      border-left: 3px dashed #eee;
+      margin-bottom: 30px;
+      position: relative
+    }
+
+    .ticket-item .ticket-first-row {
+      display: flex;
+      flex: 1 1 auto;
+      align-items: center;
+      padding: 10px 15px;
+      border-bottom: 2px dashed #eee
+    }
+
+    .ticket-item .ticket-first-row .button-grey {
+      pointer-events: none
+    }
+
+    html[dir=ltr] .ticket-item .ticket-first-row div {
+      border-right: 1px solid #d4d4d4;
+      padding-right: 20px;
+      margin-right: 20px
+    }
+
+    html[dir=rtl] .ticket-item .ticket-first-row div {
+      border-left: 1px solid #d4d4d4;
+      padding-left: 20px;
+      margin-left: 20px
+    }
+
+    .ticket-item .ticket-first-row div:last-of-type {
+      border: 0 !important;
+      margin: 0;
+      padding: 0
+    }
+
+    .ticket-item .ticket-first-row label {
+      display: block;
+      color: #7f7f7f;
+      font-size: 13px;
+      margin-bottom: 3px
+    }
+
+    .ticket-item .ticket-first-row span {
+      font-size: 15px;
+      font-weight: 700
+    }
+
+    html[dir=ltr] .ticket-item .ticket-first-row .button-cancel {
+      margin: 0 0 0 auto
+    }
+
+    html[dir=rtl] .ticket-item .ticket-first-row .button-cancel {
+      margin: 0 auto 0 0
+    }
+
+    .ticket-item .ticket-second-row {
+      padding: 10px 15px
+    }
+
+    .ticket-item .ticket-second-row:not(:last-child) {
+      border-bottom: 3px dashed #eee
+    }
+
+    .ticket-item .match {
+      margin-bottom: 0
+    }
+
+    .ticket-item .match .top {
+      background-color: #f2f2f2
+    }
+
+    .ticket-item .match .top .teams {
+      background: 0 0
+    }
+
+    .ticket-item .match .top .event-block {
+      width: 40%;
+      font-size: 0
+    }
+
+    .ticket-item .match .top .event-block .image-holder {
+      display: inline-block;
+      vertical-align: middle;
+      height: 60px;
+      width: 60px;
+      background-color: #fff;
+      padding: 2px;
+      border: 2px solid #e7e7e7
+    }
+
+    html[dir=ltr] .ticket-item .match .top .event-block .image-holder {
+      margin-right: 10px
+    }
+
+    html[dir=rtl] .ticket-item .match .top .event-block .image-holder {
+      margin-left: 10px
+    }
+
+    .ticket-item .match .top .event-block .image-holder>img {
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+
+    .ticket-item .match .top .event-block .image-holder .empty {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f6f6f6
+    }
+
+    .ticket-item .match .top .event-block .image-holder .empty>img {
+      width: 50%;
+      height: auto
+    }
+
+    .ticket-item .match .top .event-block .event-title {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      font-family: EncodeSansExpanded-Bold, arial, tahoma;
+      max-width: calc(100% - 100px)
+    }
+
+    .ticket-item:after,
+    .ticket-item:before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #eee;
+      position: absolute;
+      top: 55px
+    }
+
+    html[dir=ltr] .ticket-item:before {
+      left: -10px
+    }
+
+    html[dir=ltr] .ticket-item:after,
+    html[dir=rtl] .ticket-item:before {
+      right: -10px
+    }
+
+    html[dir=rtl] .ticket-item:after {
+      left: -10px
+    }
+
+    .ticket-item .categoryImage {
+      width: 30px !important;
+      height: 30px !important
+    }
+
+    #purchase-order-modal .purchase-slider {
+      padding: 0 30px
+    }
+
+    #purchase-order-modal .match {
+      margin-bottom: 10px
+    }
+
+    #purchase-order-modal .match .top {
+      padding: 0;
+      flex-direction: column;
+      background-color: #fff
+    }
+
+    #purchase-order-modal .match .top .event-block {
+      font-size: 0
+    }
+
+    #purchase-order-modal .match .top .event-block .image-holder {
+      display: inline-block;
+      vertical-align: middle;
+      height: 60px;
+      width: 60px;
+      margin-right: 10px;
+      background-color: #fff;
+      padding: 2px;
+      border: 2px solid #e7e7e7
+    }
+
+    #purchase-order-modal .match .top .event-block .image-holder>img {
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+
+    #purchase-order-modal .match .top .event-block .image-holder .empty {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f6f6f6
+    }
+
+    #purchase-order-modal .match .top .event-block .image-holder .empty>img {
+      width: 50%;
+      height: auto
+    }
+
+    #purchase-order-modal .match .top .event-block .event-title {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      font-family: EncodeSansExpanded-Bold, arial, tahoma;
+      max-width: calc(100% - 70px)
+    }
+
+    #purchase-order-modal .match .top .teams {
+      position: relative;
+      max-width: none
+    }
+
+    html[dir=ltr] #purchase-order-modal .match .top .teams {
+      padding: 0 69px 0 0
+    }
+
+    html[dir=rtl] #purchase-order-modal .match .top .teams {
+      padding: 0 0 0 69px
+    }
+
+    #purchase-order-modal .match .top .teams .image-holder {
+      border: none;
+      width: 50px;
+      height: 50px
+    }
+
+    #purchase-order-modal .match .top .teams .image-holder>div {
+      border: none
+    }
+
+    html[dir=ltr] #purchase-order-modal .match .top .teams .image-holder.first {
+      margin-right: 10px
+    }
+
+    html[dir=rtl] #purchase-order-modal .match .top .teams .image-holder.first {
+      margin-left: 10px
+    }
+
+    #purchase-order-modal .match .top .teams .image-holder.second {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0
+    }
+
+    html[dir=ltr] #purchase-order-modal .match .top .teams .image-holder.second {
+      right: 13px
+    }
+
+    html[dir=rtl] #purchase-order-modal .match .top .teams .image-holder.second {
+      left: 13px
+    }
+
+    #purchase-order-modal .match .top .teams .team-names {
+      width: 100%;
+      max-width: calc(100% - 60px)
+    }
+
+    #purchase-order-modal .match .top .teams .team-names .team-name {
+      display: block;
+      font-size: 18px;
+      font-family: EncodeSansExpanded-Bold, arial, tahoma;
+      margin: 0;
+      max-width: calc(50% - 35px)
+    }
+
+    html[dir=ltr] #purchase-order-modal .match .top .teams .team-names .team-name.first {
+      float: left;
+      text-align: left
+    }
+
+    html[dir=rtl] #purchase-order-modal .match .top .teams .team-names .team-name.first {
+      float: right;
+      text-align: right
+    }
+
+    html[dir=ltr] #purchase-order-modal .match .top .teams .team-names .team-name.second {
+      float: right;
+      text-align: right
+    }
+
+    html[dir=rtl] #purchase-order-modal .match .top .teams .team-names .team-name.second {
+      float: left;
+      text-align: left
+    }
+
+    #purchase-order-modal .match .top .teams .team-names .vs {
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%)
+    }
+
+    #purchase-order-modal .match .top .blocks {
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 5px;
+      border: 0 !important
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block {
+      margin-bottom: 10px
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block .info {
+      width: 100%;
+      max-width: 100%
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block .info .first {
+      white-space: nowrap;
+      font-size: 14px;
+      color: #666
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block.stadium .info {
+      width: 100%
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block.stadium .info>span {
+      white-space: nowrap;
+      font-size: 14px;
+      color: #666
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block.when {
+      margin-top: -4px
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block>.image-holder {
+      height: 18px
+    }
+
+    #purchase-order-modal .match .top .blocks:after {
+      display: none
+    }
+
+    #purchase-order-modal .table-holder th {
+      color: #b8b8b8 !important;
+      font-weight: 300;
+      border-top: 1px solid #cbcbcb !important;
+      border-bottom: 1px solid #cbcbcb !important;
+      padding: 10px 5px !important
+    }
+
+    #purchase-order-modal .table-holder td {
+      padding: 10px 5px !important
+    }
+
+    #purchase-order-modal .total-price {
+      padding: 0 30px
+    }
+
+    #purchase-order-modal .total-price .section .price-row {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 10px 0
+    }
+
+    #purchase-order-modal .total-price .section .price-row.sub-total {
+      border-top: 1px solid #eee
+    }
+
+    #purchase-order-modal .total-price .section .price-row .price {
+      font-family: EncodeSansExpanded-Bold, arial, tahoma
+    }
+
+    #purchase-order-modal .total-price .section:not(:first-child) {
+      border-top: 3px solid #eee
+    }
+
+    #purchase-order-modal .total-price .section:last-child {
+      margin-top: 10px
+    }
+
+    #purchase-order-modal .total-price .section:last-child .price-row .label,
+    #purchase-order-modal .total-price .section:last-child .price-row .price {
+      font-size: 16px
+    }
+
+    #purchase-order-modal .total-price .section .section-label {
+      text-align: center;
+      font-family: EncodeSansExpanded-Bold, arial, tahoma;
+      padding: 10px 0
+    }
+
+    #purchase-order-modal.modal {
+      display: block;
+      height: 0;
+      overflow: hidden
+    }
+
+    #purchase-order-modal.show {
+      height: auto;
+      max-height: 100%;
+      overflow: auto
+    }
+
+    #purchase-order-modal .slider-arrows {
+      position: relative
+    }
+
+    #purchase-order-modal .slider-arrows a {
+      position: absolute;
+      font-size: 22px;
+      color: #cacaca;
+      top: 30px;
+      cursor: pointer;
+      z-index: 99;
+      font-family: monospace
+    }
+
+    #purchase-order-modal .slider-arrows a i {
+      font-weight: 700
+    }
+
+    #purchase-order-modal .slider-arrows a:hover i {
+      color: #219f45
+    }
+
+    #purchase-order-modal .slider-arrows #slider-left {
+      transform: rotate(180deg)
+    }
+
+    html[dir=ltr] #purchase-order-modal .slider-arrows #slider-left {
+      left: 0
+    }
+
+    html[dir=ltr] #purchase-order-modal .slider-arrows #slider-right,
+    html[dir=rtl] #purchase-order-modal .slider-arrows #slider-left {
+      right: 0
+    }
+
+    html[dir=rtl] #purchase-order-modal .slider-arrows #slider-right {
+      left: 0
+    }
+
+    .datepicker-wrapper {
+      position: relative
+    }
+
+    .datepicker-wrapper .gj-icon {
+      font-size: 0;
+      width: 100%;
+      height: 100%
+    }
+
+    .datepicker-wrapper .gj-datepicker {
+      height: 100%
+    }
+
+    .datepicker-wrapper .datepicker {
+      border: 0;
+      height: 100%;
+      padding: 12px;
+      font-size: 13px;
+      color: #7e7e7e;
+      text-align: inherit
+    }
+
+    .datepicker-wrapper .icomoon-calendar {
+      position: absolute;
+      top: 11px;
+      font-size: 18px;
+      color: #7e7e7e;
+      pointer-events: none
+    }
+
+    html[dir=ltr] .datepicker-wrapper .icomoon-calendar {
+      right: 15px
+    }
+
+    html[dir=rtl] .datepicker-wrapper .icomoon-calendar {
+      left: 15px
+    }
+
+    .gj-picker .chevron-left {
+      font-family: icomoon !important;
+      speak: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: rotate(180deg);
+      font-size: 20px;
+      top: 12px !important
+    }
+
+    .gj-picker .chevron-left:before {
+      content: "\e906"
+    }
+
+    html[dir=rtl] .gj-picker .chevron-left {
+      transform: rotate(0)
+    }
+
+    .gj-picker .chevron-right {
+      font-family: icomoon !important;
+      speak: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 20px;
+      top: 12px !important
+    }
+
+    .gj-picker .chevron-right:before {
+      content: "\e906"
+    }
+
+    html[dir=rtl] .gj-picker .chevron-right {
+      transform: rotate(180deg)
+    }
+
+    #timeoutModal h2 {
+      font-size: 29px
+    }
+
+    #timeoutModal img {
+      vertical-align: sub;
+      width: 29px
+    }
+
+    .accordion-btn {
+      position: relative;
+      display: flex
+    }
+
+    .accordion-btn:before {
+      content: '\00ff0b';
+      font-size: 25px;
+      color: #000;
+      float: right;
+      position: absolute;
+      margin-left: 5px
+    }
+
+    .accordion-btn[aria-expanded=true]:before {
+      content: "\00ff0d"
+    }
+
+    @media (max-width:1200px) {
+      .ticket-item .match .top .event-block .event-title {
+        font-size: 14px
+      }
+
+      .accordion-btn:before {
+        top: -5px
+      }
+
+      .ui-accordion-header {
+        font-size: 19px
+      }
+    }
+
+    @media (max-width:991px) {
+      .events-tickets {
+        margin-bottom: 50px
+      }
+
+      .ticket-item {
+        margin-bottom: 40px
+      }
+
+      .ticket-item .match .top {
+        padding: 0;
+        flex-direction: column
+      }
+
+      .ticket-item .match .top .event-block {
+        width: 100%;
+        padding: 10px
+      }
+
+      .ticket-item .match .top .teams {
+        position: relative;
+        max-width: 100%
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams {
+        padding: 13px 63px 13px 13px
+      }
+
+      html[dir=rtl] .ticket-item .match .top .teams {
+        padding: 13px 13px 13px 63px
+      }
+
+      .ticket-item .match .top .teams .image-holder,
+      .ticket-item .match .top .teams .image-holder>div {
+        border: none
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams .image-holder.first {
+        margin-right: 10px
+      }
+
+      html[dir=rtl] .ticket-item .match .top .teams .image-holder.first {
+        margin-left: 10px
+      }
+
+      .ticket-item .match .top .teams .image-holder.second {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams .image-holder.second {
+        right: 13px
+      }
+
+      html[dir=rtl] .ticket-item .match .top .teams .image-holder.second {
+        left: 13px
+      }
+
+      .ticket-item .match .top .teams .team-names {
+        width: calc(100% - 50px)
+      }
+
+      .ticket-item .match .top .teams .team-names .team-name {
+        display: block;
+        font-size: 16px;
+        font-family: EncodeSansExpanded-Bold, arial, tahoma
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams .team-names .team-name.first {
+        float: left
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams .team-names .team-name.second,
+      html[dir=rtl] .ticket-item .match .top .teams .team-names .team-name.first {
+        float: right
+      }
+
+      html[dir=rtl] .ticket-item .match .top .teams .team-names .team-name.second {
+        float: left
+      }
+
+      .ticket-item .match .top .teams .team-names .vs {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%)
+      }
+
+      .ticket-item .match .top .blocks {
+        display: block;
+        border-top: 1px solid #e2e2e2
+      }
+
+      .ticket-item .match .top .blocks .one-block {
+        width: calc(100% / 3);
+        padding: 12px 10px;
+        text-align: center
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block {
+        float: left
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block {
+        float: right
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block:not(:last-child) {
+        border-right: 1px solid #d8d8d8
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block:not(:last-child) {
+        border-left: 1px solid #d8d8d8
+      }
+
+      .ticket-item .match .top .blocks .one-block .info {
+        max-width: calc(100% - 40px);
+        width: auto !important
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block .info {
+        text-align: left
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block .info {
+        text-align: right
+      }
+
+      #purchase-order-modal .match .top .blocks {
+        margin-top: 0
+      }
+
+      #purchase-order-modal .matches .match {
+        margin-bottom: 0
+      }
+
+      .EticketCase {
+        width: 50% !important
+      }
+
+      .categoryImage {
+        width: 30px !important;
+        height: 30px !important
+      }
+
+      .blocksinCaseQr {
+        display: flex !important;
+        flex-wrap: wrap
+      }
+    }
+
+    @media (max-width:770px) {
+      .ticket-item .match .top .teams .team-names .team-name {
+        font-size: 13px
+      }
+
+      .ticket-item .match .top .teams .team-names .vs {
+        left: 48%;
+        font-size: 10px;
+        margin: 0
+      }
+
+      .ticket-item .match .top .blocks {
+        padding: 0
+      }
+
+      .ticket-item .match .top .blocks .one-block .image-holder {
+        height: 22px
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block .image-holder {
+        margin-right: 5px
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block .image-holder {
+        margin-left: 5px
+      }
+
+      .ticket-item .match .top .blocks .one-block .info>span {
+        font-size: 10px
+      }
+
+      .ticket-item .match .top .blocks .one-block .info>span>span {
+        font-size: 9px
+      }
+
+      .ticket-item .match .top .blocks .one-block .info .first {
+        font-size: 10px
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block .info .first {
+        text-align: left
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block .info .first {
+        text-align: right
+      }
+
+      .ticket-item .match .top .blocks .one-block .info .second {
+        font-size: 9px
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block .info .second {
+        text-align: left
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block .info .second {
+        text-align: right
+      }
+
+      .ticket-item .match .top .blocks:after,
+      .ticket-item .match .top .blocks:before {
+        height: 46%
+      }
+
+      .ticket-item .match .bottom {
+        font-size: 10px
+      }
+
+      html[dir=ltr] .ticket-item .match .bottom .status {
+        padding-left: 10px
+      }
+
+      html[dir=rtl] .ticket-item .match .bottom .status {
+        padding-right: 10px
+      }
+
+      .ticket-item .match .bottom .status:before {
+        width: 6px;
+        height: 6px
+      }
+
+      .ticket-item .transfer-btn .button {
+        font-size: 13px;
+        height: 45px;
+        line-height: 45px
+      }
+
+      .one-block.stadium,
+      .one-block.when {
+        width: 50% !important
+      }
+
+      .categoryImage {
+        width: 30px !important;
+        height: 30px !important
+      }
+    }
+
+    @media (max-width:575px) {
+      .ticket-item .ticket-details div {
+        border: 0;
+        padding: 0
+      }
+
+      .ticket-item .ticket-details div label {
+        font-size: 10px
+      }
+
+      .ticket-item .ticket-details div span {
+        font-size: 12px
+      }
+
+      .ticket-item .ticket-details div:nth-child(3),
+      .ticket-item .ticket-details div:nth-child(4) {
+        display: none
+      }
+
+      .ticket-item .ticket-details div:last-child {
+        text-align: center
+      }
+
+      .ticket-item .match .top .event-block .event-title {
+        font-size: 12px;
+        max-width: calc(100% - 70px)
+      }
+
+      .ticket-item .match .top .blocks .one-block {
+        padding: 10px 6px;
+        width: 50%
+      }
+
+      .ticket-item .match .top .blocks .one-block.stadium {
+        width: 100%;
+        border-bottom: 1px solid #d8d8d8
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block.stadium {
+        border-right: none
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block.stadium {
+        border-left: none
+      }
+
+      html[dir=ltr] #purchase-order-modal .match .top .teams {
+        padding: 8px 60px 8px 8px !important
+      }
+
+      html[dir=rtl] #purchase-order-modal .match .top .teams {
+        padding: 8px 8px 8px 60px !important
+      }
+
+      #purchase-order-modal .match .top .teams .image-holder {
+        width: 40px;
+        height: 40px
+      }
+
+      #purchase-order-modal .match .top .teams .team-names .team-name {
+        font-size: 12px
+      }
+
+      #purchase-order-modal .match .top .blocks .one-block.stadium {
+        text-align: center
+      }
+
+      #purchase-order-modal .match .top .blocks .one-block .info .first,
+      #purchase-order-modal .match .top .blocks .one-block .info>span {
+        font-size: 12px !important
+      }
+
+      #purchase-order-modal .slider-arrows a {
+        top: 14px
+      }
+
+      #purchase-order-modal .total-price {
+        padding: 0
+      }
+
+      #purchase-order-modal .button-green {
+        min-width: 100%;
+        width: 100%
+      }
+    }
+
+    @media (max-width:450px) {
+      .ticket-item .ticket-first-row {
+        padding: 10px
+      }
+
+      html[dir=ltr] .ticket-item .ticket-first-row>div {
+        padding-right: 8px;
+        margin-right: 8px
+      }
+
+      html[dir=rtl] .ticket-item .ticket-first-row>div {
+        padding-left: 8px;
+        margin-left: 8px
+      }
+
+      .ticket-item .ticket-first-row label {
+        font-size: 9px
+      }
+
+      .ticket-item .ticket-first-row span {
+        font-size: 11px
+      }
+
+      .ticket-item .ticket-second-row {
+        padding: 10px
+      }
+
+      .ticket-item:after,
+      .ticket-item:before {
+        top: 46px
+      }
+
+      #purchase-order-modal .purchase-slider {
+        padding: 0 20px
+      }
+
+      #purchase-order-modal .match .top .teams .team-names .vs {
+        display: none
+      }
+
+      #purchase-order-modal .match .top .blocks .one-block {
+        width: 100%
+      }
+
+      #purchase-order-modal .table-holder table tbody tr td {
+        padding: 15px 4px !important
+      }
+    }
+
+    @media (max-width:445px) {
+
+      .ticket-item .match .top .blocks:after,
+      .ticket-item .match .top .blocks:before {
+        display: none
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams {
+        padding: 8px 40px 8px 8px !important
+      }
+
+      html[dir=rtl] .ticket-item .match .top .teams {
+        padding: 8px 8px 8px 40px !important
+      }
+
+      .ticket-item .match .top .teams .team-name {
+        font-size: 10px !important
+      }
+    }
+
+    @-webkit-keyframes ui-progress-spinner-color {
+
+      0%,
+      100% {
+        stroke: #008744
+      }
+    }
+
+    @keyframes ui-progress-spinner-color {
+
+      0%,
+      100% {
+        stroke: #008744
+      }
+    }
+
+    .slick-disabled {
+      opacity: .5;
+      cursor: not-allowed;
+      pointer-events: none
+    }
+
+    .arrowSlider:hover {
+      color: #219f45
+    }
+
+    .page-title {
+      margin-left: 25px !important;
+      font-size: 19px
+    }
+
+    .page-title:dir(rtl) {
+      margin-right: 25px !important
+    }
+
+    .matches .filter-form.user-tickets {
+      margin-top: 20px !important
+    }
+
+    .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a {
+      background-color: #219f45 !important;
+      border: 1px solid #219f45 !important
+    }
+
+    .ui-accordion .ui-accordion-content {
+      background-color: #eee !important
+    }
+
+    .ui-accordion .p-accordiontab {
+      font-size: 30px
+    }
+
+    .ui-accordion .ui-accordion-header {
+      margin-top: 20px
+    }
+
+    .ui-accordion-header {
+      color: #121212;
+      font-size: 21px;
+      font-family: EncodeSansExpanded-Bold, arial, tahoma;
+      font-weight: 400 !important
+    }
+
+    @media (max-width:1200px) {
+      .ui-accordion-header {
+        font-size: 19px
+      }
+    }
+
+    .ui-accordion .ui-accordion-header a {
+      font-weight: 400 !important
+    }
+
+    .user-tickets {
+      margin-top: 20px
+    }
+
+    .ui-widget {
+      font-family: EncodeSansExpanded-Regular, arial, tahoma !important
+    }
+
+    .paginationTickets {
+      bottom: 20px;
+      position: relative
+    }
+  </style>
+  <style>
+    .ngx-pagination {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+
+    .ngx-pagination::before,
+    .ngx-pagination::after {
+      content: ' ';
+      display: table;
+    }
+
+    .ngx-pagination::after {
+      clear: both;
+    }
+
+    .ngx-pagination li {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      margin-right: 0.0625rem;
+      border-radius: 0;
+    }
+
+    .ngx-pagination li {
+      display: inline-block;
+    }
+
+    .ngx-pagination a,
+    .ngx-pagination button {
+      color: #0a0a0a;
+      display: block;
+      padding: 0.1875rem 0.625rem;
+      border-radius: 0;
+    }
+
+    .ngx-pagination a:hover,
+    .ngx-pagination button:hover {
+      background: #e6e6e6;
+    }
+
+    .ngx-pagination .current {
+      padding: 0.1875rem 0.625rem;
+      background: #2199e8;
+      color: #fefefe;
+      cursor: default;
+    }
+
+    .ngx-pagination .disabled {
+      padding: 0.1875rem 0.625rem;
+      color: #cacaca;
+      cursor: default;
+    }
+
+    .ngx-pagination .disabled:hover {
+      background: transparent;
+    }
+
+    .ngx-pagination a,
+    .ngx-pagination button {
+      cursor: pointer;
+    }
+
+    .ngx-pagination .pagination-previous a::before,
+    .ngx-pagination .pagination-previous.disabled::before {
+      content: '«';
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    .ngx-pagination .pagination-next a::after,
+    .ngx-pagination .pagination-next.disabled::after {
+      content: '»';
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+
+    .ngx-pagination .show-for-sr {
+      position: absolute !important;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+    }
+
+    .ngx-pagination .small-screen {
+      display: none;
+    }
+
+    @media screen and (max-width: 601px) {
+      .ngx-pagination.responsive .small-screen {
+        display: inline-block;
+      }
+
+      .ngx-pagination.responsive li:not(.small-screen):not(.pagination-previous):not(.pagination-next) {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Analytics here -->
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MEXXZGM26D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-MEXXZGM26D');
+
+    var FanId = "anonymous user";
+    var profileData = localStorage.getItem("profileData");
+    if (profileData) {
+      var obj = JSON.parse(profileData);
+      FanId = obj.fanId;
+    }
+    gtag('config', 'G-MEXXZGM26D', {
+      'user_id': FanId
+    });
+  </script>
+  <!-- End Google Analytics -->
+
+  <!--<link rel="stylesheet" id="lang" href="assets/styles/styles.css">-->
+  <app-root ng-version="7.2.16"><router-outlet></router-outlet><app-user-tickets class="ng-star-inserted"><app-header>
+        <div class="side-nav">
+          <div class="bars"><span></span><span></span><span></span></div>
+          <ul class="links">
+            <li><a href="javascript:void(0)">Home</a></li>
+            <li><a href="javascript:void(0)">Stadium Locations</a></li>
+            <li><a href="javascript:void(0)">Our Stores</a></li>
+            <li><a href="javascript:void(0)">FAQ</a></li>
+            <li><a href="javascript:void(0)">About Tazkarti</a></li>
+            <li><a href="javascript:void(0)">Contact Us</a></li>
+          </ul>
+          <ul class="social">
+            <li><a href="https://facebook.com/tazkarti/" target="_blank"><i class="icomoon-facebook"></i></a></li>
+            <li><a href="https://twitter.com/tazkarti" target="_blank"><i class="icomoon-twitter"></i></a></li>
+            <li><a href="https://instagram.com/tazkarti/" target="_blank"><i class="icomoon-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="header">
+          <div class="container clearfix">
+            <ul class="logos">
+              <li class="bars"><span></span><span></span><span></span></li>
+              <li class="tazkarti"><a href="javascript:void(0)"><img alt=""
+                    src="https://tazkarti.com/assets/images/logo1.svg"></a></li>
+            </ul>
+            <ul class="links"><!----><!----><!---->
+              <li class="ng-star-inserted"><a href="tazkarti/abdelrahman/myinfo.html"><i
+                    class="icomoon-user-info"></i><span>My
+                    Profile</span></a></li><!---->
+              <li class="ng-star-inserted"><a href="tazkarti/abdelrahman/SignIn.html"><i class="icomoon-logout"></i><span>Sign
+                    out</span></a></li><!---->
+              <li class="drop-down-holder"><a class="prevent-default" href="javascript:void(0)"><i
+                    class="icomoon-world"></i><span>English</span><i class="icomoon-chevron-down"></i></a>
+                <ul class="drop-down">
+                  <li><a href="javascript:void(0)"><img src="https://tazkarti.com/assets/images/lang-flag3.svg"> العربية
+                    </a></li>
+                  <li><a href="javascript:void(0)"><img src="https://tazkarti.com/assets/images/lang-flag1.svg"> English
+                    </a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div><!----><p-confirmdialog class="ng-tns-c7-12"><!----></p-confirmdialog>
+      </app-header><app-navbar-user>
+        <div class="user-nav"><!---->
+          <div class="container clearfix ng-star-inserted">
+            <div class="user-info">
+              <div class="image-holder"><!----><img alt="" src="./tazkarti/abdelrahman/profile.png"
+                  class="ng-star-inserted"><!----></div>
+              <div class="info">
+                <div class="welcome">Welcome</div>
+                <div class="name">عبدالرحمن محمد</div>
+                <div class="fan-id"><span class="text-grey-light">Tazkarti ID</span><span
+                    class="id-num">10201302100003</span></div>
+                <div class="fan-id vaccin-info"><!----></div>
+              </div>
+            </div><!---->
+            <ul class="user-links">
+              <li><a href="tazkarti/abdelrahman/index.html" class="active"><i class="icomoon-user-home"></i><span>Home</span></a></li>
+              <li><a href="tazkarti/abdelrahman/matches.html"><i class="icomoon-user-mathes"><span class="path6"></span></i><span>Matches</span></a></li>
+              <li><a href="tazkarti/abdelrahman/events.html"><i class="icomoon-event"><span class="path6"></span></i><span>Events</span></a></li>
+              <li><a href="tazkarti/abdelrahman/myTickets.html" class="active"><i class="icomoon-user-purchase-history"></i><span>My Tickets</span></a></li>
+              <li><a href="tazkarti/abdelrahman/dependents.html"><i class="icomoon-user-dependents"></i><span>Dependents</span></a></li>
+          </ul>
+          </div>
+          <div class="user-nav-bottom p-0">
+            <div class="container"><!----><!---->
+              <div class="news-holder ng-star-inserted" dir="ltr">
+                <div class="news pt-2">
+                  <div class="marquee">Tazkarti ID is your pass to stadiums. It is an effective method to achieve the
+                    safety of fans Allowing identifying them in the stadium.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Tazkarti is also a ticketing provider and event organizer that plans and hosts its own events all
+                    around Egypt.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </app-navbar-user>
+      <div class="container d-none">
+        <ol class="breadcrumb"><!---->
+          <li class="breadcrumb-item ng-star-inserted"><a href="#/profile">Home</a></li><!---->
+          <li aria-current="page" class="breadcrumb-item active ng-star-inserted"> My Tickets </li>
+        </ol>
+      </div>
+      <div class="content matches">
+        <div class="container"><p-accordion>
+            <div role="tablist" class="ui-accordion ui-widget ui-helper-reset"><p-accordiontab
+                class="ng-tns-c12-8 ng-star-inserted">
+                <div class="ui-accordion-header ui-state-default ui-corner-all"><a class="ng-tns-c12-8" role="tab"
+                    tabindex="0" id="ui-accordiontab-0" aria-controls="ui-accordiontab-0-content"><span
+                      class="ui-accordion-toggle-icon pi pi-fw pi-chevron-right"></span><!----><span
+                      class="ui-accordion-header-text ng-tns-c12-8 ng-star-inserted"> Entertainment Tickets
+                    </span><!----></a></div>
+                <div
+                  class="ui-accordion-content-wrapper ng-trigger ng-trigger-tabContent ui-accordion-content-wrapper-overflown"
+                  role="tabpanel" id="ui-accordiontab-0-content" aria-hidden="true" aria-labelledby="ui-accordiontab-0"
+                  style="height: 0px;">
+                  <div class="ui-accordion-content ui-widget-content"><button
+                      class="button button-blue width-auto size-2 filter-toggle" type="button"><i
+                        class="icomoon-filter"></i><span>Search</span></button>
+                    <div class="filter-form user-tickets"><i class="icomoon-cross filter-toggle"></i>
+                      <form novalidate="" class="ng-untouched ng-pristine ng-valid">
+                        <div class="input-holder"><label class="main-label">Event Category </label><select
+                            class="main-input icon-input ng-untouched ng-pristine ng-valid" name="showType"
+                            tabindex="1">
+                            <option selected="" value="0: undefined"> All </option><!---->
+                            <option value="31" class="ng-star-inserted"> The Elite Super Show Vol.9 </option>
+                            <option value="3" class="ng-star-inserted"> Cairo&nbsp;Opera&nbsp;House </option>
+                            <option value="20" class="ng-star-inserted"> Sayed Darwish Theatre Alexandria </option>
+                            <option value="10" class="ng-star-inserted"> Gomhouria Theatre </option>
+                            <option value="11" class="ng-star-inserted"> Arabic Music Institute </option>
+                            <option value="6" class="ng-star-inserted"> Damnhour Theatre </option>
+                          </select><i class="icomoon-chevron-down"></i></div>
+                        <div class="input-holder datepicker-wrapper"><label class="main-label">Date</label><select
+                            class="main-input icon-input ng-untouched ng-pristine ng-valid" name="showDate"
+                            tabindex="1">
+                            <option selected="" value="0: undefined"> All </option><!---->
+                          </select></div>
+                        <div class="buttons"><button class="clear-filter" type="button"> Clear Search </button><button
+                            class="button button-blue width-auto filter-toggle" type="button"> Search </button></div>
+                      </form>
+                    </div><!----><!----><!----><!---->
+                    <div class="text-center ng-star-inserted" style=""><p-progressspinner animationduration=".8s"
+                        fill="#EEEEEE" strokewidth="8">
+                        <div class="ui-progress-spinner" style="width: 50px; height: 50px;"><svg
+                            class="ui-progress-spinner-svg" viewBox="25 25 50 50" style="animation-duration: 0.8s;">
+                            <circle class="ui-progress-spinner-circle" cx="50" cy="50" r="20" stroke-miterlimit="10"
+                              fill="#EEEEEE" stroke-width="8"></circle>
+                          </svg></div>
+                      </p-progressspinner></div><!---->
+                  </div>
+                </div>
+              </p-accordiontab>
+              <p-accordiontab class="titleTickets ng-tns-c12-9 ng-star-inserted">
+                <div class="ui-accordion-header ui-state-default ui-corner-all ui-state-active"><a class="ng-tns-c12-9"
+                    role="tab" tabindex="0" id="ui-accordiontab-1" aria-controls="ui-accordiontab-1-content"
+                    aria-expanded="true"><span
+                      class="ui-accordion-toggle-icon pi pi-fw pi-chevron-down"></span><!----><span
+                      class="ui-accordion-header-text ng-tns-c12-9 ng-star-inserted"> Sports Tickets </span><!----></a>
+                </div>
+                <div class="ui-accordion-content-wrapper ng-trigger ng-trigger-tabContent" role="tabpanel"
+                  id="ui-accordiontab-1-content" aria-hidden="false" aria-labelledby="ui-accordiontab-1" style="">
+                  <div class="ui-accordion-content ui-widget-content"><button
+                      class="button button-blue width-auto size-2 filter-toggle" type="button"><i
+                        class="icomoon-filter"></i><span>Search</span></button>
+                    <div class="filter-form user-tickets"><i class="icomoon-cross filter-toggle"></i>
+                      <form novalidate="" class="ng-untouched ng-pristine ng-valid">
+                        <div class="input-holder"><label class="main-label">Match</label><!----><select
+                            class="main-input icon-input ng-untouched ng-pristine ng-valid ng-star-inserted"
+                            name="teamId" tabindex="1" style="">
+                            <option selected="" value="0: undefined"> All </option><!---->
+                            <option value="1452" class="ng-star-inserted" style=""> 1. Al Ahly FC vs Simba S.C.
+                            </option>
+                            <option value="1234" class="ng-star-inserted" style=""> 2. Al Ahly FC vs Mamelodi Sundowns
+                            </option>
+                            <option value="1006" class="ng-star-inserted" style=""> 3. Al Ahly FC vs Raja Casablanca
+                            </option>
+                            <option value="926" class="ng-star-inserted" style=""> 4. Al Ahly FC vs Al-Hilal Omdurman
+                            </option>
+                            <option value="680" class="ng-star-inserted" style=""> 5. El Dakhleya SC vs Al Ahly FC
+                            </option>
+                          </select><i class="icomoon-chevron-down"></i></div>
+                        <div class="input-holder"><label class="main-label">Stadium</label><select
+                            class="main-input icon-input ng-untouched ng-pristine ng-valid" name="stadiumId"
+                            tabindex="2">
+                            <option selected="" value="0: undefined"> All </option><!---->
+                            <option value="1" class="ng-star-inserted" style=""> Cairo Int. Stadium </option>
+                            <option value="2" class="ng-star-inserted" style=""> 30 June Stadium </option>
+                            <option value="3" class="ng-star-inserted" style=""> Al Salam Stadium </option>
+                            <option value="4" class="ng-star-inserted" style=""> Alexandria Stadium </option>
+                            <option value="5" class="ng-star-inserted" style=""> Suez Stadium </option>
+                            <option value="6" class="ng-star-inserted" style=""> Ismailia Stadium </option>
+                            <option value="7" class="ng-star-inserted" style=""> Cairo Int. Stadium </option>
+                            <option value="8" class="ng-star-inserted" style=""> NEW CAPITAL SPORTS HALL </option>
+                            <option value="9" class="ng-star-inserted" style=""> HASSAN MOSTAFA SPORTS HALL (6th of
+                              October City) </option>
+                            <option value="10" class="ng-star-inserted" style=""> CAIRO STADIUM SPORTS HALL </option>
+                            <option value="11" class="ng-star-inserted" style=""> BORG AL ARAB SPORTS &nbsp;HALL
+                            </option>
+                            <option value="12" class="ng-star-inserted" style=""> Gehaz El Reyada Stadium </option>
+                            <option value="13" class="ng-star-inserted" style=""> Ghazl El Mahala Stadium </option>
+                            <option value="14" class="ng-star-inserted" style=""> Borg El Arab Stadium </option>
+                            <option value="15" class="ng-star-inserted" style=""> Arab Contractors Stadium </option>
+                            <option value="16" class="ng-star-inserted" style=""> Khaled Bichara Stadium </option>
+                            <option value="17" class="ng-star-inserted" style=""> Petrosport Stadium </option>
+                            <option value="18" class="ng-star-inserted" style=""> El Koleya El Harbeya </option>
+                            <option value="20" class="ng-star-inserted" style=""> HASSAN MOSTAFA SPORTS HALL.. </option>
+                            <option value="21" class="ng-star-inserted" style=""> Cairo stadium </option>
+                            <option value="22" class="ng-star-inserted" style=""> International Hall (6 October)
+                            </option>
+                            <option value="23" class="ng-star-inserted" style=""> Suez Canal Stadium </option>
+                            <option value="25" class="ng-star-inserted" style=""> Aswan Stadium </option>
+                            <option value="26" class="ng-star-inserted" style=""> Haras El Hedoud Stadium </option>
+                            <option value="29" class="ng-star-inserted" style=""> TBA </option>
+                            <option value="32" class="ng-star-inserted" style=""> Hockey stadium-Canal </option>
+                            <option value="34" class="ng-star-inserted" style=""> Sports hall-Suez Canal stadium
+                            </option>
+                            <option value="35" class="ng-star-inserted" style=""> ahly gezira sports hall 1 </option>
+                            <option value="36" class="ng-star-inserted" style=""> ahly gezira sports hall 2 </option>
+                            <option value="38" class="ng-star-inserted" style=""> Cairo stadium sports halls
+                              (hall&nbsp;2) </option>
+                            <option value="42" class="ng-star-inserted" style=""> Cairo Stadium sports halls (hall 3)
+                            </option>
+                            <option value="43" class="ng-star-inserted" style=""> Nasr city stadium </option>
+                            <option value="44" class="ng-star-inserted" style=""> Hassan Mostafa Sports Hall </option>
+                            <option value="45" class="ng-star-inserted" style=""> Police Sporting Federation </option>
+                            <option value="46" class="ng-star-inserted" style=""> Egypt Stadium New Administrative
+                              Capital </option>
+                          </select><i class="icomoon-chevron-down"></i></div>
+                        <div class="buttons" tabindex="5"><button class="clear-filter" type="button"> Clear Search
+                          </button><button class="button button-blue width-auto filter-toggle" type="button"> Search
+                          </button></div>
+                      </form>
+                    </div><!---->
+                    <div class="user-tickets ng-star-inserted" style="">
+                      <div class="ticket-item">
+                        <div class="ticket-first-row">
+                          <div class="d-none d-md-block"><label>Name</label><span class="text-green">عبدالرحمن محمد محمود محمد</span></div>
+                          <div><label>Ticket No.</label><span class="text-green">1056007148967924</span></div>
+                          <div class="d-none d-lg-block"><label>Tazkarti ID</label><span>10201302100003</span></div>
+                          <div class="d-none d-lg-block"><label>Status</label><span
+                              class="text-success">Delivered</span></div><button class="button button-cancel"
+                            disabled=""> Cancel </button>
+                        </div>
+                        <div class="ticket-second-row">
+                          <div class="match">
+                            <div class="top clearfix">
+                              <div class="teams">
+                                <div class="image-holder first">
+                                  <div class="flag-icon"
+                                    style="background-image: url(&quot;https://tazkarti.com/assets/images/imagesref/fe5db71b-c3fd-4f9f-a7e2-5e61fa9da069.jpeg&quot;);">
+                                  </div>
+                                </div>
+                                <div class="image-holder second">
+                                  <div class="flag-icon"
+                                    style="background-image: url(&quot;https://tazkarti.com/assets/images/imagesref/416456df-2370-48e6-b37d-8c50ddfb289a.png&quot;);">
+                                  </div>
+                                </div>
+                                <div class="team-names">
+                                  <div class="team-name first"> Al Ahly FC </div>
+                                  <div class="vs">vs</div>
+                                  <div class="team-name second"> Esperance Sportive de Tunis </div>
+                                </div>
+                              </div>
+                              <div class="blocks clearfix">
+                                <div class="one-block stadium">
+                                  <div class="image-holder"><img alt=""
+                                      src="https://tazkarti.com/assets/images/svg/stadium.svg"></div>
+                                  <div class="info"><span> Cairo Int. Stadium, <span> Cairo </span></span></div>
+                                </div>
+                                <div class="one-block when">
+                                  <div class="image-holder"><img alt=""
+                                      src="https://tazkarti.com/assets/images/calendar.svg"></div>
+                                  <div class="info">
+                                    <div class="first"> Sat 25 May 2024 </div>
+                                    <div class="second"> Time : 08 : 00 PM </div>
+                                  </div>
+                                </div>
+                                <div class="one-block when">
+                                  <div class="image-holder"><img alt=""
+                                      src="https://tazkarti.com/assets/images/svg/class-category.svg">
+                                  </div>
+                                  <div class="info">
+                                    <div class="first"> CAT2 </div>
+                                    <div class="second"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="user-tickets ng-star-inserted" style="">
+                      <div class="ticket-item">
+                        <div class="ticket-first-row">
+                          <div class="d-none d-md-block"><label>Name</label><span class="text-green">عبدالرحمن محمد
+                              محمود محمد</span></div>
+                          <div><label>Ticket No.</label><span class="text-green">1056009152655626</span></div>
+                          <div class="d-none d-lg-block"><label>Tazkarti ID</label><span>10201302100003</span></div>
+                          <div class="d-none d-lg-block"><label>Status</label><span
+                              class="text-success">Delivered</span></div><button class="button button-cancel"
+                            disabled=""> Cancel </button>
+                        </div>
+                        <div class="ticket-second-row">
+                          <div class="match">
+                            <div class="top clearfix">
+                              <div class="teams">
+                                <div class="image-holder first">
+                                  <div class="flag-icon"
+                                    style="background-image: url(&quot;https://tazkarti.com/assets/images/imagesref/fe5db71b-c3fd-4f9f-a7e2-5e61fa9da069.jpeg&quot;);">
+                                  </div>
+                                </div>
+                                <div class="image-holder second">
+                                  <div class="flag-icon"
+                                    style="background-image: url(&quot;https://tazkarti.com/assets/images/imagesref/1b1c50f9-b2eb-4ece-8dbb-3561f4aa9894.png&quot;);">
+                                  </div>
+                                </div>
+                                <div class="team-names">
+                                  <div class="team-name first"> Al Ahly FC </div>
+                                  <div class="vs">vs</div>
+                                  <div class="team-name second"> Simba S.C. </div>
+                                </div>
+                              </div>
+                              <div class="blocks clearfix">
+                                <div class="one-block stadium">
+                                  <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/stadium.svg"></div>
+                                  <div class="info"><span> Cairo Int. Stadium, <span> Cairo </span></span></div>
+                                </div>
+                                <div class="one-block when">
+                                  <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/calendar.svg"></div>
+                                  <div class="info">
+                                    <div class="first"> Fri 05 Apr 2024 </div>
+                                    <div class="second"> Time : 10 : 00 PM </div>
+                                  </div>
+                                </div>
+                                <div class="one-block when">
+                                  <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/class-category.svg">
+                                  </div>
+                                  <div class="info">
+                                    <div class="first"> CAT3 - Right </div>
+                                    <div class="second"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-tickets ng-star-inserted" style="">
+                      <div class="ticket-item">
+                        <div class="ticket-first-row">
+                          <div class="d-none d-md-block"><label>Name</label><span class="text-green">عبدالرحمن محمد
+                              محمود محمد</span></div>
+                          <div><label>Ticket No.</label><span class="text-green">1060008134151284</span></div>
+                          <div class="d-none d-lg-block"><label>Tazkarti ID</label><span>10201302100003</span></div>
+                          <div class="d-none d-lg-block"><label>Status</label><span
+                              class="text-success">Delivered</span></div><button class="button button-cancel"
+                            disabled=""> Cancel </button>
+                        </div>
+                        <div class="ticket-second-row">
+                          <div class="match">
+                            <div class="top clearfix">
+                              <div class="teams">
+                                <div class="image-holder first">
+                                  <div class="flag-icon"
+                                    style="background-image: url(&quot;https://tazkarti.com/assets/images/imagesref/fe5db71b-c3fd-4f9f-a7e2-5e61fa9da069.jpeg&quot;);">
+                                  </div>
+                                </div>
+                                <div class="image-holder second">
+                                  <div class="flag-icon"
+                                    style="background-image: url(&quot;https://tazkarti.com/assets/images/imagesref/08f66afa-935b-4e68-ad3a-9cf02744fdb9.png&quot;);">
+                                  </div>
+                                </div>
+                                <div class="team-names">
+                                  <div class="team-name first"> Al Ahly FC </div>
+                                  <div class="vs">vs</div>
+                                  <div class="team-name second"> Mamelodi Sundowns </div>
+                                </div>
+                              </div>
+                              <div class="blocks clearfix">
+                                <div class="one-block stadium">
+                                  <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/stadium.svg"></div>
+                                  <div class="info"><span> Cairo Int. Stadium, <span> Cairo </span></span></div>
+                                </div>
+                                <div class="one-block when">
+                                  <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/calendar.svg"></div>
+                                  <div class="info">
+                                    <div class="first"> Wed 01 Nov 2023 </div>
+                                    <div class="second"> Time : 08 : 00 PM </div>
+                                  </div>
+                                </div>
+                                <div class="one-block when">
+                                  <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/class-category.svg">
+                                  </div>
+                                  <div class="info">
+                                    <div class="first"> CAT3 - Left </div>
+                                    <div class="second"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="user-tickets ng-star-inserted" style="">
+                      <div class="ticket-item">
+                        <div class="ticket-first-row">
+                          <div class="d-none d-md-block"><label>Name</label><span class="text-green">عبدالرحمن محمد
+                              محمود محمد</span></div>
+                          <div><label>Ticket No.</label><span class="text-green">1038008106544514</span></div>
+                          <div class="d-none d-lg-block"><label>Tazkarti ID</label><span>10201302100003</span></div>
+                          <div class="d-none d-lg-block"><label>Status</label><span
+                              class="text-success">Delivered</span></div><button class="button button-cancel"
+                            disabled=""> Cancel </button>
+                        </div>
+                        <div class="ticket-second-row">
+                          <div class="match">
+                            <div class="top clearfix">
+                              <div class="teams">
+                                <div class="image-holder first">
+                                  <div class="flag-icon"
+                                    style="background-image: url(&quot;https://tazkarti.com/assets/images/imagesref/fe5db71b-c3fd-4f9f-a7e2-5e61fa9da069.jpeg&quot;);">
+                                  </div>
+                                </div>
+                                <div class="image-holder second">
+                                  <div class="flag-icon"
+                                    style="background-image: url(&quot;https://tazkarti.com/assets/images/imagesref/6177d862-649d-4f26-9dbb-de3ccdecaf79.png&quot;);">
+                                  </div>
+                                </div>
+                                <div class="team-names">
+                                  <div class="team-name first"> Al Ahly FC </div>
+                                  <div class="vs">vs</div>
+                                  <div class="team-name second"> Raja Casablanca </div>
+                                </div>
+                              </div>
+                              <div class="blocks clearfix">
+                                <div class="one-block stadium">
+                                  <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/stadium.svg"></div>
+                                  <div class="info"><span> Cairo Int. Stadium, <span> Cairo </span></span></div>
+                                </div>
+                                <div class="one-block when">
+                                  <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/calendar.svg"></div>
+                                  <div class="info">
+                                    <div class="first"> Sat 22 Apr 2023 </div>
+                                    <div class="second"> Time : 09 : 00 PM </div>
+                                  </div>
+                                </div>
+                                <div class="one-block when">
+                                  <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/class-category.svg">
+                                  </div>
+                                  <div class="info">
+                                    <div class="first"> CAT3 - Left </div>
+                                    <div class="second"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!---->
+                    <div class="float-right paginationTickets ng-star-inserted" style=""><pagination-controls
+                        id="pagMatchTickets" nextlabel="" previouslabel=""><pagination-template><!---->
+                          <ul class="ngx-pagination ng-star-inserted" role="navigation" aria-label="Pagination"><!---->
+                            <li class="pagination-previous disabled ng-star-inserted"><!----><!----><span
+                                class="ng-star-inserted"> <span class="show-for-sr">page</span></span></li>
+                            <li class="small-screen"> 1 / 2 </li><!---->
+                            <li class="current ng-star-inserted"><!----><!----><!----><span
+                                class="show-for-sr ng-star-inserted">You're on page </span><span
+                                class="ng-star-inserted">1</span></li>
+                            <li class="ng-star-inserted"><!----><a tabindex="0" class="ng-star-inserted"><span
+                                  class="show-for-sr">page </span><span>2</span></a><!----></li><!---->
+                            <li class="pagination-next ng-star-inserted"><!----><a tabindex="0" aria-label=" page"
+                                class="ng-star-inserted"> <span class="show-for-sr">page</span></a><!----></li>
+                          </ul>
+                        </pagination-template></pagination-controls></div><!----><!----><!---->
+                  </div>
+                </div>
+              </p-accordiontab>
+
+              <p-accordiontab class="titleTickets ng-tns-c5-3 ng-star-inserted"><div class="ui-accordion-header ui-state-default ui-corner-all ui-state-active"><a class="ng-tns-c5-3" role="tab" tabindex="0" id="ui-accordiontab-2" aria-controls="ui-accordiontab-2-content" aria-expanded="true"><span class="ui-accordion-toggle-icon pi pi-fw pi-chevron-down"></span><!----><span class="ui-accordion-header-text ng-tns-c5-3 ng-star-inserted">  Payment History </span><!----></a></div><div class="ui-accordion-content-wrapper ng-trigger ng-trigger-tabContent" role="tabpanel" id="ui-accordiontab-2-content" aria-hidden="false" aria-labelledby="ui-accordiontab-2" style=""><div class="ui-accordion-content ui-widget-content"><div class="table-holder"><!----><table class="ng-star-inserted" style=""><thead><tr><th class="text-left">Booking No.</th><th class="table-col-3"> Purchase Date </th><th class="table-col-4"> Payment Method </th><th class="">Total Amount</th><th class="table-col-5"> Shipment Number </th><th class="table-col-action table-col-1"> Actions </th></tr></thead><!----><tbody class="ng-star-inserted"><tr><td class="text-left no-wrap"><span class="collapse-table-toggle"><i class="icomoon-plus"></i></span> 9328000116 </td><td class="table-col-3"> 02-04-2024 </td><td class="table-col-4"> Fawry </td><td class=""> 100 L.E. </td><td class="table-col-5"></td><td class="table-col-action table-col-1"><a class="table-action" href="javascript:void(0)"> View Details </a></td></tr><tr class="collapse-data"><td colspan="6"><table class="collapse-table"><tbody><tr class="collapse-col-3"><th>Purchase Date</th><td> 02-04-2024 </td></tr><tr class="collapse-col-4"><th>Payment Method</th><td> Fawry </td></tr><tr class="collapse-col-5"><th>Shipment Number</th><td></td></tr></tbody></table></td></tr></tbody><tbody class="ng-star-inserted"><tr><td class="text-left no-wrap"><span class="collapse-table-toggle"><i class="icomoon-plus"></i></span> 9285742919 </td><td class="table-col-3"> 29-10-2023 </td><td class="table-col-4"> Fawry </td><td class=""> 175 L.E. </td><td class="table-col-5"></td><td class="table-col-action table-col-1"><a class="table-action" href="javascript:void(0)"> View Details </a></td></tr><tr class="collapse-data"><td colspan="6"><table class="collapse-table"><tbody><tr class="collapse-col-3"><th>Purchase Date</th><td> 29-10-2023 </td></tr><tr class="collapse-col-4"><th>Payment Method</th><td> Fawry </td></tr><tr class="collapse-col-5"><th>Shipment Number</th><td></td></tr></tbody></table></td></tr></tbody><tbody class="ng-star-inserted"><tr><td class="text-left no-wrap"><span class="collapse-table-toggle"><i class="icomoon-plus"></i></span> 9243333969 </td><td class="table-col-3"> 17-04-2023 </td><td class="table-col-4"> Fawry </td><td class=""> 60 L.E. </td><td class="table-col-5"></td><td class="table-col-action table-col-1"><a class="table-action" href="javascript:void(0)"> View Details </a></td></tr><tr class="collapse-data"><td colspan="6"><table class="collapse-table"><tbody><tr class="collapse-col-3"><th>Purchase Date</th><td> 17-04-2023 </td></tr><tr class="collapse-col-4"><th>Payment Method</th><td> Fawry </td></tr><tr class="collapse-col-5"><th>Shipment Number</th><td></td></tr></tbody></table></td></tr></tbody><tbody class="ng-star-inserted"><tr><td class="text-left no-wrap"><span class="collapse-table-toggle"><i class="icomoon-plus"></i></span> 9239683957 </td><td class="table-col-3"> 26-03-2023 </td><td class="table-col-4"> Visa </td><td class=""> 50 L.E. </td><td class="table-col-5"></td><td class="table-col-action table-col-1"><a class="table-action" href="javascript:void(0)"> View Details </a></td></tr><tr class="collapse-data"><td colspan="6"><table class="collapse-table"><tbody><tr class="collapse-col-3"><th>Purchase Date</th><td> 26-03-2023 </td></tr><tr class="collapse-col-4"><th>Payment Method</th><td> Visa </td></tr><tr class="collapse-col-5"><th>Shipment Number</th><td></td></tr></tbody></table></td></tr></tbody><tbody class="ng-star-inserted"><tr><td class="text-left no-wrap"><span class="collapse-table-toggle"><i class="icomoon-plus"></i></span> 9201144650 </td><td class="table-col-3"> 01-11-2022 </td><td class="table-col-4"> Fawry </td><td class=""> 75 L.E. </td><td class="table-col-5"></td><td class="table-col-action table-col-1"><a class="table-action" href="javascript:void(0)"> View Details </a></td></tr><tr class="collapse-data"><td colspan="6"><table class="collapse-table"><tbody><tr class="collapse-col-3"><th>Purchase Date</th><td> 01-11-2022 </td></tr><tr class="collapse-col-4"><th>Payment Method</th><td> Fawry </td></tr><tr class="collapse-col-5"><th>Shipment Number</th><td></td></tr></tbody></table></td></tr></tbody></table><!----><!----></div><!----></div></div></p-accordiontab>
+            </div>
+          </p-accordion></div>
+        <div aria-hidden="false" aria-labelledby="" class="modal fade transfer-tickets-modal app-modal"
+          id="transfer-ticket-modal" role="dialog" tabindex="-1">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body matches">
+                <div class="modal-title"><i class="icomoon-arrows"></i><span>Transfer Ticket</span></div>
+                <div class="ticket-item">
+                  <div class="ticket-first-row">
+                    <div class="ticket-details">
+                      <div><label>Ticket No.</label><span class="text-green"></span></div>
+                      <div><label>Tazkarti ID</label><span></span></div>
+                      <div><label>Status</label><span></span></div>
+                    </div>
+                  </div>
+                  <div class="ticket-second-row">
+                    <div class="match">
+                      <div class="top clearfix">
+                        <div class="teams">
+                          <div class="image-holder first">
+                            <div class="flag-icon flag-icon-null"></div>
+                          </div>
+                          <div class="image-holder second">
+                            <div class="flag-icon flag-icon-null"></div>
+                          </div>
+                          <div class="team-names">
+                            <div class="team-name first"> </div>
+                            <div class="vs">vs</div>
+                            <div class="team-name second"></div>
+                          </div>
+                        </div>
+                        <div class="blocks">
+                          <div class="one-block stadium">
+                            <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/stadium.svg"></div>
+                            <div class="info"><span> , <span> </span></span></div>
+                          </div>
+                          <div class="one-block when">
+                            <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/calendar.svg"></div>
+                            <div class="info">
+                              <div class="first"> Invalid date </div>
+                              <div class="second"> Time : Invalid date </div>
+                            </div>
+                          </div>
+                          <div class="one-block when">
+                            <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/class-category.svg"></div>
+                            <div class="info">
+                              <div class="first"> </div>
+                              <div class="second"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="transfer-details">
+                  <p>Transferring tickets is irreversible! Make sure you enter the correct Tazkarti ID.</p>
+                  <div class="transfer-number"><i class="icomoon-user-info"></i><input
+                      class="form-control ng-untouched ng-pristine ng-valid" max="99999999999999" name="fanID"
+                      onkeypress="if(this.value.length==14) return false;" type="number"></div><!----><!---->
+                </div>
+              </div>
+              <div class="book-ticket-modal-footer clearfix"><button aria-label="Close" class="button float-left"
+                  data-dismiss="modal" type="button"><i class="icomoon-arrow-left2"></i> Back </button><button
+                  class="button button-green float-right" data-dismiss="modal" id="ticket-transfer" disabled="">
+                  Transfer </button></div>
+            </div>
+          </div>
+        </div>
+        <div aria-hidden="true" aria-labelledby="" class="modal fade transfer-tickets-modal success"
+          id="transfer-ticket-success-modal" role="dialog" tabindex="-1">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body matches">
+                <div class="modal-title"><i><img alt="" src="https://tazkarti.com/assets/images/svg/group-1311.svg"></i><span>Ticket
+                    Transferred</span>
+                  <h6>Ticket has been successfully transferred.</h6>
+                </div>
+                <div class="ticket-item">
+                  <div class="ticket-first-row">
+                    <div class="ticket-details">
+                      <div><label>Ticket No.</label><span class="text-green"></span></div>
+                      <div><label>Tazkarti ID</label><span></span></div>
+                      <div><label>Status</label><span></span></div>
+                    </div>
+                  </div>
+                  <div class="ticket-second-row">
+                    <div class="match">
+                      <div class="top clearfix">
+                        <div class="teams">
+                          <div class="image-holder first">
+                            <div class="flag-icon flag-icon-null"></div>
+                          </div>
+                          <div class="image-holder second">
+                            <div class="flag-icon flag-icon-null"></div>
+                          </div>
+                          <div class="team-names">
+                            <div class="team-name first"> </div>
+                            <div class="vs">vs</div>
+                            <div class="team-name second"> </div>
+                          </div>
+                        </div>
+                        <div class="blocks">
+                          <div class="one-block stadium">
+                            <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/stadium.svg"></div>
+                            <div class="info"><span> , <span> </span></span></div>
+                          </div>
+                          <div class="one-block when">
+                            <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/calendar.svg"></div>
+                            <div class="info">
+                              <div class="first"> Invalid date </div>
+                              <div class="second"> Time : Invalid date </div>
+                            </div>
+                          </div>
+                          <div class="one-block when">
+                            <div class="image-holder"><img alt="" src="https://tazkarti.com/assets/images/svg/class-category.svg"></div>
+                            <div class="info">
+                              <div class="first"> </div>
+                              <div class="second"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="book-ticket-modal-footer clearfix"><button class="button button-green d-none" type="button">
+                  Back </button><button aria-label="Close" class="button button-green" data-dismiss="modal"> Back
+                </button></div>
+            </div>
+          </div>
+        </div>
+        <div aria-hidden="true" aria-labelledby="" class="modal fade transfer-tickets-modal app-modal"
+          id="purchase-order-modal" role="dialog" tabindex="-1">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body matches">
+                <div class="modal-title"><span>Booking No.</span>
+                  <h6 class="mt-2"></h6>
+                </div>
+                <div class="slider-arrows"><a href="" id="slider-left"><span class="arrowSlider">&gt;</span></a><a
+                    href="" id="slider-right"><span class="arrowSlider">&gt;</span></a></div><!---->
+              </div>
+              <div class="book-ticket-modal-footer clearfix"><button class="button button-green d-none" type="button">
+                  Back </button><button aria-label="Close" class="button button-green" id="closePaymentHistoryDetails">
+                  Close </button></div>
+            </div>
+          </div>
+        </div>
+        <div aria-hidden="true" aria-labelledby="" class="modal fade transfer-tickets-modal app-modal"
+          id="renew-purchase-order-modal" role="dialog" tabindex="-1">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body matches">
+                <div class="modal-title"><span>Purchase Order</span>
+                  <h6 class="mt-2"></h6>
+                </div><!---->
+              </div>
+              <div class="book-ticket-modal-footer clearfix"><button class="button button-green d-none" type="button">
+                  Back </button><button aria-label="Close" class="button button-green" id="closePaymentHistoryDetails">
+                  Close </button></div>
+            </div>
+          </div>
+        </div>
+      </div><p-confirmdialog class="ng-tns-c7-11"><!----></p-confirmdialog><app-footer>
+        <div class="footer logged-in">
+          <div class="container">
+            <ul class="links">
+              <li><a href="javascript:void(0)"><img alt="" src="https://tazkarti.com/assets/images/tazkarti.svg"></a></li>
+              <li><a href="javascript:void(0)">Home</a></li>
+              <li><a href="javascript:void(0)">Stadium Locations</a></li>
+              <li><a href="javascript:void(0)">Our Stores</a></li>
+              <li><a href="javascript:void(0)">FAQ</a></li>
+              <li><a href="javascript:void(0)">About Tazkarti</a></li>
+              <li><a href="javascript:void(0)">Contact Us</a></li>
+            </ul>
+            <div class="copy-rights">© 2023 Tazkarti. All rights reserved.</div>
+          </div>
+        </div><p-confirmdialog class="ng-tns-c7-13"><!----></p-confirmdialog>
+      </app-footer>
+    </app-user-tickets><p-toast position="top-center" class="ng-tns-c1-0">
+      <div class="ng-tns-c1-0 ui-toast ui-widget ui-toast-top-center"><!----></div>
+    </p-toast><!----></app-root>
+  <script type="text/javascript" src="runtime.fa2bbddee92b46058ef5.js"></script>
+  <script type="text/javascript" src="es2015-polyfills.f70ede54a5010ad33b36.js" nomodule=""></script>
+  <script type="text/javascript" src="polyfills.97a01cd49377eeaac7a6.js"></script>
+  <script type="text/javascript" src="scripts.6d9a83bfa1c904fe043c.js"></script>
+  <script type="text/javascript" src="main.43ea8131cb07ca55dc15.js"></script>
+
+
+</body>
+
+</html>
