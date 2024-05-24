@@ -1,0 +1,4686 @@
+<html class="no-js" lang="" dir="ltr" id="htmlTag">
+
+<head>
+    <meta http-equiv="origin-trial"
+        content="Az520Inasey3TAyqLyojQa8MnmCALSEU29yQFW8dePZ7xQTvSt73pHazLFTK5f7SyLUJSo2uKLesEtEa9aUYcgMAAACPeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZyIsImV4cGlyeSI6MTcyNTQwNzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0=">
+    <meta charset="utf-8">
+    <title>Tazkarti</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="https://tazkarti.com/favicon.ico">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <link rel="stylesheet" href="https://tazkarti.com/styles.9d76113b960fa23b63e0.css">
+    <style>
+        .modal-open {
+            padding-right: 0 !important;
+            padding-left: 0 !important
+        }
+    </style>
+    <script type="text/javascript" async=""
+        src="https://www.gstatic.com/recaptcha/releases/8k85QBI-qzxmenDv318AZH30/recaptcha__en.js"
+        crossorigin="anonymous"
+        integrity="sha384-YaLdSXMqm9CEKTpOkSnpu5vAhzVfmtaskI7GboiAj0dVtvfpzmGU1XBINZ7hs6ET"></script>
+    <script charset="utf-8" src="https://tazkarti.com/1.7cbf48878a7d362f9e1b.js"></script>
+    <script charset="utf-8" src="https://tazkarti.com/7.731f3826aaf127b1d913.js"></script>
+    <style>
+        .view-all {
+            cursor: pointer
+        }
+
+        .disabled {
+            pointer-events: none !important;
+            opacity: .5 !important;
+            cursor: default !important
+        }
+
+        .errorbook {
+            color: red
+        }
+
+        .modalQueue .teams {
+            text-align: center
+        }
+
+        .app-modal .modal-dialog.modalQueue {
+            min-width: 400px !important;
+            max-width: 800px !important
+        }
+
+        .queueTextTop {
+            font-weight: 700;
+            font-size: 28px;
+            color: #219f45
+        }
+
+        .queueTextMiddle {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #000
+        }
+
+        .queueTextMiddle2 {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            color: red
+        }
+
+        .queueTextPeopleNumber {
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: 12px;
+            color: #000
+        }
+
+        .warningQueue {
+            margin-top: 10px;
+            border-radius: 10px;
+            background-color: #f59898;
+            width: 100%;
+            color: #000;
+            font-weight: 700;
+            padding: 20px
+        }
+
+        .warningQueue span {
+            display: list-item
+        }
+
+        .lastupdateTime {
+            font-weight: 700;
+            font-size: 12px
+        }
+
+        .queueImage {
+            width: 350px
+        }
+
+        @media (max-width:768px) {
+            .bottom {
+                flex-direction: row !important;
+                flex-wrap: wrap
+            }
+
+            .bottom .first,
+            .bottom .one,
+            .bottom .second {
+                font-size: 8px !important
+            }
+
+            .bottom .status.green {
+                width: 20%
+            }
+
+            .bottom .one:nth-child(1) {
+                width: 60% !important
+            }
+
+            .bottom .one:nth-child(2) {
+                width: 20% !important
+            }
+
+            .bottom .one:nth-child(3) {
+                width: 30% !important
+            }
+
+            .bottom .one:nth-child(4) {
+                width: 16% !important
+            }
+
+            .bottom .one:nth-child(5) {
+                width: 20% !important
+            }
+        }
+
+        @media (max-width:992px) {
+            .bottom {
+                flex-direction: row !important;
+                flex-wrap: wrap;
+                max-height: -webkit-fit-content !important;
+                max-height: -moz-fit-content !important;
+                max-height: fit-content !important
+            }
+
+            .bottom .status.green {
+                width: 20%
+            }
+
+            .bottom .one:nth-child(1) {
+                width: 60% !important
+            }
+
+            .bottom .one:nth-child(2) {
+                width: 20% !important
+            }
+
+            .bottom .one:nth-child(3) {
+                width: 30% !important
+            }
+
+            .bottom .one:nth-child(4) {
+                width: 16% !important
+            }
+
+            .bottom .one:nth-child(5) {
+                width: 20% !important
+            }
+        }
+
+        .modalQueue .teams.responsive {
+            display: none !important;
+            margin-bottom: 10px
+        }
+
+        @media (max-width:575px) {
+            .modalQueue .matches .match {
+                margin-bottom: 20px
+            }
+
+            .app-modal .modalQueue .modal-body {
+                padding: 20px
+            }
+
+            .modalQueue .teams.main {
+                display: none !important
+            }
+
+            .modalQueue .teams.responsive {
+                display: flex !important
+            }
+
+            .app-modal .modal-dialog {
+                min-width: 300px
+            }
+
+            .queueTextTop {
+                font-size: 16px
+            }
+
+            .queueTextMiddle {
+                font-size: 14px
+            }
+
+            .warningQueue {
+                margin-top: 0
+            }
+
+            .queueImage {
+                width: 300px;
+                display: flex;
+                margin: auto
+            }
+        }
+
+        @media (max-width:450px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 20px
+            }
+
+            .page-title-holder .view-all-en {
+                margin-left: 0 !important
+            }
+
+            .page-title-holder .view-all-ar {
+                margin-right: 0 !important
+            }
+        }
+
+        @media (max-width:400px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 400px
+            }
+        }
+
+        @media (max-width:380px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 20px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 380px
+            }
+        }
+
+        @media (max-width:370px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 380px
+            }
+        }
+
+        @media (max-width:360px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 360px
+            }
+        }
+
+        @media (max-width:350px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 350px
+            }
+        }
+
+        @media (max-width:330px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 330px
+            }
+        }
+
+        @media (max-width:320px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 320px
+            }
+        }
+
+        .disclaimer {
+            background-color: #fcfee6;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #000;
+            padding: 4px;
+            box-shadow: 0 0 0 #00000029;
+            font-weight: 700
+        }
+
+        .disclaimer .disclaimer-content {
+            border: 2px solid #efff01;
+            display: flex;
+            padding: 13px
+        }
+
+        .disclaimer .disclaimer-content div {
+            padding-left: 10px
+        }
+
+        .disclaimer .disclaimer-content span {
+            text-align: left;
+            padding-left: 20px
+        }
+
+        .disclaimer .disclaimer-content span img {
+            vertical-align: top
+        }
+
+        progress[value] {
+            display: block;
+            width: 100%;
+            min-height: 2rem;
+            margin-top: 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: inset 4px 4px 4px rgba(84, 30, 8, .2);
+            background-color: rgba(149, 250, 61, .1);
+            -webkit-animation: 4s linear infinite colorrush;
+            animation: 4s linear infinite colorrush
+        }
+
+        progress[value]::-webkit-progress-inner-element {
+            border-radius: 8px;
+            overflow: hidden;
+            background-position: inherit
+        }
+
+        progress[value]::-webkit-progress-bar {
+            border-radius: 8px;
+            background-color: transparent;
+            background-position: inherit
+        }
+
+        progress[value]::-webkit-progress-value {
+            border-radius: 10px 0 0 10px;
+            box-shadow: inset 2px 2px 2px rgba(90, 90, 92, .2);
+            background: repeating-linear-gradient(45deg, transparent 0 6px, rgba(0, 0, 0, .1) 6px 12px), linear-gradient(#219f45, #219f45, #4aac66);
+            background-size: calc(12px/.707) 100%, 100% 800%;
+            background-position: inherit
+        }
+
+        progress[value]::-moz-progress-bar {
+            border-radius: 10px 0 0 10px;
+            box-shadow: inset 2px 2px 2px rgba(90, 90, 92, .2);
+            background: repeating-linear-gradient(45deg, transparent 0 6px, rgba(0, 0, 0, .1) 6px 12px), linear-gradient(#219f45, #219f45, #4aac66);
+            background-size: calc(12px/.707) 100%, 100% 800%;
+            background-position: inherit
+        }
+
+        @-webkit-keyframes colorrush {
+            0% {
+                background-position: 0 0
+            }
+
+            100% {
+                background-position: calc(10*(12px/.707)) 100%
+            }
+        }
+
+        @keyframes colorrush {
+            0% {
+                background-position: 0 0
+            }
+
+            100% {
+                background-position: calc(10*(12px/.707)) 100%
+            }
+        }
+    </style>
+    <style>
+        .footer {
+            background-color: #363636;
+            padding: 30px 0 22px;
+            z-index: 777;
+            position: relative
+        }
+
+        .footer>.container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .footer .links {
+            position: relative;
+            z-index: 3
+        }
+
+        html[dir=ltr] .footer .links {
+            text-align: left
+        }
+
+        html[dir=rtl] .footer .links {
+            text-align: right
+        }
+
+        .footer .links>li {
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        html[dir=ltr] .footer .links>li {
+            margin-right: 18px
+        }
+
+        html[dir=rtl] .footer .links>li {
+            margin-left: 18px
+        }
+
+        .footer .links>li:first-child {
+            height: 30px
+        }
+
+        .footer .links>li>a {
+            display: block;
+            color: #fff;
+            font-family: EncodeSansExpanded-Regular, arial, tahoma;
+            font-size: 13px;
+            height: 100%
+        }
+
+        .footer .links>li>a:hover {
+            opacity: .5;
+            transition: all .1s ease-in-out
+        }
+
+        .footer .links>li>a>img {
+            display: block;
+            height: 100%;
+            width: auto
+        }
+
+        .footer .copy-rights {
+            font-size: 11px;
+            color: #bebebe;
+            font-family: EncodeSansExpanded-Regular, arial, tahoma
+        }
+
+        html[dir=ltr] .footer .copy-rights {
+            direction: ltr
+        }
+
+        html[dir=rtl] .footer .copy-rights {
+            direction: rtl
+        }
+
+        @media (max-width:991px) {
+            .logged-in {
+                margin-bottom: 72px
+            }
+
+            .footer>.container {
+                display: block
+            }
+
+            .footer .links {
+                text-align: center;
+                margin-bottom: 15px
+            }
+
+            .footer .copy-rights {
+                text-align: center
+            }
+        }
+
+        @media (max-width:769px) {
+            .footer .links {
+                text-align: center
+            }
+
+            .footer .links>li {
+                margin: 0 5px
+            }
+        }
+
+        @media (max-width:575px) {
+            .footer.logged-in {
+                margin-bottom: 67px
+            }
+
+            .footer .links>li:first-child {
+                display: none
+            }
+        }
+    </style>
+    <script charset="utf-8" src="https://tazkarti.com/8.6e5089816c41cf88ab2a.js"></script>
+    <script charset="utf-8" src="https://tazkarti.com/6.d89b4067179bf400fc71.js"></script>
+    <style>
+        .user-nav {
+            background-color: #fff
+        }
+
+        .user-nav>.container {
+            position: relative
+        }
+
+        .user-nav .user-info {
+            font-size: 0;
+            width: 340px;
+            white-space: nowrap
+        }
+
+        html[dir=ltr] .user-nav .user-info {
+            float: left
+        }
+
+        html[dir=rtl] .user-nav .user-info {
+            float: right
+        }
+
+        .user-nav .user-info .image-holder {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #bebebe;
+            position: relative;
+            transform: translateY(25%)
+        }
+
+        html[dir=ltr] .user-nav .user-info .image-holder {
+            margin-right: 10px
+        }
+
+        html[dir=rtl] .user-nav .user-info .image-holder {
+            margin-left: 10px
+        }
+
+        .user-nav .user-info .image-holder>img {
+            display: block;
+            width: 100%;
+            height: auto
+        }
+
+        .user-nav .user-info .info {
+            display: inline-block;
+            vertical-align: middle;
+            width: calc(100% - 110px)
+        }
+
+        .user-nav .user-info .info .welcome {
+            color: #121212;
+            margin: 0;
+            font-size: 13px;
+            font-weight: 700
+        }
+
+        html[dir=ltr] .user-nav .user-info .info .welcome {
+            text-align: left
+        }
+
+        html[dir=rtl] .user-nav .user-info .info .welcome {
+            text-align: right
+        }
+
+        .user-nav .user-info .info .name {
+            font-weight: 700;
+            font-size: 18px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-bottom: 0;
+            direction: initial
+        }
+
+        html[dir=ltr] .user-nav .user-info .info .name {
+            text-align: left
+        }
+
+        html[dir=rtl] .user-nav .user-info .info .name {
+            text-align: right
+        }
+
+        .user-nav .user-info .info .fan-id {
+            font-family: EncodeSansExpanded-Regular, arial, tahoma;
+            font-size: 14px
+        }
+
+        html[dir=ltr] .user-nav .user-info .info .fan-id {
+            text-align: left
+        }
+
+        html[dir=rtl] .user-nav .user-info .info .fan-id {
+            text-align: right
+        }
+
+        .user-nav .user-info .info .fan-id>span {
+            display: inline-block
+        }
+
+        html[dir=ltr] .user-nav .user-info .info .fan-id>span {
+            margin-right: 10px
+        }
+
+        html[dir=rtl] .user-nav .user-info .info .fan-id>span {
+            margin-left: 10px
+        }
+
+        .user-nav .user-info .info .fan-id .id-num {
+            letter-spacing: 1px
+        }
+
+        .user-nav .user-links {
+            margin-top: 39px;
+            width: calc(100% - 430px);
+            font-size: 0;
+            white-space: nowrap;
+            min-width: 318px
+        }
+
+        html[dir=ltr] .user-nav .user-links {
+            float: right;
+            text-align: right
+        }
+
+        html[dir=rtl] .user-nav .user-links {
+            float: left;
+            text-align: left
+        }
+
+        .user-nav .user-links>li {
+            display: inline-block
+        }
+
+        html[dir=ltr] .user-nav .user-links>li:not(:first-child) {
+            margin-left: 3%
+        }
+
+        html[dir=rtl] .user-nav .user-links>li:not(:first-child) {
+            margin-right: 3%
+        }
+
+        .user-nav .user-links>li>a {
+            display: block;
+            color: #7e7e7e;
+            transition: all .1s ease-in-out;
+            font-family: EncodeSansExpanded-Regular, arial, tahoma;
+            font-size: 0
+        }
+
+        .user-nav .user-links>li>a.active,
+        .user-nav .user-links>li>a:hover {
+            color: #000
+        }
+
+        .user-nav .user-links>li>a>i {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 18px
+        }
+
+        html[dir=ltr] .user-nav .user-links>li>a>i {
+            margin-right: 7px
+        }
+
+        html[dir=rtl] .user-nav .user-links>li>a>i {
+            margin-left: 7px
+        }
+
+        .user-nav .user-links>li>a>span {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px
+        }
+
+        .user-nav .user-cart {
+            display: block;
+            width: 45px;
+            height: 45px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #f2f2f2;
+            border: 1px solid #c2c2c2;
+            position: relative;
+            margin-top: 27px
+        }
+
+        html[dir=ltr] .user-nav .user-cart {
+            float: right;
+            margin-left: 20px
+        }
+
+        html[dir=rtl] .user-nav .user-cart {
+            float: left;
+            margin-right: 20px
+        }
+
+        .user-nav .user-cart>i {
+            display: inline-block;
+            font-size: 20px;
+            color: #c2c2c2
+        }
+
+        .user-nav .user-cart .num {
+            position: absolute;
+            width: 27px;
+            height: 27px;
+            line-height: 23px;
+            border-radius: 50%;
+            top: -14px;
+            border: 2px solid #fff;
+            background-color: #ff4d4d;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            padding-left: 1px;
+            transform: scale(0);
+            transition: all .3s ease-in-out
+        }
+
+        html[dir=ltr] .user-nav .user-cart .num {
+            right: -14px
+        }
+
+        html[dir=rtl] .user-nav .user-cart .num {
+            left: -14px
+        }
+
+        .user-nav .user-cart.active {
+            border-color: #219f45;
+            cursor: pointer
+        }
+
+        .user-nav .user-cart.active>i {
+            color: #219f45
+        }
+
+        .user-nav .user-cart.active .num {
+            transform: scale(1)
+        }
+
+        .user-nav .user-nav-bottom {
+            padding: 10px 0;
+            background-color: #e9e9e9;
+            color: #666;
+            font-size: 13px
+        }
+
+        html[dir=ltr] .user-nav .user-nav-bottom {
+            text-align: left
+        }
+
+        html[dir=rtl] .user-nav .user-nav-bottom {
+            text-align: right
+        }
+
+        html[dir=ltr] .user-nav .user-nav-bottom>.container {
+            padding-left: 125px
+        }
+
+        html[dir=rtl] .user-nav .user-nav-bottom>.container {
+            padding-right: 125px
+        }
+
+        @media (max-width:991px) {
+            .user-nav .user-info {
+                width: calc(100% - 65px)
+            }
+
+            .user-nav .user-info .image-holder {
+                width: 75px;
+                height: 75px
+            }
+
+            .user-nav .user-info .info .welcome {
+                font-size: 11px
+            }
+
+            .user-nav .user-info .info .name {
+                font-size: 15px;
+                margin: 0
+            }
+
+            .user-nav .user-info .info .fan-id {
+                font-size: 12px
+            }
+
+            .user-nav .user-links {
+                position: fixed;
+                top: auto;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                transform: none;
+                width: 100%;
+                background-color: #fff;
+                z-index: 77777777;
+                padding: 12px 0 10px;
+                box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2)
+            }
+
+            .user-nav .user-links>li {
+                width: 20%;
+                margin: 0 !important
+            }
+
+            .user-nav .user-links>li>a {
+                text-align: center
+            }
+
+            .user-nav .user-links>li>a>i {
+                display: block;
+                font-size: 25px;
+                margin: 0 0 5px
+            }
+
+            .user-nav .user-cart {
+                margin-top: 17px
+            }
+
+            html[dir=ltr] .user-nav .user-nav-bottom>.container {
+                padding-left: 100px
+            }
+
+            html[dir=rtl] .user-nav .user-nav-bottom>.container {
+                padding-right: 100px
+            }
+        }
+
+        @media (max-width:575px) {
+            .user-nav .user-links>li>a>span {
+                font-size: 11px
+            }
+
+            .user-nav .user-info {
+                width: calc(100% - 55px)
+            }
+
+            .user-nav .user-info .info {
+                width: calc(100% - 65px)
+            }
+
+            .user-nav .user-nav-bottom {
+                font-size: 12px
+            }
+
+            .user-nav .user-cart {
+                width: 35px;
+                height: 35px;
+                line-height: 38px;
+                margin-top: 22px
+            }
+
+            .user-nav .user-cart>i {
+                font-size: 18px
+            }
+
+            .user-nav .user-cart .num {
+                width: 25px;
+                height: 25px;
+                line-height: 22px;
+                font-size: 10px;
+                padding: 0
+            }
+        }
+
+        @media (max-width:400px) {
+            .user-nav .user-info {
+                padding: 5px 0 0
+            }
+
+            .user-nav .user-info .image-holder {
+                width: 60px;
+                height: 60px
+            }
+
+            html[dir=ltr] .user-nav .user-info .image-holder {
+                margin-right: 5px
+            }
+
+            html[dir=rtl] .user-nav .user-info .image-holder {
+                margin-left: 5px
+            }
+
+            .user-nav .user-info .info .name {
+                font-size: 13px
+            }
+
+            .user-nav .user-info .info .fan-id {
+                font-size: 11px
+            }
+
+            html[dir=ltr] .user-nav .user-info .info .fan-id>span {
+                margin-right: 5px
+            }
+
+            html[dir=rtl] .user-nav .user-info .info .fan-id>span {
+                margin-left: 5px
+            }
+        }
+
+        .news-holder {
+            height: 50px;
+            padding: 0 20px;
+            background-color: transparent;
+            position: relative;
+            overflow: hidden
+        }
+
+        .news {
+            white-space: nowrap;
+            top: 5px;
+            right: 100%;
+            width: 100%;
+            height: 40px;
+            line-height: 40px
+        }
+
+        .marquee {
+            margin: 0 auto;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            -webkit-animation: 90s linear infinite marquee;
+            animation: 90s linear infinite marquee
+        }
+
+        .marquee:hover {
+            -webkit-animation-play-state: paused;
+            animation-play-state: paused
+        }
+
+        @-webkit-keyframes marquee {
+            0% {
+                text-indent: 100%
+            }
+
+            100% {
+                text-indent: -480em
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                text-indent: 100%
+            }
+
+            100% {
+                text-indent: -480em
+            }
+        }
+
+        .vaccin-info {
+            display: flex;
+            align-items: center
+        }
+
+        .vaccin-info .status {
+            display: flex;
+            align-items: center;
+            -webkit-margin-end: 20px;
+            margin-inline-end: 20px
+        }
+
+        .vaccin-info .status svg {
+            -webkit-margin-end: 5px;
+            margin-inline-end: 5px
+        }
+
+        .vaccin-info .status.success svg .b {
+            fill: #219f45
+        }
+
+        .vaccin-info .status.success span {
+            color: #219f45
+        }
+
+        .vaccin-info .status.subscribe svg .b {
+            fill: #2965be
+        }
+
+        .vaccin-info .status.subscribe span {
+            color: #2965be
+        }
+
+        .vaccin-info .status.failed svg .b {
+            fill: #c23636
+        }
+
+        .vaccin-info .status.failed span {
+            color: #c23636
+        }
+    </style>
+    <style>
+        .txtRequired {
+            border: 1px solid #ec091e !important
+        }
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit&amp;onload=ng2recaptchaloaded" async=""
+        defer=""></script>
+    <style>
+        .disclaimer {
+            background-color: #fcfee6;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #000;
+            padding: 4px;
+            box-shadow: 0 0 0 #00000029;
+            font-weight: 700;
+            font-family: EncodeSansExpanded-Regular, arial, tahoma
+        }
+
+        .disclaimer .disclaimer-content {
+            border: 2px solid #efff01;
+            padding: 13px
+        }
+
+        .disclaimer .disclaimer-content span {
+            text-align: left;
+            padding-left: 20px
+        }
+
+        .disclaimer .disclaimer-content span img {
+            vertical-align: top
+        }
+
+        .user-home .all-events,
+        .user-home .all-matches {
+            margin-bottom: 60px
+        }
+
+        .user-home .tickets-table .name {
+            color: #219f45 !important;
+            font-weight: 700;
+            width: 40%
+        }
+
+        .user-home .tickets-table .teams-cell {
+            width: 220px;
+            box-sizing: content-box;
+            white-space: nowrap
+        }
+
+        .user-home .tickets-table .teams-cell .collapse-table-toggle {
+            vertical-align: middle
+        }
+
+        .user-home .tickets-table .teams-cell .teams-holder {
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        .user-home .tickets-table .teams-cell .teams-holder .team-names {
+            font-size: 0;
+            white-space: nowrap
+        }
+
+        .user-home .tickets-table .teams-cell .teams-holder .team-names .team-name {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            font-weight: 700;
+            color: #000
+        }
+
+        .user-home .tickets-table .teams-cell .teams-holder .vs {
+            display: inline-block;
+            vertical-align: bottom;
+            font-size: 14px;
+            color: #000;
+            margin: 0 5px;
+            font-weight: 100
+        }
+
+        .user-home .tickets-table .teams-cell .teams-holder .time {
+            font-size: 13px;
+            color: #7f7f7f;
+            white-space: nowrap
+        }
+
+        .user-home .dependents-table .name {
+            min-width: 140px;
+            box-sizing: content-box
+        }
+
+        @media (min-width:1200px) {
+            .user-home .dependents-table table tbody tr td {
+                padding: 22px 15px !important
+            }
+        }
+
+        @media (max-width:1199px) {
+            .n-modal .modal-dialog .modal-content .modal-body .notes {
+                height: 200px !important
+            }
+
+            .n-modal .modal-dialog .modal-content .modal-body .head .txt h2 {
+                font-size: 28px !important
+            }
+
+            .n-modal .modal-dialog .modal-content .modal-body .head .txt p {
+                font-size: 17px !important
+            }
+
+            .user-home .table-holder.first {
+                margin-bottom: 30px
+            }
+        }
+
+        @media (max-width:575px) {
+            .user-home .tickets-table .teams-cell {
+                width: auto
+            }
+
+            .user-home .tickets-table .teams-cell .teams-holder .team-names .team-name {
+                font-size: 12px
+            }
+
+            .user-home .tickets-table .teams-cell .teams-holder .team-names .team-name:first-child {
+                display: block
+            }
+
+            .user-home .tickets-table .teams-cell .teams-holder .team-names .vs {
+                font-size: 12px
+            }
+
+            html[dir=ltr] .user-home .tickets-table .teams-cell .teams-holder .team-names .vs {
+                margin: 0 3px 0 0
+            }
+
+            html[dir=rtl] .user-home .tickets-table .teams-cell .teams-holder .team-names .vs {
+                margin: 0 0 0 3px
+            }
+
+            .user-home .tickets-table .teams-cell .teams-holder .time {
+                display: none
+            }
+        }
+
+        .disabled {
+            pointer-events: none;
+            cursor: default
+        }
+
+        .venuLinkgooglemap {
+            text-decoration: underline !important
+        }
+
+        .venuLinkgooglemap:hover {
+            text-decoration: none !important;
+            cursor: pointer
+        }
+
+        @media (max-width:991px) {
+            .user-home .all-matches {
+                margin-bottom: 90px
+            }
+
+            .event-info.n-event-info {
+                display: block !important;
+                width: 100% !important;
+                padding: 20px !important
+            }
+
+            .n-event-info .top {
+                float: left
+            }
+
+            .n-event-info .show-shows {
+                float: right
+            }
+        }
+
+        @media (max-width:450px) {
+            .page-title-holder .view-all-en {
+                margin-left: 0 !important
+            }
+
+            .page-title-holder .view-all-ar {
+                margin-right: 0 !important
+            }
+        }
+
+        .n-info {
+            border-radius: 0;
+            border-width: 1.5px;
+            font-weight: 500
+        }
+
+        .n-info .close {
+            opacity: 1;
+            line-height: .9
+        }
+
+        .n-info .close:focus {
+            outline: 0
+        }
+
+        .n-info.alert-info {
+            color: #3b6e9b;
+            border-color: #68a8e0;
+            background-color: #deecf8
+        }
+
+        .n-info.alert-info .close {
+            color: #3b6e9b
+        }
+
+        .n-info.alert-danger {
+            color: #c34949;
+            border-color: #c34949;
+            background-color: #f2d7d7
+        }
+
+        .n-info.alert-danger .close {
+            color: #c34949
+        }
+
+        .n-modal {
+            overflow: hidden !important
+        }
+
+        .n-modal .modal-dialog {
+            margin-top: 0
+        }
+
+        .n-modal .modal-dialog .modal-content {
+            border-radius: 20px;
+            border-color: #707070;
+            padding: 25px
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .head {
+            text-align: center;
+            margin-bottom: 20px
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .head .logo {
+            margin-bottom: 20px
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .head .txt h2 {
+            font-size: 35px;
+            font-weight: 700;
+            color: #000;
+            margin: 0 0 20px
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .head .txt p {
+            margin: auto;
+            color: #000;
+            font-weight: 500;
+            font-size: 20px;
+            max-width: 600px
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .hint {
+            color: #0b7840;
+            font-weight: 700
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .notes {
+            height: 275px;
+            overflow: hidden auto;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #dfdfdf
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .notes.n-scroll {
+            height: auto
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .notes li {
+            margin-bottom: 15px
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .notes li .main-point {
+            display: flex;
+            align-items: flex-start;
+            font-weight: 600
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .notes li .main-point img.check-icon {
+            margin-top: 0;
+            width: 30px !important;
+            -webkit-margin-end: 10px;
+            margin-inline-end: 10px;
+            border: 0
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .notes li img {
+            width: 100%;
+            margin-top: 15px;
+            border: 1px solid #dfdfdf
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .main-checkbox {
+            font-weight: 600;
+            color: rgba(0, 0, 0, .34)
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .main-checkbox .check-txt {
+            transition: all .3s ease-in-out
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .main-checkbox input:checked~.check-txt {
+            color: #000
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .main-checkbox .check-mark {
+            box-shadow: none;
+            border-color: #c2c2c2;
+            border-width: 2px
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .n-btns {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .n-btns .n-site-btn {
+            max-width: 180px;
+            height: 55px;
+            font-size: 16px;
+            margin: 0 5px;
+            border: 1px solid #219f45
+        }
+
+        .n-modal .modal-dialog .modal-content .modal-body .n-btns .n-site-btn.light {
+            background-color: #fff;
+            color: #219f45 !important
+        }
+
+        .event1 {
+            display: flex;
+            height: 260px
+        }
+
+        .left1 {
+            width: 70%;
+            height: 100%
+        }
+
+        .startDateWithMinPRice {
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-top: 10px
+        }
+
+        .startDateWithoutMinPRice {
+            font-size: 16px;
+            margin-bottom: 20px;
+            margin-top: 20px
+        }
+
+        .noOfShowWithMinPrice {
+            margin-bottom: 10px
+        }
+
+        .noOfShowWithoutMinPrice {
+            margin-bottom: 24px
+        }
+
+        .right1 {
+            background-color: #fff;
+            padding: 16px 24px 16px 16px;
+            width: 30%;
+            height: 100%
+        }
+
+        .event-info1 {
+            height: 100%;
+            padding: 0
+        }
+
+        .first {
+            margin-bottom: 8px;
+            margin-top: 8px;
+            font-size: 16px
+        }
+
+        .second {
+            font-size: 16px;
+            margin-bottom: 8px
+        }
+
+        .shows-count1 {
+            font-size: 16px
+        }
+
+        .show1 {
+            width: auto;
+            height: auto;
+            font-weight: 700;
+            line-height: normal;
+            background-color: transparent;
+            color: #219f45 !important;
+            font-size: 18px
+        }
+
+        .image-holder-new {
+            height: 100%
+        }
+
+        .name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            height: 50px;
+            overflow: hidden
+        }
+
+        .minPrice {
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-top: 10px
+        }
+
+        @media (max-width:992px) {
+            .event1 {
+                display: flex;
+                flex-direction: column;
+                height: auto
+            }
+
+            .right1 {
+                width: 100%
+            }
+
+            .left1 {
+                width: 100%;
+                height: 225px
+            }
+        }
+
+        @media (max-width:768px) {
+            .event1 {
+                display: flex;
+                flex-direction: column;
+                height: auto
+            }
+
+            .left1 {
+                width: 100%;
+                height: auto
+            }
+
+            .right1 {
+                width: 100%
+            }
+
+            .event-info1 .top1 {
+                display: block
+            }
+
+            .minPrice {
+                font-size: 16px;
+                margin-bottom: 5px;
+                margin-top: 16px
+            }
+
+            .startDateWithMinPRice {
+                margin-bottom: 10px;
+                margin-top: 10px
+            }
+
+            .startDateWithoutMinPRice {
+                margin-bottom: 5px;
+                margin-top: 16px
+            }
+
+            .noOfShowWithoutMinPrice {
+                margin-bottom: 12px
+            }
+
+            .image-holder-new {
+                height: 130px
+            }
+        }
+    </style>
+    <style>
+        .disabled {
+            pointer-events: none !important;
+            opacity: .5 !important;
+            cursor: default !important
+        }
+
+        .errorbook {
+            color: red
+        }
+
+        .modalQueue .teams {
+            text-align: center
+        }
+
+        .app-modal .modal-dialog.modalQueue {
+            min-width: 400px !important;
+            max-width: 800px !important
+        }
+
+        .queueTextTop {
+            font-weight: 700;
+            font-size: 28px;
+            color: #219f45
+        }
+
+        .queueTextMiddle {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #000
+        }
+
+        .queueTextMiddle2 {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            color: red
+        }
+
+        .queueTextPeopleNumber {
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: 12px;
+            color: #000
+        }
+
+        .warningQueue {
+            margin-top: 10px;
+            border-radius: 10px;
+            background-color: #f59898;
+            width: 100%;
+            color: #000;
+            font-weight: 700;
+            padding: 20px
+        }
+
+        .warningQueue span {
+            display: list-item
+        }
+
+        .lastupdateTime {
+            font-weight: 700;
+            font-size: 12px
+        }
+
+        .queueImage {
+            width: 350px
+        }
+
+        .modalQueue .teams.responsive {
+            display: none !important;
+            margin-bottom: 10px
+        }
+
+        @media (max-width:768px) {
+            .bottom {
+                flex-direction: row !important;
+                flex-wrap: wrap
+            }
+
+            .bottom .first,
+            .bottom .one,
+            .bottom .second {
+                font-size: 8px !important
+            }
+
+            .bottom .status.green {
+                width: 20%
+            }
+
+            .bottom .one:nth-child(1) {
+                width: 60% !important
+            }
+
+            .bottom .one:nth-child(2) {
+                width: 20% !important
+            }
+
+            .bottom .one:nth-child(3) {
+                width: 30% !important
+            }
+
+            .bottom .one:nth-child(4) {
+                width: 16% !important
+            }
+
+            .bottom .one:nth-child(5) {
+                width: 20% !important
+            }
+        }
+
+        @media (max-width:992px) {
+            .bottom {
+                flex-direction: row !important;
+                flex-wrap: wrap;
+                max-height: -webkit-fit-content !important;
+                max-height: -moz-fit-content !important;
+                max-height: fit-content !important
+            }
+
+            .bottom .status.green {
+                width: 20%
+            }
+
+            .bottom .one:nth-child(1) {
+                width: 60% !important
+            }
+
+            .bottom .one:nth-child(2) {
+                width: 20% !important
+            }
+
+            .bottom .one:nth-child(3) {
+                width: 30% !important
+            }
+
+            .bottom .one:nth-child(4) {
+                width: 16% !important
+            }
+
+            .bottom .one:nth-child(5) {
+                width: 20% !important
+            }
+        }
+
+        @media (max-width:575px) {
+            .modalQueue .matches .match {
+                margin-bottom: 20px
+            }
+
+            .app-modal .modalQueue .modal-body {
+                padding: 20px
+            }
+
+            .modalQueue .teams.main {
+                display: none !important
+            }
+
+            .modalQueue .teams.responsive {
+                display: flex !important
+            }
+
+            .app-modal .modal-dialog {
+                min-width: 300px
+            }
+
+            .queueTextTop {
+                font-size: 16px
+            }
+
+            .queueTextMiddle {
+                font-size: 14px
+            }
+
+            .warningQueue {
+                margin-top: 0
+            }
+
+            .queueImage {
+                width: 300px;
+                display: flex;
+                margin: auto
+            }
+        }
+
+        @media (max-width:450px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 20px
+            }
+
+            .page-title-holder .view-all-en {
+                margin-left: 0 !important
+            }
+
+            .page-title-holder .view-all-ar {
+                margin-right: 0 !important
+            }
+        }
+
+        @media (max-width:400px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 400px
+            }
+        }
+
+        @media (max-width:380px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 20px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 380px
+            }
+        }
+
+        @media (max-width:370px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 380px
+            }
+        }
+
+        @media (max-width:360px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 360px
+            }
+        }
+
+        @media (max-width:350px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 350px
+            }
+        }
+
+        @media (max-width:330px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 330px
+            }
+        }
+
+        @media (max-width:320px) {
+            .app-modal .modalQueue .modal-body {
+                padding: 10px
+            }
+
+            .modalQueue .matches,
+            .modalQueue .noti-modal-footer {
+                max-width: 320px
+            }
+        }
+
+        .disclaimer {
+            background-color: #fcfee6;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #000;
+            padding: 4px;
+            box-shadow: 0 0 0 #00000029;
+            font-weight: 700
+        }
+
+        .disclaimer .disclaimer-content {
+            border: 2px solid #efff01;
+            display: flex;
+            padding: 13px
+        }
+
+        .disclaimer .disclaimer-content div {
+            padding-left: 10px
+        }
+
+        .disclaimer .disclaimer-content span {
+            text-align: left;
+            padding-left: 20px
+        }
+
+        .disclaimer .disclaimer-content span img {
+            vertical-align: top
+        }
+
+        progress[value] {
+            display: block;
+            width: 100%;
+            min-height: 2rem;
+            margin-top: 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: inset 4px 4px 4px rgba(84, 30, 8, .2);
+            background-color: rgba(149, 250, 61, .1);
+            -webkit-animation: 4s linear infinite colorrush;
+            animation: 4s linear infinite colorrush
+        }
+
+        progress[value]::-webkit-progress-inner-element {
+            border-radius: 8px;
+            overflow: hidden;
+            background-position: inherit
+        }
+
+        progress[value]::-webkit-progress-bar {
+            border-radius: 8px;
+            background-color: transparent;
+            background-position: inherit
+        }
+
+        progress[value]::-webkit-progress-value {
+            border-radius: 10px 0 0 10px;
+            box-shadow: inset 2px 2px 2px rgba(90, 90, 92, .2);
+            background: repeating-linear-gradient(45deg, transparent 0 6px, rgba(0, 0, 0, .1) 6px 12px), linear-gradient(#219f45, #219f45, #4aac66);
+            background-size: calc(12px/.707) 100%, 100% 800%;
+            background-position: inherit
+        }
+
+        progress[value]::-moz-progress-bar {
+            border-radius: 10px 0 0 10px;
+            box-shadow: inset 2px 2px 2px rgba(90, 90, 92, .2);
+            background: repeating-linear-gradient(45deg, transparent 0 6px, rgba(0, 0, 0, .1) 6px 12px), linear-gradient(#219f45, #219f45, #4aac66);
+            background-size: calc(12px/.707) 100%, 100% 800%;
+            background-position: inherit
+        }
+
+        @-webkit-keyframes colorrush {
+            0% {
+                background-position: 0 0
+            }
+
+            100% {
+                background-position: calc(10*(12px/.707)) 100%
+            }
+        }
+
+        @keyframes colorrush {
+            0% {
+                background-position: 0 0
+            }
+
+            100% {
+                background-position: calc(10*(12px/.707)) 100%
+            }
+        }
+    </style>
+    <style>
+        .all-tickets {
+            margin-bottom: 40px
+        }
+
+        .events-tickets {
+            margin-bottom: 70px
+        }
+
+        .sports-tickets {
+            margin-bottom: 50px
+        }
+
+        .ticket-item {
+            background-color: #fff;
+            border-right: 3px dashed #eee;
+            border-left: 3px dashed #eee;
+            margin-bottom: 30px;
+            position: relative
+        }
+
+        .ticket-item .ticket-first-row {
+            display: flex;
+            flex: 1 1 auto;
+            align-items: center;
+            padding: 10px 15px;
+            border-bottom: 2px dashed #eee
+        }
+
+        .ticket-item .ticket-first-row .button-grey {
+            pointer-events: none
+        }
+
+        html[dir=ltr] .ticket-item .ticket-first-row div {
+            border-right: 1px solid #d4d4d4;
+            padding-right: 20px;
+            margin-right: 20px
+        }
+
+        html[dir=rtl] .ticket-item .ticket-first-row div {
+            border-left: 1px solid #d4d4d4;
+            padding-left: 20px;
+            margin-left: 20px
+        }
+
+        .ticket-item .ticket-first-row div:last-of-type {
+            border: 0 !important;
+            margin: 0;
+            padding: 0
+        }
+
+        .ticket-item .ticket-first-row label {
+            display: block;
+            color: #7f7f7f;
+            font-size: 13px;
+            margin-bottom: 3px
+        }
+
+        .ticket-item .ticket-first-row span {
+            font-size: 15px;
+            font-weight: 700
+        }
+
+        html[dir=ltr] .ticket-item .ticket-first-row .button-cancel {
+            margin: 0 0 0 auto
+        }
+
+        html[dir=rtl] .ticket-item .ticket-first-row .button-cancel {
+            margin: 0 auto 0 0
+        }
+
+        .ticket-item .ticket-second-row {
+            padding: 10px 15px
+        }
+
+        .ticket-item .ticket-second-row:not(:last-child) {
+            border-bottom: 3px dashed #eee
+        }
+
+        .ticket-item .match {
+            margin-bottom: 0
+        }
+
+        .ticket-item .match .top {
+            background-color: #f2f2f2
+        }
+
+        .ticket-item .match .top .teams {
+            background: 0 0
+        }
+
+        .ticket-item .match .top .event-block {
+            width: 40%;
+            font-size: 0
+        }
+
+        .ticket-item .match .top .event-block .image-holder {
+            display: inline-block;
+            vertical-align: middle;
+            height: 60px;
+            width: 60px;
+            background-color: #fff;
+            padding: 2px;
+            border: 2px solid #e7e7e7
+        }
+
+        html[dir=ltr] .ticket-item .match .top .event-block .image-holder {
+            margin-right: 10px
+        }
+
+        html[dir=rtl] .ticket-item .match .top .event-block .image-holder {
+            margin-left: 10px
+        }
+
+        .ticket-item .match .top .event-block .image-holder>img {
+            display: block;
+            width: 100%;
+            height: 100%
+        }
+
+        .ticket-item .match .top .event-block .image-holder .empty {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6f6f6
+        }
+
+        .ticket-item .match .top .event-block .image-holder .empty>img {
+            width: 50%;
+            height: auto
+        }
+
+        .ticket-item .match .top .event-block .event-title {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            font-family: EncodeSansExpanded-Bold, arial, tahoma;
+            max-width: calc(100% - 100px)
+        }
+
+        .ticket-item:after,
+        .ticket-item:before {
+            content: '';
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: #eee;
+            position: absolute;
+            top: 55px
+        }
+
+        html[dir=ltr] .ticket-item:before {
+            left: -10px
+        }
+
+        html[dir=ltr] .ticket-item:after,
+        html[dir=rtl] .ticket-item:before {
+            right: -10px
+        }
+
+        html[dir=rtl] .ticket-item:after {
+            left: -10px
+        }
+
+        .ticket-item .categoryImage {
+            width: 30px !important;
+            height: 30px !important
+        }
+
+        #purchase-order-modal .purchase-slider {
+            padding: 0 30px
+        }
+
+        #purchase-order-modal .match {
+            margin-bottom: 10px
+        }
+
+        #purchase-order-modal .match .top {
+            padding: 0;
+            flex-direction: column;
+            background-color: #fff
+        }
+
+        #purchase-order-modal .match .top .event-block {
+            font-size: 0
+        }
+
+        #purchase-order-modal .match .top .event-block .image-holder {
+            display: inline-block;
+            vertical-align: middle;
+            height: 60px;
+            width: 60px;
+            margin-right: 10px;
+            background-color: #fff;
+            padding: 2px;
+            border: 2px solid #e7e7e7
+        }
+
+        #purchase-order-modal .match .top .event-block .image-holder>img {
+            display: block;
+            width: 100%;
+            height: 100%
+        }
+
+        #purchase-order-modal .match .top .event-block .image-holder .empty {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f6f6f6
+        }
+
+        #purchase-order-modal .match .top .event-block .image-holder .empty>img {
+            width: 50%;
+            height: auto
+        }
+
+        #purchase-order-modal .match .top .event-block .event-title {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            font-family: EncodeSansExpanded-Bold, arial, tahoma;
+            max-width: calc(100% - 70px)
+        }
+
+        #purchase-order-modal .match .top .teams {
+            position: relative;
+            max-width: none
+        }
+
+        html[dir=ltr] #purchase-order-modal .match .top .teams {
+            padding: 0 69px 0 0
+        }
+
+        html[dir=rtl] #purchase-order-modal .match .top .teams {
+            padding: 0 0 0 69px
+        }
+
+        #purchase-order-modal .match .top .teams .image-holder {
+            border: none;
+            width: 50px;
+            height: 50px
+        }
+
+        #purchase-order-modal .match .top .teams .image-holder>div {
+            border: none
+        }
+
+        html[dir=ltr] #purchase-order-modal .match .top .teams .image-holder.first {
+            margin-right: 10px
+        }
+
+        html[dir=rtl] #purchase-order-modal .match .top .teams .image-holder.first {
+            margin-left: 10px
+        }
+
+        #purchase-order-modal .match .top .teams .image-holder.second {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0
+        }
+
+        html[dir=ltr] #purchase-order-modal .match .top .teams .image-holder.second {
+            right: 13px
+        }
+
+        html[dir=rtl] #purchase-order-modal .match .top .teams .image-holder.second {
+            left: 13px
+        }
+
+        #purchase-order-modal .match .top .teams .team-names {
+            width: 100%;
+            max-width: calc(100% - 60px)
+        }
+
+        #purchase-order-modal .match .top .teams .team-names .team-name {
+            display: block;
+            font-size: 18px;
+            font-family: EncodeSansExpanded-Bold, arial, tahoma;
+            margin: 0;
+            max-width: calc(50% - 35px)
+        }
+
+        html[dir=ltr] #purchase-order-modal .match .top .teams .team-names .team-name.first {
+            float: left;
+            text-align: left
+        }
+
+        html[dir=rtl] #purchase-order-modal .match .top .teams .team-names .team-name.first {
+            float: right;
+            text-align: right
+        }
+
+        html[dir=ltr] #purchase-order-modal .match .top .teams .team-names .team-name.second {
+            float: right;
+            text-align: right
+        }
+
+        html[dir=rtl] #purchase-order-modal .match .top .teams .team-names .team-name.second {
+            float: left;
+            text-align: left
+        }
+
+        #purchase-order-modal .match .top .teams .team-names .vs {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%)
+        }
+
+        #purchase-order-modal .match .top .blocks {
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 5px;
+            border: 0 !important
+        }
+
+        #purchase-order-modal .match .top .blocks .one-block {
+            margin-bottom: 10px
+        }
+
+        #purchase-order-modal .match .top .blocks .one-block .info {
+            width: 100%;
+            max-width: 100%
+        }
+
+        #purchase-order-modal .match .top .blocks .one-block .info .first {
+            white-space: nowrap;
+            font-size: 14px;
+            color: #666
+        }
+
+        #purchase-order-modal .match .top .blocks .one-block.stadium .info {
+            width: 100%
+        }
+
+        #purchase-order-modal .match .top .blocks .one-block.stadium .info>span {
+            white-space: nowrap;
+            font-size: 14px;
+            color: #666
+        }
+
+        #purchase-order-modal .match .top .blocks .one-block.when {
+            margin-top: -4px
+        }
+
+        #purchase-order-modal .match .top .blocks .one-block>.image-holder {
+            height: 18px
+        }
+
+        #purchase-order-modal .match .top .blocks:after {
+            display: none
+        }
+
+        #purchase-order-modal .table-holder th {
+            color: #b8b8b8 !important;
+            font-weight: 300;
+            border-top: 1px solid #cbcbcb !important;
+            border-bottom: 1px solid #cbcbcb !important;
+            padding: 10px 5px !important
+        }
+
+        #purchase-order-modal .table-holder td {
+            padding: 10px 5px !important
+        }
+
+        #purchase-order-modal .total-price {
+            padding: 0 30px
+        }
+
+        #purchase-order-modal .total-price .section .price-row {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 10px 0
+        }
+
+        #purchase-order-modal .total-price .section .price-row.sub-total {
+            border-top: 1px solid #eee
+        }
+
+        #purchase-order-modal .total-price .section .price-row .price {
+            font-family: EncodeSansExpanded-Bold, arial, tahoma
+        }
+
+        #purchase-order-modal .total-price .section:not(:first-child) {
+            border-top: 3px solid #eee
+        }
+
+        #purchase-order-modal .total-price .section:last-child {
+            margin-top: 10px
+        }
+
+        #purchase-order-modal .total-price .section:last-child .price-row .label,
+        #purchase-order-modal .total-price .section:last-child .price-row .price {
+            font-size: 16px
+        }
+
+        #purchase-order-modal .total-price .section .section-label {
+            text-align: center;
+            font-family: EncodeSansExpanded-Bold, arial, tahoma;
+            padding: 10px 0
+        }
+
+        #purchase-order-modal.modal {
+            display: block;
+            height: 0;
+            overflow: hidden
+        }
+
+        #purchase-order-modal.show {
+            height: auto;
+            max-height: 100%;
+            overflow: auto
+        }
+
+        #purchase-order-modal .slider-arrows {
+            position: relative
+        }
+
+        #purchase-order-modal .slider-arrows a {
+            position: absolute;
+            font-size: 22px;
+            color: #cacaca;
+            top: 30px;
+            cursor: pointer;
+            z-index: 99;
+            font-family: monospace
+        }
+
+        #purchase-order-modal .slider-arrows a i {
+            font-weight: 700
+        }
+
+        #purchase-order-modal .slider-arrows a:hover i {
+            color: #219f45
+        }
+
+        #purchase-order-modal .slider-arrows #slider-left {
+            transform: rotate(180deg)
+        }
+
+        html[dir=ltr] #purchase-order-modal .slider-arrows #slider-left {
+            left: 0
+        }
+
+        html[dir=ltr] #purchase-order-modal .slider-arrows #slider-right,
+        html[dir=rtl] #purchase-order-modal .slider-arrows #slider-left {
+            right: 0
+        }
+
+        html[dir=rtl] #purchase-order-modal .slider-arrows #slider-right {
+            left: 0
+        }
+
+        .datepicker-wrapper {
+            position: relative
+        }
+
+        .datepicker-wrapper .gj-icon {
+            font-size: 0;
+            width: 100%;
+            height: 100%
+        }
+
+        .datepicker-wrapper .gj-datepicker {
+            height: 100%
+        }
+
+        .datepicker-wrapper .datepicker {
+            border: 0;
+            height: 100%;
+            padding: 12px;
+            font-size: 13px;
+            color: #7e7e7e;
+            text-align: inherit
+        }
+
+        .datepicker-wrapper .icomoon-calendar {
+            position: absolute;
+            top: 11px;
+            font-size: 18px;
+            color: #7e7e7e;
+            pointer-events: none
+        }
+
+        html[dir=ltr] .datepicker-wrapper .icomoon-calendar {
+            right: 15px
+        }
+
+        html[dir=rtl] .datepicker-wrapper .icomoon-calendar {
+            left: 15px
+        }
+
+        .gj-picker .chevron-left {
+            font-family: icomoon !important;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: rotate(180deg);
+            font-size: 20px;
+            top: 12px !important
+        }
+
+        .gj-picker .chevron-left:before {
+            content: "\e906"
+        }
+
+        html[dir=rtl] .gj-picker .chevron-left {
+            transform: rotate(0)
+        }
+
+        .gj-picker .chevron-right {
+            font-family: icomoon !important;
+            speak: none;
+            font-style: normal;
+            font-weight: 400;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 20px;
+            top: 12px !important
+        }
+
+        .gj-picker .chevron-right:before {
+            content: "\e906"
+        }
+
+        html[dir=rtl] .gj-picker .chevron-right {
+            transform: rotate(180deg)
+        }
+
+        #timeoutModal h2 {
+            font-size: 29px
+        }
+
+        #timeoutModal img {
+            vertical-align: sub;
+            width: 29px
+        }
+
+        .accordion-btn {
+            position: relative;
+            display: flex
+        }
+
+        .accordion-btn:before {
+            content: '\00ff0b';
+            font-size: 25px;
+            color: #000;
+            float: right;
+            position: absolute;
+            margin-left: 5px
+        }
+
+        .accordion-btn[aria-expanded=true]:before {
+            content: "\00ff0d"
+        }
+
+        @media (max-width:1200px) {
+            .ticket-item .match .top .event-block .event-title {
+                font-size: 14px
+            }
+
+            .accordion-btn:before {
+                top: -5px
+            }
+
+            .ui-accordion-header {
+                font-size: 19px
+            }
+        }
+
+        @media (max-width:991px) {
+            .events-tickets {
+                margin-bottom: 50px
+            }
+
+            .ticket-item {
+                margin-bottom: 40px
+            }
+
+            .ticket-item .match .top {
+                padding: 0;
+                flex-direction: column
+            }
+
+            .ticket-item .match .top .event-block {
+                width: 100%;
+                padding: 10px
+            }
+
+            .ticket-item .match .top .teams {
+                position: relative;
+                max-width: 100%
+            }
+
+            html[dir=ltr] .ticket-item .match .top .teams {
+                padding: 13px 63px 13px 13px
+            }
+
+            html[dir=rtl] .ticket-item .match .top .teams {
+                padding: 13px 13px 13px 63px
+            }
+
+            .ticket-item .match .top .teams .image-holder,
+            .ticket-item .match .top .teams .image-holder>div {
+                border: none
+            }
+
+            html[dir=ltr] .ticket-item .match .top .teams .image-holder.first {
+                margin-right: 10px
+            }
+
+            html[dir=rtl] .ticket-item .match .top .teams .image-holder.first {
+                margin-left: 10px
+            }
+
+            .ticket-item .match .top .teams .image-holder.second {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: 0
+            }
+
+            html[dir=ltr] .ticket-item .match .top .teams .image-holder.second {
+                right: 13px
+            }
+
+            html[dir=rtl] .ticket-item .match .top .teams .image-holder.second {
+                left: 13px
+            }
+
+            .ticket-item .match .top .teams .team-names {
+                width: calc(100% - 50px)
+            }
+
+            .ticket-item .match .top .teams .team-names .team-name {
+                display: block;
+                font-size: 16px;
+                font-family: EncodeSansExpanded-Bold, arial, tahoma
+            }
+
+            html[dir=ltr] .ticket-item .match .top .teams .team-names .team-name.first {
+                float: left
+            }
+
+            html[dir=ltr] .ticket-item .match .top .teams .team-names .team-name.second,
+            html[dir=rtl] .ticket-item .match .top .teams .team-names .team-name.first {
+                float: right
+            }
+
+            html[dir=rtl] .ticket-item .match .top .teams .team-names .team-name.second {
+                float: left
+            }
+
+            .ticket-item .match .top .teams .team-names .vs {
+                position: absolute;
+                top: 50%;
+                left: 45%;
+                transform: translate(-50%, -50%)
+            }
+
+            .ticket-item .match .top .blocks {
+                display: block;
+                border-top: 1px solid #e2e2e2
+            }
+
+            .ticket-item .match .top .blocks .one-block {
+                width: calc(100% / 3);
+                padding: 12px 10px;
+                text-align: center
+            }
+
+            html[dir=ltr] .ticket-item .match .top .blocks .one-block {
+                float: left
+            }
+
+            html[dir=rtl] .ticket-item .match .top .blocks .one-block {
+                float: right
+            }
+
+            html[dir=ltr] .ticket-item .match .top .blocks .one-block:not(:last-child) {
+                border-right: 1px solid #d8d8d8
+            }
+
+            html[dir=rtl] .ticket-item .match .top .blocks .one-block:not(:last-child) {
+                border-left: 1px solid #d8d8d8
+            }
+
+            .ticket-item .match .top .blocks .one-block .info {
+                max-width: calc(100% - 40px);
+                width: auto !important
+            }
+
+            html[dir=ltr] .ticket-item .match .top .blocks .one-block .info {
+                text-align: left
+            }
+
+            html[dir=rtl] .ticket-item .match .top .blocks .one-block .info {
+                text-align: right
+            }
+
+            #purchase-order-modal .match .top .blocks {
+                margin-top: 0
+            }
+
+            #purchase-order-modal .matches .match {
+                margin-bottom: 0
+            }
+
+            .EticketCase {
+                width: 50% !important
+            }
+
+            .categoryImage {
+                width: 30px !important;
+                height: 30px !important
+            }
+
+            .blocksinCaseQr {
+                display: flex !important;
+                flex-wrap: wrap
+            }
+        }
+
+        @media (max-width:770px) {
+            .ticket-item .match .top .teams .team-names .team-name {
+                font-size: 13px
+            }
+
+            .ticket-item .match .top .teams .team-names .vs {
+                left: 48%;
+                font-size: 10px;
+                margin: 0
+            }
+
+            .ticket-item .match .top .blocks {
+                padding: 0
+            }
+
+            .ticket-item .match .top .blocks .one-block .image-holder {
+                height: 22px
+            }
+
+            html[dir=ltr] .ticket-item .match .top .blocks .one-block .image-holder {
+                margin-right: 5px
+            }
+
+            html[dir=rtl] .ticket-item .match .top .blocks .one-block .image-holder {
+                margin-left: 5px
+            }
+
+            .ticket-item .match .top .blocks .one-block .info>span {
+                font-size: 10px
+            }
+
+            .ticket-item .match .top .blocks .one-block .info>span>span {
+                font-size: 9px
+            }
+
+            .ticket-item .match .top .blocks .one-block .info .first {
+                font-size: 10px
+            }
+
+            html[dir=ltr] .ticket-item .match .top .blocks .one-block .info .first {
+                text-align: left
+            }
+
+            html[dir=rtl] .ticket-item .match .top .blocks .one-block .info .first {
+                text-align: right
+            }
+
+            .ticket-item .match .top .blocks .one-block .info .second {
+                font-size: 9px
+            }
+
+            html[dir=ltr] .ticket-item .match .top .blocks .one-block .info .second {
+                text-align: left
+            }
+
+            html[dir=rtl] .ticket-item .match .top .blocks .one-block .info .second {
+                text-align: right
+            }
+
+            .ticket-item .match .top .blocks:after,
+            .ticket-item .match .top .blocks:before {
+                height: 46%
+            }
+
+            .ticket-item .match .bottom {
+                font-size: 10px
+            }
+
+            html[dir=ltr] .ticket-item .match .bottom .status {
+                padding-left: 10px
+            }
+
+            html[dir=rtl] .ticket-item .match .bottom .status {
+                padding-right: 10px
+            }
+
+            .ticket-item .match .bottom .status:before {
+                width: 6px;
+                height: 6px
+            }
+
+            .ticket-item .transfer-btn .button {
+                font-size: 13px;
+                height: 45px;
+                line-height: 45px
+            }
+
+            .one-block.stadium,
+            .one-block.when {
+                width: 50% !important
+            }
+
+            .categoryImage {
+                width: 30px !important;
+                height: 30px !important
+            }
+        }
+
+        @media (max-width:575px) {
+            .ticket-item .ticket-details div {
+                border: 0;
+                padding: 0
+            }
+
+            .ticket-item .ticket-details div label {
+                font-size: 10px
+            }
+
+            .ticket-item .ticket-details div span {
+                font-size: 12px
+            }
+
+            .ticket-item .ticket-details div:nth-child(3),
+            .ticket-item .ticket-details div:nth-child(4) {
+                display: none
+            }
+
+            .ticket-item .ticket-details div:last-child {
+                text-align: center
+            }
+
+            .ticket-item .match .top .event-block .event-title {
+                font-size: 12px;
+                max-width: calc(100% - 70px)
+            }
+
+            .ticket-item .match .top .blocks .one-block {
+                padding: 10px 6px;
+                width: 50%
+            }
+
+            .ticket-item .match .top .blocks .one-block.stadium {
+                width: 100%;
+                border-bottom: 1px solid #d8d8d8
+            }
+
+            html[dir=ltr] .ticket-item .match .top .blocks .one-block.stadium {
+                border-right: none
+            }
+
+            html[dir=rtl] .ticket-item .match .top .blocks .one-block.stadium {
+                border-left: none
+            }
+
+            html[dir=ltr] #purchase-order-modal .match .top .teams {
+                padding: 8px 60px 8px 8px !important
+            }
+
+            html[dir=rtl] #purchase-order-modal .match .top .teams {
+                padding: 8px 8px 8px 60px !important
+            }
+
+            #purchase-order-modal .match .top .teams .image-holder {
+                width: 40px;
+                height: 40px
+            }
+
+            #purchase-order-modal .match .top .teams .team-names .team-name {
+                font-size: 12px
+            }
+
+            #purchase-order-modal .match .top .blocks .one-block.stadium {
+                text-align: center
+            }
+
+            #purchase-order-modal .match .top .blocks .one-block .info .first,
+            #purchase-order-modal .match .top .blocks .one-block .info>span {
+                font-size: 12px !important
+            }
+
+            #purchase-order-modal .slider-arrows a {
+                top: 14px
+            }
+
+            #purchase-order-modal .total-price {
+                padding: 0
+            }
+
+            #purchase-order-modal .button-green {
+                min-width: 100%;
+                width: 100%
+            }
+        }
+
+        @media (max-width:450px) {
+            .ticket-item .ticket-first-row {
+                padding: 10px
+            }
+
+            html[dir=ltr] .ticket-item .ticket-first-row>div {
+                padding-right: 8px;
+                margin-right: 8px
+            }
+
+            html[dir=rtl] .ticket-item .ticket-first-row>div {
+                padding-left: 8px;
+                margin-left: 8px
+            }
+
+            .ticket-item .ticket-first-row label {
+                font-size: 9px
+            }
+
+            .ticket-item .ticket-first-row span {
+                font-size: 11px
+            }
+
+            .ticket-item .ticket-second-row {
+                padding: 10px
+            }
+
+            .ticket-item:after,
+            .ticket-item:before {
+                top: 46px
+            }
+
+            #purchase-order-modal .purchase-slider {
+                padding: 0 20px
+            }
+
+            #purchase-order-modal .match .top .teams .team-names .vs {
+                display: none
+            }
+
+            #purchase-order-modal .match .top .blocks .one-block {
+                width: 100%
+            }
+
+            #purchase-order-modal .table-holder table tbody tr td {
+                padding: 15px 4px !important
+            }
+        }
+
+        @media (max-width:445px) {
+
+            .ticket-item .match .top .blocks:after,
+            .ticket-item .match .top .blocks:before {
+                display: none
+            }
+
+            html[dir=ltr] .ticket-item .match .top .teams {
+                padding: 8px 40px 8px 8px !important
+            }
+
+            html[dir=rtl] .ticket-item .match .top .teams {
+                padding: 8px 8px 8px 40px !important
+            }
+
+            .ticket-item .match .top .teams .team-name {
+                font-size: 10px !important
+            }
+        }
+
+        @-webkit-keyframes ui-progress-spinner-color {
+
+            0%,
+            100% {
+                stroke: #008744
+            }
+        }
+
+        @keyframes ui-progress-spinner-color {
+
+            0%,
+            100% {
+                stroke: #008744
+            }
+        }
+
+        .slick-disabled {
+            opacity: .5;
+            cursor: not-allowed;
+            pointer-events: none
+        }
+
+        .arrowSlider:hover {
+            color: #219f45
+        }
+
+        .page-title {
+            margin-left: 25px !important;
+            font-size: 19px
+        }
+
+        .page-title:dir(rtl) {
+            margin-right: 25px !important
+        }
+
+        .matches .filter-form.user-tickets {
+            margin-top: 20px !important
+        }
+
+        .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a {
+            background-color: #219f45 !important;
+            border: 1px solid #219f45 !important
+        }
+
+        .ui-accordion .ui-accordion-content {
+            background-color: #eee !important
+        }
+
+        .ui-accordion .p-accordiontab {
+            font-size: 30px
+        }
+
+        .ui-accordion .ui-accordion-header {
+            margin-top: 20px
+        }
+
+        .ui-accordion-header {
+            color: #121212;
+            font-size: 21px;
+            font-family: EncodeSansExpanded-Bold, arial, tahoma;
+            font-weight: 400 !important
+        }
+
+        @media (max-width:1200px) {
+            .ui-accordion-header {
+                font-size: 19px
+            }
+        }
+
+        .ui-accordion .ui-accordion-header a {
+            font-weight: 400 !important
+        }
+
+        .user-tickets {
+            margin-top: 20px
+        }
+
+        .ui-widget {
+            font-family: EncodeSansExpanded-Regular, arial, tahoma !important
+        }
+
+        .paginationTickets {
+            bottom: 20px;
+            position: relative
+        }
+    </style>
+    <style>
+        .ngx-pagination {
+            margin-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        .ngx-pagination::before,
+        .ngx-pagination::after {
+            content: ' ';
+            display: table;
+        }
+
+        .ngx-pagination::after {
+            clear: both;
+        }
+
+        .ngx-pagination li {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            margin-right: 0.0625rem;
+            border-radius: 0;
+        }
+
+        .ngx-pagination li {
+            display: inline-block;
+        }
+
+        .ngx-pagination a,
+        .ngx-pagination button {
+            color: #0a0a0a;
+            display: block;
+            padding: 0.1875rem 0.625rem;
+            border-radius: 0;
+        }
+
+        .ngx-pagination a:hover,
+        .ngx-pagination button:hover {
+            background: #e6e6e6;
+        }
+
+        .ngx-pagination .current {
+            padding: 0.1875rem 0.625rem;
+            background: #2199e8;
+            color: #fefefe;
+            cursor: default;
+        }
+
+        .ngx-pagination .disabled {
+            padding: 0.1875rem 0.625rem;
+            color: #cacaca;
+            cursor: default;
+        }
+
+        .ngx-pagination .disabled:hover {
+            background: transparent;
+        }
+
+        .ngx-pagination a,
+        .ngx-pagination button {
+            cursor: pointer;
+        }
+
+        .ngx-pagination .pagination-previous a::before,
+        .ngx-pagination .pagination-previous.disabled::before {
+            content: '«';
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        .ngx-pagination .pagination-next a::after,
+        .ngx-pagination .pagination-next.disabled::after {
+            content: '»';
+            display: inline-block;
+            margin-left: 0.5rem;
+        }
+
+        .ngx-pagination .show-for-sr {
+            position: absolute !important;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+        }
+
+        .ngx-pagination .small-screen {
+            display: none;
+        }
+
+        @media screen and (max-width: 601px) {
+            .ngx-pagination.responsive .small-screen {
+                display: inline-block;
+            }
+
+            .ngx-pagination.responsive li:not(.small-screen):not(.pagination-previous):not(.pagination-next) {
+                display: none;
+            }
+        }
+    </style>
+    <style>
+        .date-input input {
+            height: 45px !important
+        }
+
+        .fan-card-holder {
+            width: 25%;
+            min-width: 320px;
+            max-width: 400px
+        }
+
+        html[dir=ltr] .fan-card-holder {
+            float: left;
+            margin-right: 30px
+        }
+
+        html[dir=rtl] .fan-card-holder {
+            float: right;
+            margin-left: 30px
+        }
+
+        .fan-card-holder .fan-card {
+            padding-top: 120%;
+            width: 100%;
+            background-image: url(fan-id.7322ac3ac357e1815049.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            margin-bottom: 20px
+        }
+
+        .fan-card-holder .fan-card .fan-info {
+            position: absolute;
+            top: 12%;
+            left: 0;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column
+        }
+
+        .fan-card-holder .fan-card .fan-info .logo {
+            height: 30px
+        }
+
+        .fan-card-holder .fan-card .fan-info .logo>img {
+            display: block;
+            height: 100%;
+            width: auto;
+            margin: auto
+        }
+
+        .fan-card-holder .fan-card .fan-info .page-title {
+            font-size: 20px;
+            margin-bottom: 0
+        }
+
+        .fan-card-holder .fan-card .fan-info .image-holder {
+            padding-top: 30%;
+            width: 30%;
+            border: 2px solid #219f45;
+            margin: 10px auto;
+            position: relative;
+            overflow: hidden
+        }
+
+        .fan-card-holder .fan-card .fan-info .image-holder>img {
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+
+        .fan-card-holder .fan-card .fan-info .no-fanid-image {
+            display: block;
+            margin: auto
+        }
+
+        .fan-card-holder .fan-card .fan-info .name {
+            text-align: center;
+            font-size: 15px;
+            font-family: EncodeSansExpanded-Bold, arial, tahoma
+        }
+
+        .fan-card-holder .fan-card .fan-info .sec-title {
+            margin: 0 auto;
+            font-weight: 700;
+            max-width: calc(100% - 40px)
+        }
+
+        .fan-card-holder .fan-card .fanid-apply {
+            position: absolute;
+            bottom: 0;
+            transform: translateY(60%);
+            left: 0;
+            width: 100%;
+            max-width: none
+        }
+
+        .fan-card-holder .fan-card .fanid-apply:hover {
+            opacity: 1
+        }
+
+        .fan-card-holder .authorize {
+            padding: 20px;
+            background-color: #e7e7e7
+        }
+
+        .fan-card-holder .authorize .question {
+            position: relative
+        }
+
+        html[dir=ltr] .fan-card-holder .authorize .question {
+            padding-left: 50px
+        }
+
+        html[dir=rtl] .fan-card-holder .authorize .question {
+            padding-right: 50px
+        }
+
+        .fan-card-holder .authorize .question:before {
+            content: "\e913";
+            font-family: icomoon !important;
+            position: absolute;
+            top: 2px;
+            width: 40px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            color: #219f45;
+            font-size: 40px
+        }
+
+        html[dir=ltr] .fan-card-holder .authorize .question:before {
+            left: 0
+        }
+
+        html[dir=rtl] .fan-card-holder .authorize .question:before {
+            right: 0
+        }
+
+        .fan-card-holder .authorize .main-title {
+            margin: 0 0 20px !important
+        }
+
+        .fan-card-holder .authorize .sec-title {
+            margin-bottom: 20px;
+            color: #000
+        }
+
+        .fan-card-holder .authorize .main-radio {
+            margin: 0 10px 20px 0
+        }
+
+        .fan-card-holder .authorize .button {
+            max-width: none
+        }
+
+        .profile-page .devider {
+            height: 1px;
+            width: 100%;
+            background-color: #c8c8c8;
+            margin: 15px 0 40px
+        }
+
+        .profile-page .page-title-holder .button {
+            min-width: 130px
+        }
+
+        .profile-page .profile-info {
+            width: calc(75% - 30px);
+            max-width: calc(100% - 350px);
+            min-width: calc(100% - 430px);
+            float: left
+        }
+
+        @media (max-width:769px) {
+            .fan-card-holder {
+                float: none !important;
+                margin: 0 auto 50px !important
+            }
+
+            .profile-page .profile-info {
+                float: none;
+                width: 100%;
+                max-width: none
+            }
+        }
+
+        @media (max-width:350px) {
+            .fan-card-holder {
+                min-width: 290px
+            }
+        }
+
+        @media (min-width:770px) and (max-width:991px) {
+            .profile-page .page-title-holder .page-title {
+                margin-bottom: 10px
+            }
+
+            .profile-page .page-title-holder .button {
+                flex-basis: 100%
+            }
+        }
+
+        .txtRequired,
+        input.ng-invalid.ng-touched {
+            border: 1px solid #ec091e !important
+        }
+
+        .n-info {
+            border-radius: 0;
+            border-width: 1.5px;
+            font-weight: 500
+        }
+
+        .n-info .close {
+            opacity: 1;
+            line-height: .9
+        }
+
+        .n-info .close:focus {
+            outline: 0
+        }
+
+        .n-info.alert-info {
+            color: #3b6e9b;
+            border-color: #68a8e0;
+            background-color: #deecf8
+        }
+
+        .n-info.alert-info .close {
+            color: #3b6e9b
+        }
+
+        .n-info.alert-danger {
+            color: #c34949;
+            border-color: #c34949;
+            background-color: #f2d7d7
+        }
+
+        .n-info.alert-danger .close {
+            color: #c34949
+        }
+
+        .n-modal .modal-content {
+            border-radius: 20px;
+            border-color: #707070;
+            padding: 40px
+        }
+    </style>
+    <style>
+        .country-name[_ngcontent-egm-c15] {
+            margin-left: 6px;
+        }
+
+        .dial-code[_ngcontent-egm-c15] {
+            color: #999;
+        }
+
+        .scrollable-menu[_ngcontent-egm-c15] {
+            height: auto;
+            max-height: 200px;
+            width: 350px;
+            overflow-x: hidden;
+        }
+
+        .flagInput[_ngcontent-egm-c15] {
+            padding: 0 !important;
+        }
+
+        .input-group-addon[_ngcontent-egm-c15] {
+            text-align: left;
+        }
+
+        .btn-flag[_ngcontent-egm-c15] {
+            border-color: white;
+        }
+
+        .btn[_ngcontent-egm-c15]:hover,
+        .btn[_ngcontent-egm-c15]:focus {
+            background-color: white;
+        }
+
+        .defaultCountry[_ngcontent-egm-c15] {
+            background: url("https://res.cloudinary.com/dvbuhh0bl/image/upload/c_scale,h_15,w_15/v1495279723/default_tmey2r.png") no-repeat;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+        }
+
+        .list-group[_ngcontent-egm-c15] {
+            margin-bottom: 0;
+        }
+
+        .dropbtn[_ngcontent-egm-c15] {
+            background-color: white;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown[_ngcontent-egm-c15] {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content[_ngcontent-egm-c15] {
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .dropdown-content[_ngcontent-egm-c15] a[_ngcontent-egm-c15] {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .arrow-down[_ngcontent-egm-c15] {
+            display: inline-block;
+            vertical-align: text-top;
+            margin-top: 5px;
+            margin-left: 2px;
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #444;
+        }
+    </style>
+    <style>
+        .flag[_ngcontent-egm-c15] {
+            display: inline-block;
+            width: 16px;
+            height: 11px;
+            background: url('https://res.cloudinary.com/dvbuhh0bl/image/upload/v1495279723/flags_boi3c5.png') no-repeat
+        }
+
+        .flag.flag-af[_ngcontent-egm-c15] {
+            background-position: -32px 0
+        }
+
+        .flag.flag-ky[_ngcontent-egm-c15] {
+            background-position: -128px -77px
+        }
+
+        .flag.flag-in[_ngcontent-egm-c15] {
+            background-position: -64px -66px
+        }
+
+        .flag.flag-mm[_ngcontent-egm-c15] {
+            background-position: -192px -88px
+        }
+
+        .flag.flag-td[_ngcontent-egm-c15] {
+            background-position: -240px -132px
+        }
+
+        .flag.flag-dm[_ngcontent-egm-c15] {
+            background-position: -80px -33px
+        }
+
+        .flag.flag-se[_ngcontent-egm-c15] {
+            background-position: -208px -121px
+        }
+
+        .flag.flag-pr[_ngcontent-egm-c15] {
+            background-position: -224px -110px
+        }
+
+        .flag.flag-bj[_ngcontent-egm-c15] {
+            background-position: -112px -11px
+        }
+
+        .flag.flag-gr[_ngcontent-egm-c15] {
+            background-position: -48px -55px
+        }
+
+        .flag.flag-um[_ngcontent-egm-c15] {
+            background-position: -256px -143px
+        }
+
+        .flag.flag-ps[_ngcontent-egm-c15] {
+            background-position: -240px -110px
+        }
+
+        .flag.flag-fi[_ngcontent-egm-c15] {
+            background-position: 0 -44px
+        }
+
+        .flag.flag-kr[_ngcontent-egm-c15] {
+            background-position: -80px -77px
+        }
+
+        .flag.flag-nl[_ngcontent-egm-c15] {
+            background-position: -240px -99px
+        }
+
+        .flag.flag-bo[_ngcontent-egm-c15] {
+            background-position: -160px -11px
+        }
+
+        .flag.flag-bf[_ngcontent-egm-c15] {
+            background-position: -48px -11px
+        }
+
+        .flag.flag-ba[_ngcontent-egm-c15] {
+            background-position: -256px 0
+        }
+
+        .flag.flag-ax[_ngcontent-egm-c15] {
+            background-position: -224px 0
+        }
+
+        .flag.flag-pf[_ngcontent-egm-c15] {
+            background-position: -112px -110px
+        }
+
+        .flag.flag-eg[_ngcontent-egm-c15] {
+            background-position: -160px -33px
+        }
+
+        .flag.flag-sb[_ngcontent-egm-c15] {
+            background-position: -144px -121px
+        }
+
+        .flag.flag-dk[_ngcontent-egm-c15] {
+            background-position: -64px -33px
+        }
+
+        .flag.flag-ci[_ngcontent-egm-c15] {
+            background-position: -112px -22px
+        }
+
+        .flag.flag-ic[_ngcontent-egm-c15] {
+            background-position: -240px -55px
+        }
+
+        .flag.flag-cl[_ngcontent-egm-c15] {
+            background-position: -144px -22px
+        }
+
+        .flag.flag-zw[_ngcontent-egm-c15] {
+            background-position: -32px -165px
+        }
+
+        .flag.flag-my[_ngcontent-egm-c15] {
+            background-position: -112px -99px
+        }
+
+        .flag.flag-li[_ngcontent-egm-c15] {
+            background-position: -208px -77px
+        }
+
+        .flag.flag-mc[_ngcontent-egm-c15] {
+            background-position: -80px -88px
+        }
+
+        .flag.flag-fo[_ngcontent-egm-c15] {
+            background-position: -64px -44px
+        }
+
+        .flag.flag-vu[_ngcontent-egm-c15] {
+            background-position: -144px -154px
+        }
+
+        .flag.flag-al[_ngcontent-egm-c15] {
+            background-position: -80px 0
+        }
+
+        .flag.flag-ge[_ngcontent-egm-c15] {
+            background-position: -144px -44px
+        }
+
+        .flag.flag-somaliland[_ngcontent-egm-c15] {
+            background-position: -96px -132px
+        }
+
+        .flag.flag-am[_ngcontent-egm-c15] {
+            background-position: -96px 0
+        }
+
+        .flag.flag-tf[_ngcontent-egm-c15] {
+            background-position: -256px -132px
+        }
+
+        .flag.flag-ni[_ngcontent-egm-c15] {
+            background-position: -224px -99px
+        }
+
+        .flag.flag-tn[_ngcontent-egm-c15] {
+            background-position: -112px -143px
+        }
+
+        .flag.flag-lv[_ngcontent-egm-c15] {
+            background-position: -32px -88px
+        }
+
+        .flag.flag-vi[_ngcontent-egm-c15] {
+            background-position: -112px -154px
+        }
+
+        .flag.flag-ve[_ngcontent-egm-c15] {
+            background-position: -80px -154px
+        }
+
+        .flag.flag-gm[_ngcontent-egm-c15] {
+            background-position: -256px -44px
+        }
+
+        .flag.flag-fm[_ngcontent-egm-c15] {
+            background-position: -48px -44px
+        }
+
+        .flag.flag-mg[_ngcontent-egm-c15] {
+            background-position: -128px -88px
+        }
+
+        .flag.flag-mh[_ngcontent-egm-c15] {
+            background-position: -144px -88px
+        }
+
+        .flag.flag-tc[_ngcontent-egm-c15] {
+            background-position: -224px -132px
+        }
+
+        .flag.flag-id[_ngcontent-egm-c15] {
+            background-position: -256px -55px
+        }
+
+        .flag.flag-tw[_ngcontent-egm-c15] {
+            background-position: -192px -143px
+        }
+
+        .flag.flag-so[_ngcontent-egm-c15] {
+            background-position: -80px -132px
+        }
+
+        .flag.flag-pg[_ngcontent-egm-c15] {
+            background-position: -128px -110px
+        }
+
+        .flag.flag-hk[_ngcontent-egm-c15] {
+            background-position: -144px -55px
+        }
+
+        .flag.flag-mt[_ngcontent-egm-c15] {
+            background-position: -32px -99px
+        }
+
+        .flag.flag-do[_ngcontent-egm-c15] {
+            background-position: -96px -33px
+        }
+
+        .flag.flag-gg[_ngcontent-egm-c15] {
+            background-position: -192px -44px
+        }
+
+        .flag.flag-nr[_ngcontent-egm-c15] {
+            background-position: -16px -110px
+        }
+
+        .flag.flag-mp[_ngcontent-egm-c15] {
+            background-position: -240px -88px
+        }
+
+        .flag.flag-mw[_ngcontent-egm-c15] {
+            background-position: -80px -99px
+        }
+
+        .flag.flag-bb[_ngcontent-egm-c15] {
+            background-position: 0 -11px
+        }
+
+        .flag.flag-hu[_ngcontent-egm-c15] {
+            background-position: -224px -55px
+        }
+
+        .flag.flag-xk[_ngcontent-egm-c15] {
+            background-position: -208px -154px
+        }
+
+        .flag.flag-za[_ngcontent-egm-c15] {
+            background-position: -256px -154px
+        }
+
+        .flag.flag-zanzibar[_ngcontent-egm-c15] {
+            background-position: 0 -165px
+        }
+
+        .flag.flag-sy[_ngcontent-egm-c15] {
+            background-position: -192px -132px
+        }
+
+        .flag.flag-bi[_ngcontent-egm-c15] {
+            background-position: -96px -11px
+        }
+
+        .flag.flag-qa[_ngcontent-egm-c15] {
+            background-position: -32px -121px
+        }
+
+        .flag.flag-kurdistan[_ngcontent-egm-c15] {
+            background-position: -96px -77px
+        }
+
+        .flag.flag-scotland[_ngcontent-egm-c15] {
+            background-position: -176px -121px
+        }
+
+        .flag.flag-gf[_ngcontent-egm-c15] {
+            background-position: -160px -44px
+        }
+
+        .flag.flag-tk[_ngcontent-egm-c15] {
+            background-position: -64px -143px
+        }
+
+        .flag.flag-me[_ngcontent-egm-c15] {
+            background-position: -112px -88px
+        }
+
+        .flag.flag-om[_ngcontent-egm-c15] {
+            background-position: -64px -110px
+        }
+
+        .flag.flag-tv[_ngcontent-egm-c15] {
+            background-position: -176px -143px
+        }
+
+        .flag.flag-at[_ngcontent-egm-c15] {
+            background-position: -176px 0
+        }
+
+        .flag.flag-by[_ngcontent-egm-c15] {
+            background-position: -256px -11px
+        }
+
+        .flag.flag-wf[_ngcontent-egm-c15] {
+            background-position: -176px -154px
+        }
+
+        .flag.flag-ph[_ngcontent-egm-c15] {
+            background-position: -144px -110px
+        }
+
+        .flag.flag-ke[_ngcontent-egm-c15] {
+            background-position: -240px -66px
+        }
+
+        .flag.flag-ng[_ngcontent-egm-c15] {
+            background-position: -208px -99px
+        }
+
+        .flag.flag-eh[_ngcontent-egm-c15] {
+            background-position: -176px -33px
+        }
+
+        .flag.flag-yt[_ngcontent-egm-c15] {
+            background-position: -240px -154px
+        }
+
+        .flag.flag-cg[_ngcontent-egm-c15] {
+            background-position: -80px -22px
+        }
+
+        .flag.flag-br[_ngcontent-egm-c15] {
+            background-position: -176px -11px
+        }
+
+        .flag.flag-ma[_ngcontent-egm-c15] {
+            background-position: -64px -88px
+        }
+
+        .flag.flag-bm[_ngcontent-egm-c15] {
+            background-position: -128px -11px
+        }
+
+        .flag.flag-gi[_ngcontent-egm-c15] {
+            background-position: -224px -44px
+        }
+
+        .flag.flag-mn[_ngcontent-egm-c15] {
+            background-position: -208px -88px
+        }
+
+        .flag.flag-eu[_ngcontent-egm-c15] {
+            background-position: -256px -33px
+        }
+
+        .flag.flag-us[_ngcontent-egm-c15] {
+            background-position: 0 -154px
+        }
+
+        .flag.flag-uy[_ngcontent-egm-c15] {
+            background-position: -16px -154px
+        }
+
+        .flag.flag-hn[_ngcontent-egm-c15] {
+            background-position: -176px -55px
+        }
+
+        .flag.flag-gp[_ngcontent-egm-c15] {
+            background-position: -16px -55px
+        }
+
+        .flag.flag-km[_ngcontent-egm-c15] {
+            background-position: -32px -77px
+        }
+
+        .flag.flag-au[_ngcontent-egm-c15] {
+            background-position: -192px 0
+        }
+
+        .flag.flag-tz[_ngcontent-egm-c15] {
+            background-position: -208px -143px
+        }
+
+        .flag.flag-pt[_ngcontent-egm-c15] {
+            background-position: -256px -110px
+        }
+
+        .flag.flag-je[_ngcontent-egm-c15] {
+            background-position: -176px -66px
+        }
+
+        .flag.flag-md[_ngcontent-egm-c15] {
+            background-position: -96px -88px
+        }
+
+        .flag.flag-pl[_ngcontent-egm-c15] {
+            background-position: -176px -110px
+        }
+
+        .flag.flag-cr[_ngcontent-egm-c15] {
+            background-position: -208px -22px
+        }
+
+        .flag.flag-sk[_ngcontent-egm-c15] {
+            background-position: -16px -132px
+        }
+
+        .flag.flag-kg[_ngcontent-egm-c15] {
+            background-position: -256px -66px
+        }
+
+        .flag.flag-nu[_ngcontent-egm-c15] {
+            background-position: -32px -110px
+        }
+
+        .flag.flag-lr[_ngcontent-egm-c15] {
+            background-position: -240px -77px
+        }
+
+        .flag.flag-ht[_ngcontent-egm-c15] {
+            background-position: -208px -55px
+        }
+
+        .flag.flag-rw[_ngcontent-egm-c15] {
+            background-position: -112px -121px
+        }
+
+        .flag.flag-sg[_ngcontent-egm-c15] {
+            background-position: -224px -121px
+        }
+
+        .flag.flag-ag[_ngcontent-egm-c15] {
+            background-position: -48px 0
+        }
+
+        .flag.flag-mx[_ngcontent-egm-c15] {
+            background-position: -96px -99px
+        }
+
+        .flag.flag-ch[_ngcontent-egm-c15] {
+            background-position: -96px -22px
+        }
+
+        .flag.flag-sz[_ngcontent-egm-c15] {
+            background-position: -208px -132px
+        }
+
+        .flag.flag-dj[_ngcontent-egm-c15] {
+            background-position: -48px -33px
+        }
+
+        .flag.flag-kn[_ngcontent-egm-c15] {
+            background-position: -48px -77px
+        }
+
+        .flag.flag-england[_ngcontent-egm-c15] {
+            background-position: -192px -33px
+        }
+
+        .flag.flag-ro[_ngcontent-egm-c15] {
+            background-position: -64px -121px
+        }
+
+        .flag.flag-ca[_ngcontent-egm-c15] {
+            background-position: -16px -22px
+        }
+
+        .flag.flag-tr[_ngcontent-egm-c15] {
+            background-position: -144px -143px
+        }
+
+        .flag.flag-pa[_ngcontent-egm-c15] {
+            background-position: -80px -110px
+        }
+
+        .flag.flag-ye[_ngcontent-egm-c15] {
+            background-position: -224px -154px
+        }
+
+        .flag.flag-si[_ngcontent-egm-c15] {
+            background-position: -256px -121px
+        }
+
+        .flag.flag-tt[_ngcontent-egm-c15] {
+            background-position: -160px -143px
+        }
+
+        .flag.flag-ml[_ngcontent-egm-c15] {
+            background-position: -176px -88px
+        }
+
+        .flag.flag-sl[_ngcontent-egm-c15] {
+            background-position: -32px -132px
+        }
+
+        .flag.flag-sa[_ngcontent-egm-c15] {
+            background-position: -128px -121px
+        }
+
+        .flag.flag-py[_ngcontent-egm-c15] {
+            background-position: -16px -121px
+        }
+
+        .flag.flag-ad[_ngcontent-egm-c15] {
+            background-position: 0 0
+        }
+
+        .flag.flag-gy[_ngcontent-egm-c15] {
+            background-position: -128px -55px
+        }
+
+        .flag.flag-ls[_ngcontent-egm-c15] {
+            background-position: -256px -77px
+        }
+
+        .flag.flag-sj[_ngcontent-egm-c15] {
+            background-position: 0 -132px
+        }
+
+        .flag.flag-fk[_ngcontent-egm-c15] {
+            background-position: -32px -44px
+        }
+
+        .flag.flag-kw[_ngcontent-egm-c15] {
+            background-position: -112px -77px
+        }
+
+        .flag.flag-sm[_ngcontent-egm-c15] {
+            background-position: -48px -132px
+        }
+
+        .flag.flag-vn[_ngcontent-egm-c15] {
+            background-position: -128px -154px
+        }
+
+        .flag.flag-iq[_ngcontent-egm-c15] {
+            background-position: -96px -66px
+        }
+
+        .flag.flag-ie[_ngcontent-egm-c15] {
+            background-position: 0 -66px
+        }
+
+        .flag.flag-mz[_ngcontent-egm-c15] {
+            background-position: -128px -99px
+        }
+
+        .flag.flag-vg[_ngcontent-egm-c15] {
+            background-position: -96px -154px
+        }
+
+        .flag.flag-ms[_ngcontent-egm-c15] {
+            background-position: -16px -99px
+        }
+
+        .flag.flag-cw[_ngcontent-egm-c15] {
+            background-position: -256px -22px
+        }
+
+        .flag.flag-bt[_ngcontent-egm-c15] {
+            background-position: -208px -11px
+        }
+
+        .flag.flag-gn[_ngcontent-egm-c15] {
+            background-position: 0 -55px
+        }
+
+        .flag.flag-uz[_ngcontent-egm-c15] {
+            background-position: -32px -154px
+        }
+
+        .flag.flag-cv[_ngcontent-egm-c15] {
+            background-position: -240px -22px
+        }
+
+        .flag.flag-pw[_ngcontent-egm-c15] {
+            background-position: 0 -121px
+        }
+
+        .flag.flag-bv[_ngcontent-egm-c15] {
+            background-position: -224px -11px
+        }
+
+        .flag.flag-lb[_ngcontent-egm-c15] {
+            background-position: -176px -77px
+        }
+
+        .flag.flag-sn[_ngcontent-egm-c15] {
+            background-position: -64px -132px
+        }
+
+        .flag.flag-la[_ngcontent-egm-c15] {
+            background-position: -160px -77px
+        }
+
+        .flag.flag-pe[_ngcontent-egm-c15] {
+            background-position: -96px -110px
+        }
+
+        .flag.flag-sx[_ngcontent-egm-c15] {
+            background-position: -176px -132px
+        }
+
+        .flag.flag-fr[_ngcontent-egm-c15] {
+            background-position: -80px -44px
+        }
+
+        .flag.flag-catalonia[_ngcontent-egm-c15] {
+            background-position: -32px -22px
+        }
+
+        .flag.flag-kh[_ngcontent-egm-c15] {
+            background-position: 0 -77px
+        }
+
+        .flag.flag-jp[_ngcontent-egm-c15] {
+            background-position: -224px -66px
+        }
+
+        .flag.flag-vc[_ngcontent-egm-c15] {
+            background-position: -64px -154px
+        }
+
+        .flag.flag-hm[_ngcontent-egm-c15] {
+            background-position: -160px -55px
+        }
+
+        .flag.flag-tl[_ngcontent-egm-c15] {
+            background-position: -80px -143px
+        }
+
+        .flag.flag-no[_ngcontent-egm-c15] {
+            background-position: -256px -99px
+        }
+
+        .flag.flag-ee[_ngcontent-egm-c15] {
+            background-position: -144px -33px
+        }
+
+        .flag.flag-cz[_ngcontent-egm-c15] {
+            background-position: -16px -33px
+        }
+
+        .flag.flag-gw[_ngcontent-egm-c15] {
+            background-position: -112px -55px
+        }
+
+        .flag.flag-ai[_ngcontent-egm-c15] {
+            background-position: -64px 0
+        }
+
+        .flag.flag-ar[_ngcontent-egm-c15] {
+            background-position: -144px 0
+        }
+
+        .flag.flag-co[_ngcontent-egm-c15] {
+            background-position: -192px -22px
+        }
+
+        .flag.flag-na[_ngcontent-egm-c15] {
+            background-position: -144px -99px
+        }
+
+        .flag.flag-er[_ngcontent-egm-c15] {
+            background-position: -208px -33px
+        }
+
+        .flag.flag-pm[_ngcontent-egm-c15] {
+            background-position: -192px -110px
+        }
+
+        .flag.flag-bg[_ngcontent-egm-c15] {
+            background-position: -64px -11px
+        }
+
+        .flag.flag-sr[_ngcontent-egm-c15] {
+            background-position: -112px -132px
+        }
+
+        .flag.flag-cm[_ngcontent-egm-c15] {
+            background-position: -160px -22px
+        }
+
+        .flag.flag-il[_ngcontent-egm-c15] {
+            background-position: -16px -66px
+        }
+
+        .flag.flag-tibet[_ngcontent-egm-c15] {
+            background-position: -32px -143px
+        }
+
+        .flag.flag-lk[_ngcontent-egm-c15] {
+            background-position: -224px -77px
+        }
+
+        .flag.flag-et[_ngcontent-egm-c15] {
+            background-position: -240px -33px
+        }
+
+        .flag.flag-rs[_ngcontent-egm-c15] {
+            background-position: -80px -121px
+        }
+
+        .flag.flag-th[_ngcontent-egm-c15] {
+            background-position: -16px -143px
+        }
+
+        .flag.flag-tm[_ngcontent-egm-c15] {
+            background-position: -96px -143px
+        }
+
+        .flag.flag-fj[_ngcontent-egm-c15] {
+            background-position: -16px -44px
+        }
+
+        .flag.flag-ki[_ngcontent-egm-c15] {
+            background-position: -16px -77px
+        }
+
+        .flag.flag-re[_ngcontent-egm-c15] {
+            background-position: -48px -121px
+        }
+
+        .flag.flag-nf[_ngcontent-egm-c15] {
+            background-position: -192px -99px
+        }
+
+        .flag.flag-kz[_ngcontent-egm-c15] {
+            background-position: -144px -77px
+        }
+
+        .flag.flag-nc[_ngcontent-egm-c15] {
+            background-position: -160px -99px
+        }
+
+        .flag.flag-bn[_ngcontent-egm-c15] {
+            background-position: -144px -11px
+        }
+
+        .flag.flag-gb[_ngcontent-egm-c15] {
+            background-position: -112px -44px
+        }
+
+        .flag.flag-mq[_ngcontent-egm-c15] {
+            background-position: -256px -88px
+        }
+
+        .flag.flag-sc[_ngcontent-egm-c15] {
+            background-position: -160px -121px
+        }
+
+        .flag.flag-gu[_ngcontent-egm-c15] {
+            background-position: -96px -55px
+        }
+
+        .flag.flag-io[_ngcontent-egm-c15] {
+            background-position: -80px -66px
+        }
+
+        .flag.flag-cd[_ngcontent-egm-c15] {
+            background-position: -48px -22px
+        }
+
+        .flag.flag-tg[_ngcontent-egm-c15] {
+            background-position: 0 -143px
+        }
+
+        .flag.flag-sv[_ngcontent-egm-c15] {
+            background-position: -160px -132px
+        }
+
+        .flag.flag-jo[_ngcontent-egm-c15] {
+            background-position: -208px -66px
+        }
+
+        .flag.flag-ua[_ngcontent-egm-c15] {
+            background-position: -224px -143px
+        }
+
+        .flag.flag-ga[_ngcontent-egm-c15] {
+            background-position: -96px -44px
+        }
+
+        .flag.flag-cu[_ngcontent-egm-c15] {
+            background-position: -224px -22px
+        }
+
+        .flag.flag-va[_ngcontent-egm-c15] {
+            background-position: -48px -154px
+        }
+
+        .flag.flag-mu[_ngcontent-egm-c15] {
+            background-position: -48px -99px
+        }
+
+        .flag.flag-hr[_ngcontent-egm-c15] {
+            background-position: -192px -55px
+        }
+
+        .flag.flag-to[_ngcontent-egm-c15] {
+            background-position: -128px -143px
+        }
+
+        .flag.flag-bh[_ngcontent-egm-c15] {
+            background-position: -80px -11px
+        }
+
+        .flag.flag-ec[_ngcontent-egm-c15] {
+            background-position: -128px -33px
+        }
+
+        .flag.flag-ug[_ngcontent-egm-c15] {
+            background-position: -240px -143px
+        }
+
+        .flag.flag-de[_ngcontent-egm-c15] {
+            background-position: -32px -33px
+        }
+
+        .flag.flag-gq[_ngcontent-egm-c15] {
+            background-position: -32px -55px
+        }
+
+        .flag.flag-bd[_ngcontent-egm-c15] {
+            background-position: -16px -11px
+        }
+
+        .flag.flag-bs[_ngcontent-egm-c15] {
+            background-position: -192px -11px
+        }
+
+        .flag.flag-ck[_ngcontent-egm-c15] {
+            background-position: -128px -22px
+        }
+
+        .flag.flag-gd[_ngcontent-egm-c15] {
+            background-position: -128px -44px
+        }
+
+        .flag.flag-sh[_ngcontent-egm-c15] {
+            background-position: -240px -121px
+        }
+
+        .flag.flag-be[_ngcontent-egm-c15] {
+            background-position: -32px -11px
+        }
+
+        .flag.flag-mr[_ngcontent-egm-c15] {
+            background-position: 0 -99px
+        }
+
+        .flag.flag-tj[_ngcontent-egm-c15] {
+            background-position: -48px -143px
+        }
+
+        .flag.flag-gl[_ngcontent-egm-c15] {
+            background-position: -240px -44px
+        }
+
+        .flag.flag-as[_ngcontent-egm-c15] {
+            background-position: -160px 0
+        }
+
+        .flag.flag-es[_ngcontent-egm-c15] {
+            background-position: -224px -33px
+        }
+
+        .flag.flag-zm[_ngcontent-egm-c15] {
+            background-position: -16px -165px
+        }
+
+        .flag.flag-wales[_ngcontent-egm-c15] {
+            background-position: -160px -154px
+        }
+
+        .flag.flag-np[_ngcontent-egm-c15] {
+            background-position: 0 -110px
+        }
+
+        .flag.flag-lu[_ngcontent-egm-c15] {
+            background-position: -16px -88px
+        }
+
+        .flag.flag-st[_ngcontent-egm-c15] {
+            background-position: -144px -132px
+        }
+
+        .flag.flag-ao[_ngcontent-egm-c15] {
+            background-position: -128px 0
+        }
+
+        .flag.flag-cf[_ngcontent-egm-c15] {
+            background-position: -64px -22px
+        }
+
+        .flag.flag-az[_ngcontent-egm-c15] {
+            background-position: -240px 0
+        }
+
+        .flag.flag-bw[_ngcontent-egm-c15] {
+            background-position: -240px -11px
+        }
+
+        .flag.flag-nz[_ngcontent-egm-c15] {
+            background-position: -48px -110px
+        }
+
+        .flag.flag-cy[_ngcontent-egm-c15] {
+            background-position: 0 -33px
+        }
+
+        .flag.flag-ne[_ngcontent-egm-c15] {
+            background-position: -176px -99px
+        }
+
+        .flag.flag-kp[_ngcontent-egm-c15] {
+            background-position: -64px -77px
+        }
+
+        .flag.flag-gs[_ngcontent-egm-c15] {
+            background-position: -64px -55px
+        }
+
+        .flag.flag-mk[_ngcontent-egm-c15] {
+            background-position: -160px -88px
+        }
+
+        .flag.flag-mo[_ngcontent-egm-c15] {
+            background-position: -224px -88px
+        }
+
+        .flag.flag-jm[_ngcontent-egm-c15] {
+            background-position: -192px -66px
+        }
+
+        .flag.flag-ws[_ngcontent-egm-c15] {
+            background-position: -192px -154px
+        }
+
+        .flag.flag-lc[_ngcontent-egm-c15] {
+            background-position: -192px -77px
+        }
+
+        .flag.flag-an[_ngcontent-egm-c15] {
+            background-position: -112px 0
+        }
+
+        .flag.flag-gh[_ngcontent-egm-c15] {
+            background-position: -208px -44px
+        }
+
+        .flag.flag-im[_ngcontent-egm-c15] {
+            background-position: -48px -66px
+        }
+
+        .flag.flag-is[_ngcontent-egm-c15] {
+            background-position: -128px -66px
+        }
+
+        .flag.flag-ae[_ngcontent-egm-c15] {
+            background-position: -16px 0
+        }
+
+        .flag.flag-it[_ngcontent-egm-c15] {
+            background-position: -144px -66px
+        }
+
+        .flag.flag-ss[_ngcontent-egm-c15] {
+            background-position: -128px -132px
+        }
+
+        .flag.flag-ly[_ngcontent-egm-c15] {
+            background-position: -48px -88px
+        }
+
+        .flag.flag-mv[_ngcontent-egm-c15] {
+            background-position: -64px -99px
+        }
+
+        .flag.flag-ir[_ngcontent-egm-c15] {
+            background-position: -112px -66px
+        }
+
+        .flag.flag-gt[_ngcontent-egm-c15] {
+            background-position: -80px -55px
+        }
+
+        .flag.flag-bz[_ngcontent-egm-c15] {
+            background-position: 0 -22px
+        }
+
+        .flag.flag-dz[_ngcontent-egm-c15] {
+            background-position: -112px -33px
+        }
+
+        .flag.flag-lt[_ngcontent-egm-c15] {
+            background-position: 0 -88px
+        }
+
+        .flag.flag-sd[_ngcontent-egm-c15] {
+            background-position: -192px -121px
+        }
+
+        .flag.flag-pk[_ngcontent-egm-c15] {
+            background-position: -160px -110px
+        }
+
+        .flag.flag-ru[_ngcontent-egm-c15] {
+            background-position: -96px -121px
+        }
+
+        .flag.flag-pn[_ngcontent-egm-c15] {
+            background-position: -208px -110px
+        }
+
+        .flag.flag-cn[_ngcontent-egm-c15] {
+            background-position: -176px -22px
+        }
+
+        .flag.flag-aw[_ngcontent-egm-c15] {
+            background-position: -208px 0
+        }
+    </style>
+    <style>
+        .outter[_ngcontent-egm-c16] {
+            padding-bottom: 80px;
+            padding-top: 15px;
+            min-height: calc(100vh - 147px)
+        }
+
+        .eventCategory[_ngcontent-egm-c16] {
+            display: block;
+            background-color: #fff;
+            padding: 0;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px -4px rgba(44, 25, 80, .16);
+            overflow: hidden;
+            height: 300px;
+            margin-bottom: 15px
+        }
+
+        .eventCategory[_ngcontent-egm-c16]:hover {
+            transform: translateY(-5px);
+            transition: all .3s ease-in-out
+        }
+
+        .eventCategory[_ngcontent-egm-c16] .eventpic[_ngcontent-egm-c16] {
+            height: 80%
+        }
+
+        .eventCategory[_ngcontent-egm-c16] .eventpic[_ngcontent-egm-c16] img[_ngcontent-egm-c16] {
+            width: 100%;
+            height: 190px
+        }
+
+        .eventCategory[_ngcontent-egm-c16] .caption[_ngcontent-egm-c16] {
+            height: 20%
+        }
+
+        .eventCategory[_ngcontent-egm-c16] .caption[_ngcontent-egm-c16] .txt[_ngcontent-egm-c16] {
+            color: #000;
+            opacity: .6;
+            font-size: 21px;
+            text-align: center;
+            line-height: 25px
+        }
+
+        @media (max-width:991px) {
+            .eventCategory[_ngcontent-egm-c16] {
+                margin-bottom: 15px
+            }
+
+            .eventCategory[_ngcontent-egm-c16] .caption[_ngcontent-egm-c16] .txt[_ngcontent-egm-c16] {
+                font-size: 18px
+            }
+        }
+    </style>
+</head>
+
+<body class="" style="">
+
+    <!-- Google Analytics here -->
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MEXXZGM26D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MEXXZGM26D');
+
+        var FanId = "anonymous user";
+        var profileData = localStorage.getItem("profileData");
+        if (profileData) {
+            var obj = JSON.parse(profileData);
+            FanId = obj.fanId;
+        }
+        gtag('config', 'G-MEXXZGM26D', {
+            'user_id': FanId
+        });
+    </script>
+    <!-- End Google Analytics -->
+
+    <!--<link rel="stylesheet" id="lang" href="assets/styles/styles.css">-->
+    <app-root ng-version="7.2.16"><router-outlet></router-outlet><app-events-categories _nghost-egm-c16=""
+            class="ng-star-inserted"><app-header _ngcontent-egm-c16="">
+                <div class="side-nav">
+                    <div class="bars"><span></span><span></span><span></span></div>
+                    <ul class="links">
+                        <li><a href="javascript:void(0)">Home</a></li>
+                        <li><a href="javascript:void(0)">Stadium Locations</a></li>
+                        <li><a href="javascript:void(0)">Our Stores</a></li>
+                        <li><a href="javascript:void(0)">FAQ</a></li>
+                        <li><a href="javascript:void(0)">About Tazkarti</a></li>
+                        <li><a href="javascript:void(0)">Contact Us</a></li>
+                    </ul>
+                    <ul class="social">
+                        <li><a href="https://facebook.com/tazkarti/" target="_blank"><i
+                                    class="icomoon-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/tazkarti" target="_blank"><i class="icomoon-twitter"></i></a>
+                        </li>
+                        <li><a href="https://instagram.com/tazkarti/" target="_blank"><i
+                                    class="icomoon-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="header">
+                    <div class="container clearfix">
+                        <ul class="logos">
+                            <li class="bars"><span></span><span></span><span></span></li>
+                            <li class="tazkarti"><a href="javascript:void(0)"><img alt=""
+                                        src="https://tazkarti.com/assets/images/logo1.svg"></a></li>
+                        </ul>
+                        <ul class="links"><!----><!----><!---->
+                            <li class="ng-star-inserted"><a href="./tazkarti/omar/myinfo.html"><i
+                                        class="icomoon-user-info"></i><span>My Profile</span></a></li><!---->
+                            <li class="ng-star-inserted"><a href="tazkarti/omar/SignIn.html"><i
+                                        class="icomoon-logout"></i><span>Sign out</span></a></li><!---->
+                            <li class="drop-down-holder"><a class="prevent-default" href="javascript:void(0)"><i
+                                        class="icomoon-world"></i><span>English</span><i
+                                        class="icomoon-chevron-down"></i></a>
+                                <ul class="drop-down">
+                                    <li><a href="javascript:void(0)"><img src="https://tazkarti.com/assets/images/lang-flag3.svg"> العربية
+                                        </a></li>
+                                    <li><a href="javascript:void(0)"><img src="https://tazkarti.com/assets/images/lang-flag1.svg"> English
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!---->
+                <p-confirmdialog class="ng-tns-c7-54"><!----></p-confirmdialog>
+            </app-header><!----><app-navbar-user _ngcontent-egm-c16="" class="ng-star-inserted">
+                <div class="user-nav"><!---->
+                    <div class="container clearfix ng-star-inserted">
+                        <div class="user-info">
+                            <div class="image-holder"><!----><img alt=""
+                                    src="./tazkarti/omar/profile.png"
+                                    class="ng-star-inserted"><!----></div>
+                            <div class="info">
+                                <div class="welcome">Welcome</div>
+                                <div class="name">عمر جاب الله</div>
+                                <div class="fan-id"><span class="text-grey-light">Tazkarti ID</span><span
+                                        class="id-num">10001162220059</span></div>
+                                <div class="fan-id vaccin-info"><!----></div>
+                            </div>
+                        </div><!---->
+                        <ul class="user-links">
+              <li><a href="tazkarti/omar/index.html" ><i class="icomoon-user-home"></i><span>Home</span></a></li>
+              <li><a href="tazkarti/omar/matches.html" ><i class="icomoon-user-mathes"><span class="path6"></span></i><span>Matches</span></a></li>
+              <li><a href="tazkarti/omar/events.html" class="active"><i class="icomoon-event"><span class="path6"></span></i><span>Events</span></a></li>
+              <li><a href="tazkarti/omar/myTickets.html" ><i class="icomoon-user-purchase-history"></i><span>My Tickets</span></a></li>
+              <li><a href="tazkarti/omar/dependents.html"><i class="icomoon-user-dependents"></i><span>Dependents</span></a></li>
+          </ul>
+                    </div>
+                    <div class="user-nav-bottom p-0">
+                        <div class="container"><!----><!---->
+                            <div class="news-holder ng-star-inserted" dir="ltr">
+                                <div class="news pt-2">
+                                    <div class="marquee">Tazkarti ID is your pass to stadiums. It is an effective method
+                                        to achieve the safety of fans Allowing identifying them in the stadium.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Tazkarti is also a ticketing provider and event organizer that plans and hosts
+                                        its own events all around Egypt.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </app-navbar-user>
+            <div _ngcontent-egm-c16="" class="outter">
+                <div _ngcontent-egm-c16="" class="container">
+                    <div _ngcontent-egm-c16="" class="page-title">Event Categories </div><br _ngcontent-egm-c16="">
+                    <div _ngcontent-egm-c16="" class="row d-flex justify-content-center align-items-center"><!---->
+                        <div _ngcontent-egm-c16="" class="col-md-6 col-12 ng-star-inserted"><a _ngcontent-egm-c16=""
+                                class="eventCategory" id="link_events_card" href="tazkarti/omar/events.html">
+                                <div _ngcontent-egm-c16=""
+                                    class="eventpic d-flex justify-content-center align-items-center"><img
+                                        _ngcontent-egm-c16="" alt="" style="height: 100%;width: 100%;"
+                                        src="https://tazkarti.com/assets/images/imagesref/af317770-e3b2-4484-8cf9-e87d38738f71.png"></div>
+                                <div _ngcontent-egm-c16=""
+                                    class="caption d-flex justify-content-center align-items-center">
+                                    <div _ngcontent-egm-c16="" class="first txt"> The Elite Super Show Vol.9 </div>
+                                </div>
+                            </a></div>
+                        <div _ngcontent-egm-c16="" class="col-md-6 col-12 ng-star-inserted"><a _ngcontent-egm-c16=""
+                                class="eventCategory" id="link_events_card" href="tazkarti/omar/events.html">
+                                <div _ngcontent-egm-c16=""
+                                    class="eventpic d-flex justify-content-center align-items-center"><img
+                                        _ngcontent-egm-c16="" alt="" style="height: 100%;width: 100%;"
+                                        src="https://tazkarti.com/assets/images/imagesref/f4840429-8b1b-49f0-9a1e-6ab563625408.jpeg"></div>
+                                <div _ngcontent-egm-c16=""
+                                    class="caption d-flex justify-content-center align-items-center">
+                                    <div _ngcontent-egm-c16="" class="first txt"> Cairo&nbsp;Opera&nbsp;House </div>
+                                </div>
+                            </a></div>
+                        <div _ngcontent-egm-c16="" class="col-md-6 col-12 ng-star-inserted"><a _ngcontent-egm-c16=""
+                                class="eventCategory" id="link_events_card" href="tazkarti/omar/events.html">
+                                <div _ngcontent-egm-c16=""
+                                    class="eventpic d-flex justify-content-center align-items-center"><img
+                                        _ngcontent-egm-c16="" alt="" style="height: 100%;width: 100%;"
+                                        src="https://tazkarti.com/assets/images/imagesref/c11860fb-9569-43cb-b659-7f6b2891d6fe.jpeg"></div>
+                                <div _ngcontent-egm-c16=""
+                                    class="caption d-flex justify-content-center align-items-center">
+                                    <div _ngcontent-egm-c16="" class="first txt"> Sayed Darwish Theatre Alexandria
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div _ngcontent-egm-c16="" class="col-md-6 col-12 ng-star-inserted"><a _ngcontent-egm-c16=""
+                                class="eventCategory" id="link_events_card" href="tazkarti/omar/events.html">
+                                <div _ngcontent-egm-c16=""
+                                    class="eventpic d-flex justify-content-center align-items-center"><img
+                                        _ngcontent-egm-c16="" alt="" style="height: 100%;width: 100%;"
+                                        src="https://tazkarti.com/assets/images/imagesref/0d3ae983-a08c-44fa-b97f-ffbee2fa0f86.jpeg"></div>
+                                <div _ngcontent-egm-c16=""
+                                    class="caption d-flex justify-content-center align-items-center">
+                                    <div _ngcontent-egm-c16="" class="first txt"> Gomhouria Theatre </div>
+                                </div>
+                            </a></div>
+                        <div _ngcontent-egm-c16="" class="col-md-6 col-12 ng-star-inserted"><a _ngcontent-egm-c16=""
+                                class="eventCategory" id="link_events_card" href="tazkarti/omar/events.html">
+                                <div _ngcontent-egm-c16=""
+                                    class="eventpic d-flex justify-content-center align-items-center"><img
+                                        _ngcontent-egm-c16="" alt="" style="height: 100%;width: 100%;"
+                                        src="https://tazkarti.com/assets/images/imagesref/bab452ef-8c97-40fd-9a48-42a931f95b84.jpeg"></div>
+                                <div _ngcontent-egm-c16=""
+                                    class="caption d-flex justify-content-center align-items-center">
+                                    <div _ngcontent-egm-c16="" class="first txt"> Arabic Music Institute </div>
+                                </div>
+                            </a></div>
+                        <div _ngcontent-egm-c16="" class="col-md-6 col-12 ng-star-inserted"><a _ngcontent-egm-c16=""
+                                class="eventCategory" id="link_events_card" href="tazkarti/omar/events.html">
+                                <div _ngcontent-egm-c16=""
+                                    class="eventpic d-flex justify-content-center align-items-center"><img
+                                        _ngcontent-egm-c16="" alt="" style="height: 100%;width: 100%;"
+                                        src="https://tazkarti.com/assets/images/imagesref/babdcc74-f737-4602-9937-9af02d76a4c6.jpeg"></div>
+                                <div _ngcontent-egm-c16=""
+                                    class="caption d-flex justify-content-center align-items-center">
+                                    <div _ngcontent-egm-c16="" class="first txt"> Damnhour Theatre </div>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+            </div><app-footer _ngcontent-egm-c16="">
+                <div class="footer logged-in">
+                    <div class="container">
+                        <ul class="links">
+                            <li><a href="javascript:void(0)"><img alt="" src="https://tazkarti.com/assets/images/tazkarti.svg"></a></li>
+                            <li><a href="javascript:void(0)">Home</a></li>
+                            <li><a href="javascript:void(0)">Stadium Locations</a></li>
+                            <li><a href="javascript:void(0)">Our Stores</a></li>
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                            <li><a href="javascript:void(0)">About Tazkarti</a></li>
+                            <li><a href="javascript:void(0)">Contact Us</a></li>
+                        </ul>
+                        <div class="copy-rights">© 2023 Tazkarti. All rights reserved.</div>
+                    </div>
+                </div><p-confirmdialog class="ng-tns-c7-55"><!----></p-confirmdialog>
+            </app-footer>
+        </app-events-categories><p-toast position="top-center" class="ng-tns-c1-0">
+            <div class="ng-tns-c1-0 ui-toast ui-widget ui-toast-top-center"><!----></div>
+        </p-toast><!----></app-root>
+    <script type="text/javascript" src="runtime.fa2bbddee92b46058ef5.js"></script>
+    <script type="text/javascript" src="es2015-polyfills.f70ede54a5010ad33b36.js" nomodule=""></script>
+    <script type="text/javascript" src="polyfills.97a01cd49377eeaac7a6.js"></script>
+    <script type="text/javascript" src="scripts.6d9a83bfa1c904fe043c.js"></script>
+    <script type="text/javascript" src="main.43ea8131cb07ca55dc15.js"></script>
+
+
+</body>
+
+</html>
